@@ -1,0 +1,30 @@
+---
+title: "Spartronics Make the Semis at Mt. Vernon, Win Two Huge Honors"
+date: 2016-03-22
+summary: "It was the first time Spartronics, their families and supporters made the nearly three-hour trek to Mount Vernon for our second District Event competition, but it was worth every…"
+cover: "../../assets/uploads/arespit.jpg"
+tags: []
+wordpressId: 2160
+---
+
+It was the first time Spartronics, their families and supporters made the nearly three-hour trek to Mount Vernon for our second ![arespit](../../assets/uploads/arespit.jpg)District Event competition, but it was worth every minute that we spent going northbound on I-5 Friday afternoon taking home three huge achievements:
+
+*   ARES our 2016 Stronghold competition robot battled back to hold strong and helped Spartronics make it all the way to the **Semifinals**, finishing 14th overall and being selected as part of the 6th-ranked Alliance by Stealth Team 4089 and Aluminati Team 5495.
+
+*   **Clio Batali**, our team's Co-Captain and Drive Team member, was named a Dean's List Semi-finalist, and will go on to compete for Finalist honors at the Pacific Northwest District Championship in Portland in early April. This is one of the most prized honors for any FRC team member.
+
+*   Spartronics were also awarded the prized **"Gracious Professionalism" Award**, recognizing our ability to work with other FRC teams and to compete on and off the field in a manner that reflects this exceptional FIRST standard.
+
+Currently Spartronics is ranked 22nd in our three-state District (AK, OR and WA). So while we won't know if we officially qualify as there are two more weekends of competitions still left to play, the prospects look solid as the top 64 teams will qualify and we have earned a total of 74 District Ranking Points. The PNW Championship will be held April 6-9, with the first matches beginning on Thurs. April 7 at 1pm. To see the ranking, check out The Blue Alliance, [here](https://www.thebluealliance.com/events/pnw/2016#rankings)![robbymoatgoat](../../assets/uploads/robbymoatgoat.jpg)
+
+Robby Davis takes a selfie with the Moat Goat in the Awards Line for "Gracious Professionals"
+
+![ruyadth](../../assets/uploads/ruyadth.jpg)
+
+Super Mentor Riyadth shows off our latest "Gracious Professionalism" Award
+
+![clio](../../assets/uploads/clio1.jpg)
+
+Clio wins the biggest honor yet for a Spartronics member, honored as a Dean's List semifinalist
+
+.

@@ -1,0 +1,30 @@
+---
+title: "THIS WEEK! All Robotics Open House at BHS: March 15, 5-7pm"
+date: 2017-03-14
+summary: "Join us for all-island Community Open House for FIRST Robotics sponsored by BHS Spartronics Team 4915! This Wednesday, March 15th from 5 – 7 pm, meet all our local Robotics teams…"
+cover: "../../assets/uploads/Open-House-2015-Spartronics-Team-4915-500-People-Attend.avif"
+tags: []
+wordpressId: 2461
+---
+
+Join us for all-island Community Open House for FIRST Robotics sponsored by BHS [Spartronics Team 4915](/)!
+
+This Wednesday, March 15th from 5 – 7 pm, meet _all_ our local Robotics teams — students from grades 4th through 12th, including FIRST Robotics [FLL](http://www.firstinspires.org/robotics/fll), [FTC](http://www.firstinspires.org/robotics/ftc) and [FRC](http://www.firstinspires.org/robotics/frc) teams!
+
+We want as many community supporters, teachers, staff, students of all ages, family members, parents and anyone interested in robots to see STEAM and Robotics in action on Bainbridge Island!
+
+Come see Spartronics' new robot for this year’s [STEAMWORKS](https://www.youtube.com/watch?v=EMiNmJW7enI) game. Witness our design process, and learn about all of our subteams -- programming, mechanical, and marketing -- who have been working incredibly hard during our 6-week build season. Plus you can also see more robots created by our FIRST FTC middle school teams and local FLL elementary/intermediate school teams this past season!
+
+**Come meet HELIOS before our 2nd and final FIRST FRC District Event Competition at Glacier Peak High School, March 25 - 26.**
+
+![HELIOS](../../assets/uploads/HELIOS-ROBOT.jpg)
+
+[HELIOS](/about-2/our-robot/helios-2017/) was built in just six-week by our 50-member student-lead team, with guidance from Coach Chee and our 16 professional mentors. We just finished our first District Event and return home as Auburn Mountainview District Event Champions! We are currently [ranked #1](http://frc-districtrankings.firstinspires.org/2017/PNW) in both WA and OR!
+
+Come meet HELIOS before our 2nd and final FIRST FRC District Event Competition at [Glacier Peak High School,](https://www.firstwa.org/Team-Resources/FIRST-Robotics-Competition-Team-Resources/2015-16-Pacific-Northwest-District-Events/Glacier-Peak-Week-2) March 25 - 26.
+
+At our Open House there will be FREE REFRESHMENTS and something for ALL AGES so please bring the entire family!
+
+Here's a great video of the highlights of our 2015 Open House:
+
+https://youtu.be/xk\_0d-PKopI

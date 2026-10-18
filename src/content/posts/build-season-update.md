@@ -1,0 +1,22 @@
+---
+title: "Spartronics Build Season: Week 3"
+date: 2017-02-02
+summary: "This week in Subteams: This week was the third week in the 2017 build season and in all the subteams ideas are turning into realities while clear forms are starting to appear and…"
+cover: "../../assets/uploads/unnamed1.jpg"
+tags: []
+wordpressId: 2378
+---
+
+### ![](../../assets/uploads/unnamed-2.jpg)
+
+### This week in Subteams:
+
+This week was the third week in the 2017 build season and in all the subteams ideas are turning into realities while clear forms are starting to appear and come together into one robot. This week in programming, the hard working programmers have completed the coding for the intake program and the climber and have moved on to working on the launcher as well as the autonomous mode. Programmers have also been working on the IMU (Inertial Measurement Unit) sensor so the drive team will be able to know the exact location of the robot.
+
+![](../../assets/uploads/unnamed-11.jpg)
+
+![](../../assets/uploads/unnamed1.jpg)
+
+### Our Current Mechanical Ideas
+
+In Electronics, the subteam members have been working on updating and testing motors intended for all the systems in the robot this year. For the first time, the entire robot is being built in CAD as the mechanic subteams design a functional and succinct space for all of the electronics on the robot. After finishing the intake system, they have moved on to designing and working on the agitator and the launcher. The mechanics subteam has also finished the bumpers. They are now finalizing the construction of a reliable and functional intake system. The mechanics have also been working on the launchers, and although they have had a few minor setbacks, they are now back on track to being completed soon. They are concurrently working on the climbing and gear mechanisms. Over in marketing, the subteam has finalized a brand-new pit design that will fit the needs of the robot, all the subteams, as well as the safety standards - and the look will be stunning. The next step is to complete the material order, finalize the graphic arts and begin to build. Our Marketers have been working on team Spartronics gear, including our 2017 Team Shirts (featuring all of our Sponsors), and optional Spartronics baseball caps and hoodies.

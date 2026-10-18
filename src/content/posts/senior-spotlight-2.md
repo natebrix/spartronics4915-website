@@ -1,0 +1,19 @@
+---
+title: "Senior Spotlight!"
+date: 2024-02-09
+summary: "Spotlight Time. Everett is in the spotlight this week! Everett is one of our programming captains. Everett has spent four years on Spartronics. Everett's dream career is in…"
+tags:
+  - "Innovation"
+  - "Media"
+wordpressId: 3898
+---
+
+Spotlight Time. Everett is in the spotlight this week!
+
+Everett is one of our programming captains.
+
+Everett has spent four years on Spartronics.
+
+Everett's dream career is in scientific research.
+
+Everett's favorite part of FIRST and Spartronics is everyone being gracious professionals. ![](../../assets/uploads/unnamed-2-1.png)

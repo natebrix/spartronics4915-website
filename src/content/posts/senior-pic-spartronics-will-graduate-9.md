@@ -1,0 +1,27 @@
+---
+title: "Senior Pic: Spartronics will Graduate 12"
+date: 2016-03-28
+summary: "One of the coolest things they do at every FIRST District Competition is a Seniors photo. Here is a great photo with all the other teams and sprinkled throughout are Spartronics…"
+cover: "../../assets/uploads/senior-long-png.avif"
+tags: []
+wordpressId: 2183
+---
+
+![senior-long](../../assets/uploads/senior-long.jpg)One of the coolest things they do at every FIRST District Competition is a Seniors photo. Here is a great photo with all the other teams and sprinkled throughout are Spartronics members in this great shot from Glacier Peak:
+
+Aila Ikuse  
+Alex Cook  
+Andalucia Curtis  
+Connor Dalton  
+Erin Kempkes  
+Jared Cordell  
+Kolin Hawkins  
+Mathias Van Patten  
+Quinn Dassel  
+Robby Davis  
+Robin Schmidt  
+Xander Degnin
+
+Who can you find?
+
+If you have photos to share from a competition this year or one of our events, such as our Open House, please share them with us by emailing them (or a shared drive link) to Spartronics4915@gmail.com.
