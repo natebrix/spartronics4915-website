@@ -1,7 +1,7 @@
 ---
 title: "Subteam Updates for November 1st Meeting"
 date: 2023-11-17
-summary: "Mechanics: \\-Teaching new members how to operate machinery. \\-Taking inventory of parts and supplies. \\-New students took safety tests. Students learning how to operate machinery.…"
+summary: "Mechanics: -Teaching new members how to operate machinery. -Taking inventory of parts and supplies. -New students took safety tests. Students learning how to operate machinery.…"
 tags: []
 wordpressId: 3798
 ---

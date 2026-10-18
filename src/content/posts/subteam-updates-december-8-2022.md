@@ -1,7 +1,7 @@
 ---
 title: "Subteam Updates: December 8, 2022"
 date: 2023-01-05
-summary: "Mechanics: \\-Led workshop safety training/testing for new and returning members (includes power tool safety, emergency procedures, and general best practices) \\-Training new…"
+summary: "Mechanics: -Led workshop safety training/testing for new and returning members (includes power tool safety, emergency procedures, and general best practices) -Training new members…"
 tags: []
 wordpressId: 3642
 ---

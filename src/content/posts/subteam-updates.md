@@ -1,7 +1,7 @@
 ---
 title: "Subteam Updates: January 11, 2023"
 date: 2023-01-12
-summary: "Mechanics: \\-Cutting wooden field elements for testing the robot. \\-Getting students certified in woodworking equipment. \\-Creating prototype pieces for the robot. Programming:…"
+summary: "Mechanics: -Cutting wooden field elements for testing the robot. -Getting students certified in woodworking equipment. -Creating prototype pieces for the robot. Programming:…"
 tags: []
 wordpressId: 3654
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Subteam Updates 9/18/2024"
 date: 2024-09-29
-summary: "Mechanics \\-Teaching new members how to operate machinery. \\-Taking safety tests. Students learning how to operate machinery. Programming \\-Teaching new members how to code.…"
+summary: "Mechanics -Teaching new members how to operate machinery. -Taking safety tests. Students learning how to operate machinery. Programming -Teaching new members how to code.…"
 tags:
   - "Meetings"
   - "Team"

@@ -1,7 +1,7 @@
 ---
 title: "Spartronics FLL Hosted Event Schedule / Information"
 date: 2015-12-04
-summary: "\\--- EVENT ENDED --- Schedule Subject To Change. Final schedule will be provided day of event. 8:30 am Team Check-in Opens 9:00 am Coach Meeting 9:30 am Judging Sessions Begin\\…"
+summary: "--- EVENT ENDED --- Schedule Subject To Change. Final schedule will be provided day of event. 8:30 am Team Check-in Opens 9:00 am Coach Meeting 9:30 am Judging Sessions Begin…"
 tags:
   - "Events"
 wordpressId: 1245

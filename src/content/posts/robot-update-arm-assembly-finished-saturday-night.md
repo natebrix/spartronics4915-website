@@ -1,7 +1,7 @@
 ---
 title: "Robot Update: Arm assembly finished Saturday night!"
 date: 2015-02-09
-summary: "Robby Davis, Holt Ogden, Austin Gray and Kolin Hawkins \\[ VIDEO INSIDE \\] worked with engineering Mentor Paul Vibrans and Coach Chee until 10:15 pm Saturday night and finished the…"
+summary: "Robby Davis, Holt Ogden, Austin Gray and Kolin Hawkins [ VIDEO INSIDE ] worked with engineering Mentor Paul Vibrans and Coach Chee until 10:15 pm Saturday night and finished the…"
 cover: "../../assets/uploads/IMG_9856-e1423417182853.avif"
 tags:
   - "Innovation"

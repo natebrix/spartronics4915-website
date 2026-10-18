@@ -1,7 +1,7 @@
 ---
 title: "Sponsor Spotlight: Jason Shutt, Realtor Windermere Real Estate"
 date: 2023-11-24
-summary: "1\\. Can you give us a brief description of your company and what it does? I am a top-ranked Realtor at Windermere on Bainbridge Island who helps people make well-informed,…"
+summary: "1. Can you give us a brief description of your company and what it does? I am a top-ranked Realtor at Windermere on Bainbridge Island who helps people make well-informed,…"
 tags:
   - "Innovation"
   - "Media"
