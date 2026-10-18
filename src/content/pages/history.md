@@ -4,95 +4,73 @@ description: The history of Spartronics, FRC Team 4915, season by season, from o
 ---
 
 <!--
-  One "## " section per season, newest at the bottom. Start each heading with
+  One "## " section per season, newest at the top. Start each heading with
   the season's year (for example "## 2026: ...") so the robot timeline at the
   top of the page can link to it. Add the season's robot to
   src/content/pages/history-robots.ts as well.
 -->
 
-## 2013–14: Team Founding
+## 2026: Spartronics Returns to Worlds
 
-Spartronics debuted on Bainbridge Island, WA (23,000 residents) in 2013. Spartronics Team 4915 came into fruition led by a small yet incredibly dedicated group that included a student leader, a Boeing engineer, the head of our local high school science department, the District’s STEM coordinator, and a local marketing executive who had established FIRST Washington’s Facebook page in 2011.
+ARTEMIS, short for Articulating Rotating Turret with Ejection Mechanism with Intake on Swerve, was Spartronics' robot for FIRST's 2026 game, Rebuilt. Like every Spartronics robot, its name is a backronym from Greek mythology. (The NASA mission of the same name, whose descent was shown on the arena screens during districts, was a coincidence.) The 114.5-pound robot, about the size of a washing machine, pairs a swerve drive and an intake with a rotating turret and shooter, aimed with help from its camera.
 
-FRC Team 4915 – Spartronics – was the first formal robotics program in the Bainbridge Island School District. Under the leadership of Bainbridge High School Science Department chair and Physics teacher Enrique Chee, we started from scratch, without any prior FRC, FTC or FLL-related FIRST teams. In our Rookie season, we competed with some 30 students, including 4 girls, 9 professional mentors and Coach Chee.
+![ARTEMIS](../../assets/history/2026-artemis.jpg)
 
-In our Rookie Year – 2014 – we went to the FRC World Championships in St. Louis, MO, after qualifying through point ranking at the Pacific NW Championships. We also won the “Rookie Inspiration Award” at the Pacific NW District Championship. At the Shorewood District Event, Spartronics won the competition, and we also won the “Rookie Inspiration Award” after winning the “Rookie All-Star Award” at Glacier Peak.
+At the Glacier Peak District Event, Spartronics won the event, and ARTEMIS won the Innovation in Control Award. Spartronics finished the district season ranked 10th of 126 teams in the Pacific Northwest.
 
-![Spartronics students celebrating with their trophies](../../assets/history/2014-shorewood-win.jpg)
+That earned Spartronics its first trip to the FIRST Championship in Houston since 2017, and the third in team history: a first world championship for Coach Austin Smith and every student on the team. There, Citrus Circuits (Team 1678) chose Spartronics as the first pick of the Milstein Division's #1 alliance. The alliance won the Milstein Division, and Spartronics went on to play in the Einstein round robin among the champions of every division.
 
-Our first robot, ATLaS! ATLaS stands for Advanced Tele-operated Launching System. Awards Won: Rookie All-Star Award (in Glacier Peak), First Place (in Shorewood), Rookie Inspiration (in Shorewood and Portland).
+## 2025: Scouting Overhaul
 
-![ATLaS, the 2014 robot, in front of the Spartronics banner](../../assets/history/2014-atlas.jpg)
+After our 2023 Season, one Spartronics programming member knew that we needed a new system to collect and analyze data collected on other teams during competitions. This data was vital for alliance selection, allowing us to pick the team that would fit into our alliance the best.
 
-Our robot, ATLaS, is designed for autonomous performance and precision. In autonomous mode, it moves into the designated colored zone and shoots into the high goal with accuracy. Its intake system, made primarily of aluminum and powered by CIM motors, uses pneumatic cylinders to raise and lower for efficient ball collection. Notably, half of the wheel fasteners on the intake are aluminum, while the other half were custom 3D-printed using our Makerbot Replicator 2x printer. The launcher, also constructed mainly from aluminum, operates using 10 feet of 1/4 x 3/8 x 1/16 elastics that snap down to propel the ball with force when fired. The drive train, built from durable aluminum 433, provides stability and control during matches. ATLaS is powered by Java-based programming, ensuring smooth operation and precise execution of tasks.
+This new application was one of the reasons Spartronics was able to dive back into the district championships in Cheney. Spartronics and our robot EPHYRA also won the Innovation in Control Award at the Sammamish Competition. This marks the second year in a row we have won this award.
 
-## 2015: Spartronics Grows
+Spartronics rode to districts with a team consisting of over 35 students, 14 mentors, our amazing parents, a supportive island community and our Coach!
 
-In our second year – 2015 – due to incredible community support and extensive outreach, Spartronics doubled our team size to some 50 students of which 16 were girls – four times the number that we had in our first year! We also had a dozen professional mentors and of course, our tireless Coach Chee.
+![EPHYRA on the field](../../assets/history/2025-ephyra.jpg)
 
-![The Spartronics team at the 2015 Girls Gen competition](../../assets/history/2015-girls-gen.jpg)
+![Spartronics students at Girls Gen 2025](../../assets/history/2025-girls-gen.jpg)
 
-Above is the team at the Girls Gen competition in 2015. The first time we competed at this event, all-girls team was on the Alliance that placed 2nd in the tournament.
+EPHYRA was the robot Spartronics built for FIRST’s latest competition, Reefscape! EPHYRA can place coral in all positions on the reef, climb and intake coral from the delivery system. Like Spartronics’ previous robot, it also uses AI vision to move autonomously and score on any station and level from anywhere on the field.
 
-![GAEA, the 2015 robot](../../assets/history/2015-gaea.jpg)
+## 2024: Spartronics Crescendos
 
-GAEA, Team 4915 Spartronics’ robot from Bainbridge Island, stands for Grabbing Actuated Elevator Automaton. GAEA measures 28 inches by 32 inches by 75 inches and weighs 117.2 pounds when inspected. Its drive train features 4-wheel, 6-inch diameter Mecanum wheels, each powered by its own motor controller, with an additional controller for the winch. The pneumatic system includes four tanks and two single solenoids with partially open, open, and closed positions. The winch has a gear ratio of roughly 70:1, while the Mecanum wheels run on a 10.7:1 ratio. The arm mechanism combines an elevator and a pneumatic grabber, with the elevator using a high-powered winch and steel cable through a pulley to lift the grabbing arms. The innovative grabbing mechanism moves both arms with a single pneumatic cylinder, allowing GAEA to handle totes and containers efficiently.
+Spartronics harmonized with their new robot NEMESIS! Spartronics Programmers, led by Evan Kuykendall, worked hard to create and share their new AI vision system with other teams. This is what led Spartronics to win the Innovation in Control Award at our Bonney Lake competition. NEMESIS was proudly built by over 33 students, assisted by 13 mentors and one amazing Coach!
 
-In gameplay, GAEA can carry up to four totes with mobility or up to three totes and a container to the 5th level. It can collect totes from the chute (preferred) or landfill, pick up sideways containers, and load litter from the chute (though not push it on the field). In coopertition, it can stack the three yellow totes and move them to the step. The human player supports gameplay by tossing noodles past the opponent’s landfill, stacking precisely, and ensuring rule compliance.
+While Spartronics didn’t attend districts, this season marked the start of Spartronics’ effort to publish more of our code, methods, and designs, to inspire other teams to innovate and create more with their robots.
 
-GAEA’s autonomous mode offers five options: simply move; grab a recycling container and move to the auto zone; grab and move a tote to the auto zone; stack a recycling container on a tote and move both to the auto zone; or remain stationary, ready for Teleop. The robot is programmed in Java using a command-based system, balancing iterative and straightforward control approaches for consistent, strategic performance.
+![NEMESIS on the field](../../assets/history/2024-nemesis.jpg)
 
-## 2016: Students Take Charge
+NEMESIS, short for Note Ejection Machine with Elevator-Supported Intake System, was named after Nemesis, the Greek goddess of revenge. The name carried a double meaning, while honoring the mythological figure, it also reflected the team’s experience building the robot. NEMESIS was Spartronics’ most complex machine to date, and the difficulty of executing its ambitious design often made it feel like the robot itself had become our nemesis.
 
-In our third year – 2016 – we grew to 53 students and a record number of more girls 18, as well as 15 professional mentors and more sponsors than ever before. It was in 2016 that Spartronics implemented the most exciting change to its team yet: We transition to being fully student-managed and operated, as we are committed to teaching critical thinking and deliberate action, foster self-determination, and encourage the growth of leadership skills amongst ourselves. Our goal is to maintain our successes while teaching our members the skills of proactivity and the power of deliberate action. The burden of accountability and responsibility is greater on us — the students — but we have accepted the challenge with energy and zeal.
+The robot featured an over-the-bumper intake paired with an elevator-supported system to handle game pieces efficiently. Its swerve drive chassis provided high maneuverability across the field, while its endgame capabilities included the ability to climb on a chain and score in the trap. For offense, NEMESIS was able to shoot into both the speaker and the amp, giving it multiple scoring options during matches.
 
-![Spartronics students working on a robot in the shop](../../assets/history/2016-build.jpg)
+One of the most advanced aspects of NEMESIS was its use of AI vision during autonomous periods. With this system, the robot could identify notes, drive to them, pick them up, and then shoot them, all without driver input. These cutting-edge features combined to make NEMESIS not only Spartronics’ most technically challenging robot, but also one of its most innovative.
 
-ARES, Team 4915 Spartronics’ 2016 robot, stands for Advanced Robot Engineered for Siege. ARES stands 14 inches tall and measures 35 by 37.5 inches with bumpers. Built on a custom U-shaped chassis, it uses 7 Talon SRX motor controllers, plus 1 Talon SR and 1 additional Talon SRX for its scaling system. Its drive system features a gear ratio of 8.6667:1 and student-designed 14-inch wooden and omni wheels, all handmade by the team. The scaling mechanism operates with a 70:1 gear ratio, while the flywheel system — capable of spinning between 6,000 and 12,000 RPM — intakes and launches balls, with pivot control provided by a motor and potentiometer.
+## 2023: Spartronics Gets Charged Up
 
-![ARES and its handmade 14-inch wooden and omni wheels](../../assets/history/2016-ares-wheels.jpg)
+Spartronics was CHARGED UP in 2022-2023! TALOS, short for Telescopic, Actuated Lifter On Swerve, takes its name from the Greek mythological figure Talos, a giant bronze automaton forged by Hephaestus, the god of blacksmithing and craftsmanship. TALOS was designed to score on all grid nodes, pick up game pieces from both double loading stations and the ground, and maintain stability through an innovative gyroscopic balance system. The robot’s swerve drive chassis provided the agility needed for quick cycles, while its low center of gravity and strategic weight distribution ensured reliable performance even at full extension.
 
-The launching mechanism uses high-powered flywheels to feed and eject balls by reversing the wheel direction, giving ARES both intake and firing capability in one system. This innovative grabbing and launching design allows for quick ball handling on the field. In autonomous mode, ARES uses a match-by-match chooser to select from 5 field positions, 5 obstacles to breach, and 4 strategies: do nothing, breach only, breach and shoot, or breach and shoot with vision processing (including auto-targeting and a flashlight for manual targeting).
+TALOS performed well in qualifying matches. At Glacier Peak, we were an alliance captain and finished 6th. At Auburn in late March, another 6th place finish was complemented by winning the Judges’ Award and being selected as the 1st Pick of Alliance 3. These strong performances earned the team enough district points to qualify for the Pacific Northwest District Championship in Cheney, where they faced the region’s top teams.
 
-Programmed in Java with a command-based system, ARES integrates three subsystems plus vision processing powered by a Jetson. On the field, it can navigate under the low bar, cross the rock wall, moat, rough terrain, and ramparts, and even open the sally port from the back. The human player supports gameplay by acting as a spy and feeding balls for continuous scoring opportunities.
+Behind TALOS’s success was a dedicated team of ~30 students, supported by 12 professional mentors and Coach Austin Smith. After an intensive two-month build season, the team not only qualified for districts but also saw strong community engagement, celebrating our 10th anniversary at our annual All-Robotics Open House.
 
-## 2017: HELIOS Goes to Worlds
+![The 2023 Spartronics team photo](../../assets/history/2023-team.jpg)
 
-In 2017, we built HELIOS, the Highly Efficient Launcher and Intake Oriented System. The continued efforts from students and mentors of the team secured us several awards. These same efforts also propelled HELIOS into 1st place in our district after the second week of District Event Competitions.
+![TALOS on the field](../../assets/history/2023-talos.jpg)
 
-Furthermore, HELIOS and the team journeyed to the world championships in Houston, where they placed 42nd in the Hopper Division.
+## 2022: Spartronics Gets Back In-Person
 
-![A Spartronics student machining a part on a lathe](../../assets/history/2017-machining.jpg)
+The team was happy to get back in person after a long quarantine, together the team built HERMES.
 
-HELIOS is designed for high-accuracy shooting, rapid climbing, and versatile gameplay. With a storage capacity of about 35 balls, HELIOS achieves around 70% accuracy in teleop and up to 85% accuracy in autonomous. It can intake balls from both the ground and hoppers, place gears using a passive holder (gears retrieved from human players only), and climb in under 10 seconds once the rope is acquired. HELIOS excels shooting directly against the boiler in the key but can also retrieve and place gears as needed.
+HERMES, one of Spartronics’ competition robots, was built around four primary systems: the climber, conveyor, launcher, and intake. Its chassis featured a 6-wheel design, providing stability and maneuverability on the field. The launcher was engineered for no-spin ejection, improving shot accuracy and consistency, while the climber — a telescopic “lightsaber” design — stood out as the robot’s most reliable and impressive feature, enabling dependable endgame performance.
 
-In autonomous mode, the robot offers three strategies: shoot 10 balls into the boiler at roughly 80% accuracy and cross the auto line, place the center gear (less reliable, but possible with correct alignment), or simply cross the auto line. Its drive train is a six-wheel drop-center, belt-driven design powered by 4 CIM motors, with a gear ratio of about 8:1 for speed and maneuverability.
+The robot was named after Hermes, the Greek god best known as the messenger of the gods of Mount Olympus. The name was a fitting choice for the transportation-themed FRC season, symbolizing speed, delivery, and connection — qualities mirrored in the robot’s capabilities.
 
-HELIOS’s launcher system uses two axes of adjustment — one for the ball rails and one for the flywheel angle — allowing precise targeting. The flywheel is powered by a CIM motor without a gearbox to maximize torque, using a Banebots T81 wheel for shooting. Primary structural components are made of CNC-cut Baltic Birch. The intake system runs on a BAG motor with a 10:1 gear ratio, using six 1-inch urethane belts in a West Coast Products roller setup, a 1.25-inch drum, and a 19-inch width to hold up to four balls at once. A yoga mat provides back wall padding. The agitator, built from a 14-inch wooden baseplate with 6-inch aluminum sides, is driven by a snowblower motor and features four 6”x2” paddles on a 17.5-inch central shaft, plus a roller to reduce jams.
+During competitions, HERMES’ pit area prominently featured its CAD banner and a graphic showcasing its 6-wheel chassis, giving visitors and judges a detailed view of its engineering. While the entire design contributed to its success, the climbing system was universally regarded as its standout element, offering a level of reliability that made it a key asset in matches.
 
-The climber is powered by a CIM motor with a 35:1 gear ratio and a 1-inch drum diameter, featuring both a brake for safe lowering and a ratchet to hold position at the top. Its rope-catching system uses Velcro on the drum paired with a polypropylene loop section at the rope’s base. HELIOS is programmed in Java with a focus on reliability and flexibility.
-
-## 2018: Spartronics Builds Two Robots
-
-![Spartronics students with their robot](../../assets/history/2018-two-robots.jpg)
-
-While the 2018-2019 Competition Season may not have been our most successful, as we didn’t make it to Worlds, the team still considers it a very valuable year. For the first time, Spartronics built two robots! While only one of these identical robots could actually go on to compete, having two robots gave us more time for the robot to be tested and for drive team to practice. The support from our community was also stronger than ever – 28 sponsors supported us!
-
-![THEMIS, the 2018 robot, holding a cube](../../assets/history/2018-themis.jpg)
-
-Meet THEMIS — THE Mechanical Intake Scissor-lift.
-
-## 2019: Spartronics Goes to Space
-
-While Spartronics and our Robot CHAOS didn’t qualify for the district championships in Tacoma, we won the Engineering Inspiration Award at Glacier Peak! The Engineering Inspiration Award is second only to the Impact Award and is an amazing accomplishment for the team!
-
-CHAOS, Team 4915 Spartronics’ robot for the Destination: Deep Space season, is a Cargo Hatch-panel Ascending Operational System designed for both scoring and climbing at the highest level. It can load cargo into the cargo ship and the lower level of the rocket ship, and it features a Level 3 climbing system that made it a strong endgame contender. The climbing system, one of CHAOS’s most striking features, uses a four-leg pneumatic setup to lift the robot securely and efficiently, earning it a reputation as one of the coolest aspects of the design.
-
-Like all Spartronics robots, CHAOS is named after a figure from Greek mythology. In myth, Chaos represents the primordial emptiness before the universe came into being, a fitting nod to the season’s space theme. The name also serves as an acronym describing its primary functions: Cargo Hatch-panel Ascending Operational System.
-
-Mechanically, CHAOS is equipped with several specialized systems. The cargo chute uses belts powered by motors to fire cargo balls accurately into scoring locations. Its intake mechanism employs a bar with mecanum wheels, allowing it to smoothly guide cargo into the chute for rapid scoring cycles. Combined with its 6-wheel tank drive, CHAOS delivers reliable movement and robust pushing power on the field.
-
-While CHAOS proved to be a competitive machine, it faced ongoing challenges with pneumatic leaks and electrical issues over the season. Even so, its versatile scoring systems, powerful intake, and eye-catching Level 3 climb kept it at the heart of Spartronics’ strategy throughout competition.
+![HERMES in the pit, in front of its banner](../../assets/history/2022-hermes.jpg)
 
 ## 2020: Spartronics Goes Into Quarantine
 
@@ -114,64 +92,86 @@ The challenge had the team identify a real-world problem, brainstorm a solution,
 
 ![The Spartronics logo wearing a face mask](../../assets/history/2020-mask-logo.png)
 
-## 2022: Spartronics Gets Back In-Person
+## 2019: Spartronics Goes to Space
 
-The team was happy to get back in person after a long quarantine, together the team built HERMES.
+While Spartronics and our Robot CHAOS didn’t qualify for the district championships in Tacoma, we won the Engineering Inspiration Award at Glacier Peak! The Engineering Inspiration Award is second only to the Impact Award and is an amazing accomplishment for the team!
 
-HERMES, one of Spartronics’ competition robots, was built around four primary systems: the climber, conveyor, launcher, and intake. Its chassis featured a 6-wheel design, providing stability and maneuverability on the field. The launcher was engineered for no-spin ejection, improving shot accuracy and consistency, while the climber — a telescopic “lightsaber” design — stood out as the robot’s most reliable and impressive feature, enabling dependable endgame performance.
+CHAOS, Team 4915 Spartronics’ robot for the Destination: Deep Space season, is a Cargo Hatch-panel Ascending Operational System designed for both scoring and climbing at the highest level. It can load cargo into the cargo ship and the lower level of the rocket ship, and it features a Level 3 climbing system that made it a strong endgame contender. The climbing system, one of CHAOS’s most striking features, uses a four-leg pneumatic setup to lift the robot securely and efficiently, earning it a reputation as one of the coolest aspects of the design.
 
-The robot was named after Hermes, the Greek god best known as the messenger of the gods of Mount Olympus. The name was a fitting choice for the transportation-themed FRC season, symbolizing speed, delivery, and connection — qualities mirrored in the robot’s capabilities.
+Like all Spartronics robots, CHAOS is named after a figure from Greek mythology. In myth, Chaos represents the primordial emptiness before the universe came into being, a fitting nod to the season’s space theme. The name also serves as an acronym describing its primary functions: Cargo Hatch-panel Ascending Operational System.
 
-During competitions, HERMES’ pit area prominently featured its CAD banner and a graphic showcasing its 6-wheel chassis, giving visitors and judges a detailed view of its engineering. While the entire design contributed to its success, the climbing system was universally regarded as its standout element, offering a level of reliability that made it a key asset in matches.
+Mechanically, CHAOS is equipped with several specialized systems. The cargo chute uses belts powered by motors to fire cargo balls accurately into scoring locations. Its intake mechanism employs a bar with mecanum wheels, allowing it to smoothly guide cargo into the chute for rapid scoring cycles. Combined with its 6-wheel tank drive, CHAOS delivers reliable movement and robust pushing power on the field.
 
-![HERMES in the pit, in front of its banner](../../assets/history/2022-hermes.jpg)
+While CHAOS proved to be a competitive machine, it faced ongoing challenges with pneumatic leaks and electrical issues over the season. Even so, its versatile scoring systems, powerful intake, and eye-catching Level 3 climb kept it at the heart of Spartronics’ strategy throughout competition.
 
-## 2023: Spartronics Gets Charged Up
+## 2018: Spartronics Builds Two Robots
 
-Spartronics was CHARGED UP in 2022-2023! TALOS, short for Telescopic, Actuated Lifter On Swerve, takes its name from the Greek mythological figure Talos, a giant bronze automaton forged by Hephaestus, the god of blacksmithing and craftsmanship. TALOS was designed to score on all grid nodes, pick up game pieces from both double loading stations and the ground, and maintain stability through an innovative gyroscopic balance system. The robot’s swerve drive chassis provided the agility needed for quick cycles, while its low center of gravity and strategic weight distribution ensured reliable performance even at full extension.
+![Spartronics students with their robot](../../assets/history/2018-two-robots.jpg)
 
-TALOS performed well in qualifying matches. At Glacier Peak, we were an alliance captain and finished 6th. At Auburn in late March, another 6th place finish was complemented by winning the Judges’ Award and being selected as the 1st Pick of Alliance 3. These strong performances earned the team enough district points to qualify for the Pacific Northwest District Championship in Cheney, where they faced the region’s top teams.
+While the 2018-2019 Competition Season may not have been our most successful, as we didn’t make it to Worlds, the team still considers it a very valuable year. For the first time, Spartronics built two robots! While only one of these identical robots could actually go on to compete, having two robots gave us more time for the robot to be tested and for drive team to practice. The support from our community was also stronger than ever – 28 sponsors supported us!
 
-Behind TALOS’s success was a dedicated team of ~30 students, supported by 12 professional mentors and Coach Austin Smith. After an intensive two-month build season, the team not only qualified for districts but also saw strong community engagement, celebrating our 10th anniversary at our annual All-Robotics Open House.
+![THEMIS, the 2018 robot, holding a cube](../../assets/history/2018-themis.jpg)
 
-![The 2023 Spartronics team photo](../../assets/history/2023-team.jpg)
+Meet THEMIS — THE Mechanical Intake Scissor-lift.
 
-![TALOS on the field](../../assets/history/2023-talos.jpg)
+## 2017: HELIOS Goes to Worlds
 
-## 2024: Spartronics Crescendos
+In 2017, we built HELIOS, the Highly Efficient Launcher and Intake Oriented System. The continued efforts from students and mentors of the team secured us several awards. These same efforts also propelled HELIOS into 1st place in our district after the second week of District Event Competitions.
 
-Spartronics harmonized with their new robot NEMESIS! Spartronics Programmers, led by Evan Kuykendall, worked hard to create and share their new AI vision system with other teams. This is what led Spartronics to win the Innovation in Control Award at our Bonney Lake competition. NEMESIS was proudly built by over 33 students, assisted by 13 mentors and one amazing Coach!
+Furthermore, HELIOS and the team journeyed to the world championships in Houston, where they placed 42nd in the Hopper Division.
 
-While Spartronics didn’t attend districts, this season marked the start of Spartronics’ effort to publish more of our code, methods, and designs, to inspire other teams to innovate and create more with their robots.
+![A Spartronics student machining a part on a lathe](../../assets/history/2017-machining.jpg)
 
-![NEMESIS on the field](../../assets/history/2024-nemesis.jpg)
+HELIOS is designed for high-accuracy shooting, rapid climbing, and versatile gameplay. With a storage capacity of about 35 balls, HELIOS achieves around 70% accuracy in teleop and up to 85% accuracy in autonomous. It can intake balls from both the ground and hoppers, place gears using a passive holder (gears retrieved from human players only), and climb in under 10 seconds once the rope is acquired. HELIOS excels shooting directly against the boiler in the key but can also retrieve and place gears as needed.
 
-NEMESIS, short for Note Ejection Machine with Elevator-Supported Intake System, was named after Nemesis, the Greek goddess of revenge. The name carried a double meaning, while honoring the mythological figure, it also reflected the team’s experience building the robot. NEMESIS was Spartronics’ most complex machine to date, and the difficulty of executing its ambitious design often made it feel like the robot itself had become our nemesis.
+In autonomous mode, the robot offers three strategies: shoot 10 balls into the boiler at roughly 80% accuracy and cross the auto line, place the center gear (less reliable, but possible with correct alignment), or simply cross the auto line. Its drive train is a six-wheel drop-center, belt-driven design powered by 4 CIM motors, with a gear ratio of about 8:1 for speed and maneuverability.
 
-The robot featured an over-the-bumper intake paired with an elevator-supported system to handle game pieces efficiently. Its swerve drive chassis provided high maneuverability across the field, while its endgame capabilities included the ability to climb on a chain and score in the trap. For offense, NEMESIS was able to shoot into both the speaker and the amp, giving it multiple scoring options during matches.
+HELIOS’s launcher system uses two axes of adjustment — one for the ball rails and one for the flywheel angle — allowing precise targeting. The flywheel is powered by a CIM motor without a gearbox to maximize torque, using a Banebots T81 wheel for shooting. Primary structural components are made of CNC-cut Baltic Birch. The intake system runs on a BAG motor with a 10:1 gear ratio, using six 1-inch urethane belts in a West Coast Products roller setup, a 1.25-inch drum, and a 19-inch width to hold up to four balls at once. A yoga mat provides back wall padding. The agitator, built from a 14-inch wooden baseplate with 6-inch aluminum sides, is driven by a snowblower motor and features four 6”x2” paddles on a 17.5-inch central shaft, plus a roller to reduce jams.
 
-One of the most advanced aspects of NEMESIS was its use of AI vision during autonomous periods. With this system, the robot could identify notes, drive to them, pick them up, and then shoot them, all without driver input. These cutting-edge features combined to make NEMESIS not only Spartronics’ most technically challenging robot, but also one of its most innovative.
+The climber is powered by a CIM motor with a 35:1 gear ratio and a 1-inch drum diameter, featuring both a brake for safe lowering and a ratchet to hold position at the top. Its rope-catching system uses Velcro on the drum paired with a polypropylene loop section at the rope’s base. HELIOS is programmed in Java with a focus on reliability and flexibility.
 
-## 2025: Scouting Overhaul
+## 2016: Students Take Charge
 
-After our 2023 Season, one Spartronics programming member knew that we needed a new system to collect and analyze data collected on other teams during competitions. This data was vital for alliance selection, allowing us to pick the team that would fit into our alliance the best.
+In our third year – 2016 – we grew to 53 students and a record number of more girls 18, as well as 15 professional mentors and more sponsors than ever before. It was in 2016 that Spartronics implemented the most exciting change to its team yet: We transition to being fully student-managed and operated, as we are committed to teaching critical thinking and deliberate action, foster self-determination, and encourage the growth of leadership skills amongst ourselves. Our goal is to maintain our successes while teaching our members the skills of proactivity and the power of deliberate action. The burden of accountability and responsibility is greater on us — the students — but we have accepted the challenge with energy and zeal.
 
-This new application was one of the reasons Spartronics was able to dive back into the district championships in Cheney. Spartronics and our robot EPHYRA also won the Innovation in Control Award at the Sammamish Competition. This marks the second year in a row we have won this award.
+![Spartronics students working on a robot in the shop](../../assets/history/2016-build.jpg)
 
-Spartronics rode to districts with a team consisting of over 35 students, 14 mentors, our amazing parents, a supportive island community and our Coach!
+ARES, Team 4915 Spartronics’ 2016 robot, stands for Advanced Robot Engineered for Siege. ARES stands 14 inches tall and measures 35 by 37.5 inches with bumpers. Built on a custom U-shaped chassis, it uses 7 Talon SRX motor controllers, plus 1 Talon SR and 1 additional Talon SRX for its scaling system. Its drive system features a gear ratio of 8.6667:1 and student-designed 14-inch wooden and omni wheels, all handmade by the team. The scaling mechanism operates with a 70:1 gear ratio, while the flywheel system — capable of spinning between 6,000 and 12,000 RPM — intakes and launches balls, with pivot control provided by a motor and potentiometer.
 
-![EPHYRA on the field](../../assets/history/2025-ephyra.jpg)
+![ARES and its handmade 14-inch wooden and omni wheels](../../assets/history/2016-ares-wheels.jpg)
 
-![Spartronics students at Girls Gen 2025](../../assets/history/2025-girls-gen.jpg)
+The launching mechanism uses high-powered flywheels to feed and eject balls by reversing the wheel direction, giving ARES both intake and firing capability in one system. This innovative grabbing and launching design allows for quick ball handling on the field. In autonomous mode, ARES uses a match-by-match chooser to select from 5 field positions, 5 obstacles to breach, and 4 strategies: do nothing, breach only, breach and shoot, or breach and shoot with vision processing (including auto-targeting and a flashlight for manual targeting).
 
-EPHYRA was the robot Spartronics built for FIRST’s latest competition, Reefscape! EPHYRA can place coral in all positions on the reef, climb and intake coral from the delivery system. Like Spartronics’ previous robot, it also uses AI vision to move autonomously and score on any station and level from anywhere on the field.
+Programmed in Java with a command-based system, ARES integrates three subsystems plus vision processing powered by a Jetson. On the field, it can navigate under the low bar, cross the rock wall, moat, rough terrain, and ramparts, and even open the sally port from the back. The human player supports gameplay by acting as a spy and feeding balls for continuous scoring opportunities.
 
-## 2026: Spartronics Returns to Worlds
+## 2015: Spartronics Grows
 
-ARTEMIS, short for Articulating Rotating Turret with Ejection Mechanism with Intake on Swerve, was Spartronics' robot for FIRST's 2026 game, Rebuilt. Like every Spartronics robot, its name is a backronym from Greek mythology. (The NASA mission of the same name, whose descent was shown on the arena screens during districts, was a coincidence.) The 114.5-pound robot, about the size of a washing machine, pairs a swerve drive and an intake with a rotating turret and shooter, aimed with help from its camera.
+In our second year – 2015 – due to incredible community support and extensive outreach, Spartronics doubled our team size to some 50 students of which 16 were girls – four times the number that we had in our first year! We also had a dozen professional mentors and of course, our tireless Coach Chee.
 
-![ARTEMIS](../../assets/history/2026-artemis.jpg)
+![The Spartronics team at the 2015 Girls Gen competition](../../assets/history/2015-girls-gen.jpg)
 
-At the Glacier Peak District Event, Spartronics won the event, and ARTEMIS won the Innovation in Control Award. Spartronics finished the district season ranked 10th of 126 teams in the Pacific Northwest.
+Above is the team at the Girls Gen competition in 2015. The first time we competed at this event, all-girls team was on the Alliance that placed 2nd in the tournament.
 
-That earned Spartronics its first trip to the FIRST Championship in Houston since 2017, and the third in team history: a first world championship for Coach Austin Smith and every student on the team. There, Citrus Circuits (Team 1678) chose Spartronics as the first pick of the Milstein Division's #1 alliance. The alliance won the Milstein Division, and Spartronics went on to play in the Einstein round robin among the champions of every division.
+![GAEA, the 2015 robot](../../assets/history/2015-gaea.jpg)
+
+GAEA, Team 4915 Spartronics’ robot from Bainbridge Island, stands for Grabbing Actuated Elevator Automaton. GAEA measures 28 inches by 32 inches by 75 inches and weighs 117.2 pounds when inspected. Its drive train features 4-wheel, 6-inch diameter Mecanum wheels, each powered by its own motor controller, with an additional controller for the winch. The pneumatic system includes four tanks and two single solenoids with partially open, open, and closed positions. The winch has a gear ratio of roughly 70:1, while the Mecanum wheels run on a 10.7:1 ratio. The arm mechanism combines an elevator and a pneumatic grabber, with the elevator using a high-powered winch and steel cable through a pulley to lift the grabbing arms. The innovative grabbing mechanism moves both arms with a single pneumatic cylinder, allowing GAEA to handle totes and containers efficiently.
+
+In gameplay, GAEA can carry up to four totes with mobility or up to three totes and a container to the 5th level. It can collect totes from the chute (preferred) or landfill, pick up sideways containers, and load litter from the chute (though not push it on the field). In coopertition, it can stack the three yellow totes and move them to the step. The human player supports gameplay by tossing noodles past the opponent’s landfill, stacking precisely, and ensuring rule compliance.
+
+GAEA’s autonomous mode offers five options: simply move; grab a recycling container and move to the auto zone; grab and move a tote to the auto zone; stack a recycling container on a tote and move both to the auto zone; or remain stationary, ready for Teleop. The robot is programmed in Java using a command-based system, balancing iterative and straightforward control approaches for consistent, strategic performance.
+
+## 2013–14: Team Founding
+
+Spartronics debuted on Bainbridge Island, WA (23,000 residents) in 2013. Spartronics Team 4915 came into fruition led by a small yet incredibly dedicated group that included a student leader, a Boeing engineer, the head of our local high school science department, the District’s STEM coordinator, and a local marketing executive who had established FIRST Washington’s Facebook page in 2011.
+
+FRC Team 4915 – Spartronics – was the first formal robotics program in the Bainbridge Island School District. Under the leadership of Bainbridge High School Science Department chair and Physics teacher Enrique Chee, we started from scratch, without any prior FRC, FTC or FLL-related FIRST teams. In our Rookie season, we competed with some 30 students, including 4 girls, 9 professional mentors and Coach Chee.
+
+In our Rookie Year – 2014 – we went to the FRC World Championships in St. Louis, MO, after qualifying through point ranking at the Pacific NW Championships. We also won the “Rookie Inspiration Award” at the Pacific NW District Championship. At the Shorewood District Event, Spartronics won the competition, and we also won the “Rookie Inspiration Award” after winning the “Rookie All-Star Award” at Glacier Peak.
+
+![Spartronics students celebrating with their trophies](../../assets/history/2014-shorewood-win.jpg)
+
+Our first robot, ATLaS! ATLaS stands for Advanced Tele-operated Launching System. Awards Won: Rookie All-Star Award (in Glacier Peak), First Place (in Shorewood), Rookie Inspiration (in Shorewood and Portland).
+
+![ATLaS, the 2014 robot, in front of the Spartronics banner](../../assets/history/2014-atlas.jpg)
+
+Our robot, ATLaS, is designed for autonomous performance and precision. In autonomous mode, it moves into the designated colored zone and shoots into the high goal with accuracy. Its intake system, made primarily of aluminum and powered by CIM motors, uses pneumatic cylinders to raise and lower for efficient ball collection. Notably, half of the wheel fasteners on the intake are aluminum, while the other half were custom 3D-printed using our Makerbot Replicator 2x printer. The launcher, also constructed mainly from aluminum, operates using 10 feet of 1/4 x 3/8 x 1/16 elastics that snap down to propel the ball with force when fired. The drive train, built from durable aluminum 433, provides stability and control during matches. ATLaS is powered by Java-based programming, ensuring smooth operation and precise execution of tasks.

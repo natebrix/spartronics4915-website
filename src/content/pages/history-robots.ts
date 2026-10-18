@@ -1,6 +1,6 @@
-// The robot timeline at the top of the Our History page, oldest first.
+// The robot timeline at the top of the Our History page, newest first.
 // To add a new season: put the robot's photo in src/assets/history/, import
-// it below, and add one entry to the end of the list. Then add a section for
+// it below, and add one entry to the start of the list. Then add a section for
 // the season to history.md whose heading starts with the same year.
 import type { ImageMetadata } from 'astro';
 import atlas from '../../assets/history/2014-atlas.jpg';
@@ -28,17 +28,6 @@ export interface Robot {
 }
 
 export const ROBOTS: Robot[] = [
-	{ year: 2014, name: 'ATLaS', standsFor: 'Advanced Tele-operated Launching System', game: 'Aerial Assist', image: atlas, section: '2013' },
-	{ year: 2015, name: 'GAEA', standsFor: 'Grabbing Actuated Elevator Automaton', game: 'Recycle Rush', image: gaea },
-	{ year: 2016, name: 'ARES', standsFor: 'Advanced Robot Engineered for Siege', game: 'Stronghold', image: ares },
-	{ year: 2017, name: 'HELIOS', standsFor: 'Highly Efficient Launcher and Intake Oriented System', game: 'Steamworks' },
-	{ year: 2018, name: 'THEMIS', standsFor: 'THE Mechanical Intake Scissor-lift', game: 'Power Up', image: themis },
-	{ year: 2019, name: 'CHAOS', standsFor: 'Cargo Hatch-panel Ascending Operational System', game: 'Destination: Deep Space' },
-	{ year: 2020, name: 'ATHENA', standsFor: 'Ascending Turreted Hyper Elevating Navigating Assembly', game: 'Infinite Recharge', image: athena },
-	{ year: 2022, name: 'HERMES', game: 'Rapid React', image: hermes },
-	{ year: 2023, name: 'TALOS', standsFor: 'Telescopic, Actuated Lifter On Swerve', game: 'Charged Up', image: talos },
-	{ year: 2024, name: 'NEMESIS', standsFor: 'Note Ejection Machine with Elevator-Supported Intake System', game: 'Crescendo', image: nemesis },
-	{ year: 2025, name: 'EPHYRA', game: 'Reefscape', image: ephyra },
 	{
 		year: 2026,
 		name: 'ARTEMIS',
@@ -46,4 +35,15 @@ export const ROBOTS: Robot[] = [
 		game: 'Rebuilt',
 		image: artemis,
 	},
+	{ year: 2025, name: 'EPHYRA', game: 'Reefscape', image: ephyra },
+	{ year: 2024, name: 'NEMESIS', standsFor: 'Note Ejection Machine with Elevator-Supported Intake System', game: 'Crescendo', image: nemesis },
+	{ year: 2023, name: 'TALOS', standsFor: 'Telescopic, Actuated Lifter On Swerve', game: 'Charged Up', image: talos },
+	{ year: 2022, name: 'HERMES', game: 'Rapid React', image: hermes },
+	{ year: 2020, name: 'ATHENA', standsFor: 'Ascending Turreted Hyper Elevating Navigating Assembly', game: 'Infinite Recharge', image: athena },
+	{ year: 2019, name: 'CHAOS', standsFor: 'Cargo Hatch-panel Ascending Operational System', game: 'Destination: Deep Space' },
+	{ year: 2018, name: 'THEMIS', standsFor: 'THE Mechanical Intake Scissor-lift', game: 'Power Up', image: themis },
+	{ year: 2017, name: 'HELIOS', standsFor: 'Highly Efficient Launcher and Intake Oriented System', game: 'Steamworks' },
+	{ year: 2016, name: 'ARES', standsFor: 'Advanced Robot Engineered for Siege', game: 'Stronghold', image: ares },
+	{ year: 2015, name: 'GAEA', standsFor: 'Grabbing Actuated Elevator Automaton', game: 'Recycle Rush', image: gaea },
+	{ year: 2014, name: 'ATLaS', standsFor: 'Advanced Tele-operated Launching System', game: 'Aerial Assist', image: atlas, section: '2013' },
 ];

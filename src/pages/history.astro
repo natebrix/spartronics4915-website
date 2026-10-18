@@ -23,11 +23,6 @@ const robots = ROBOTS.map((robot) => {
 	<div class="wrap">
 		<p class="eyebrow">Since 2013</p>
 		<h1>{page.data.title}</h1>
-		<p class="lede">
-			Every season, FIRST releases a new game in January and every FRC team builds a new robot from scratch to play
-			it. Like all Spartronics robots, each one is named after a figure from Greek mythology. Pick a robot to jump to
-			its season.
-		</p>
 		<TimelineRobots robots={robots} />
 	</div>
 	<div class="story prose">
@@ -40,11 +35,6 @@ const robots = ROBOTS.map((robot) => {
 		max-width: var(--wide);
 		margin: 0 auto;
 		padding: 1.5rem 1rem 0;
-	}
-	.lede {
-		max-width: var(--column);
-		font-size: 1.15rem;
-		color: var(--muted);
 	}
 	/* The story reads as a vertical timeline: a line down the left, a marker per season. */
 	.story {
