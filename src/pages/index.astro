@@ -1,7 +1,299 @@
 ---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import logo from '../assets/brand/logo.png';
+import marketingPhoto from '../assets/home/marketing.jpg';
+import mechanicsPhoto from '../assets/home/mechanics.jpg';
+import Countdown from '../components/Countdown.astro';
+import PostCard from '../components/PostCard.astro';
+import { SITE_DESCRIPTION, SITE_TITLE, TEAM_EMAIL } from '../consts';
 import Base from '../layouts/Base.astro';
+import { getPosts } from '../lib/posts';
+
+const latest = (await getPosts()).slice(0, 3);
+
+// Only the top two tiers appear on the home page; the rest are on /sponsors/.
+const HOME_TIERS = ['pantheon', 'presenting'];
+const featuredSponsors = (await getCollection('sponsors'))
+	.filter((sponsor) => HOME_TIERS.includes(sponsor.data.tier) && sponsor.data.logo)
+	.sort((a, b) => HOME_TIERS.indexOf(a.data.tier) - HOME_TIERS.indexOf(b.data.tier) || a.data.order - b.data.order);
 ---
 
-<Base title="TODO index" description="TODO">
-	<h1>TODO: index</h1>
+<Base title={SITE_TITLE} description={SITE_DESCRIPTION} fullWidth>
+	<section class="hero">
+		<div class="hero-inner">
+			<Image src={logo} alt="Spartronics 4915 logo" width={260} height={260} loading="eager" class="hero-logo" />
+			<div>
+				<p class="eyebrow light">FIRST Robotics Competition</p>
+				<h1>We are Spartronics<br /><span>Team 4915</span></h1>
+				<p class="lead">
+					Builders, coders, electricians, designers and marketers from Bainbridge Island, Washington.
+				</p>
+				<p class="actions">
+					<a class="button" href="/join/">Join the team</a>
+					<a class="button outline" href="/sponsors/sponsor-information/">Support us</a>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<Countdown />
+
+	<section class="band">
+		<div class="split">
+			<div>
+				<p class="eyebrow">Meet FRC Team 4915</p>
+				<h2>Spartronics</h2>
+				<p>
+					Team 4915 proudly hails from Bainbridge Island, Washington. We were founded in 2013 by physics teacher Enrique
+					Chee, and the team started its journey from scratch.
+				</p>
+				<p>
+					Spartronics is an FRC team. <a href="https://www.firstinspires.org/robotics/frc">FRC</a>, short for FIRST
+					Robotics Competition, is a program run by <a href="https://www.firstinspires.org/about">FIRST</a> that
+					challenges teams of high school students to build an original robot to compete in a new themed game each year.
+				</p>
+				<p>
+					Since 2013 we have worked toward our mission: spreading STEM education in our local community and beyond, while
+					encouraging equal gender representation in STEM fields.
+				</p>
+				<p><strong>We are builders, we are coders, we are electricians, we are designers, we are marketers, we are Spartronics!</strong></p>
+			</div>
+			<Image src={mechanicsPhoto} alt="Spartronics students building the robot" width={800} class="photo" />
+		</div>
+	</section>
+
+	<section class="band tint">
+		<div class="wrap">
+			<p class="eyebrow">Latest news</p>
+			<h2>What we've been up to</h2>
+			<div class="grid">
+				{latest.map((post) => <PostCard post={post} />)}
+			</div>
+			<p><a href="/news/">All news →</a></p>
+		</div>
+	</section>
+
+	<section class="band">
+		<div class="split reverse">
+			<div>
+				<p class="eyebrow">Join us</p>
+				<h2>Join Spartronics</h2>
+				<p>
+					Are you a high school student who wants to learn engineering, electronics, design, programming, or business and
+					marketing? Would you like to grow your skills on industry-grade machines and platforms? You can join at any point
+					in the season. Check our calendar for meeting dates and come to our next meeting!
+				</p>
+				<p class="actions">
+					<a class="button secondary" href="/join/">How to join</a>
+					<a class="button outline-dark" href="/calendar/">Calendar</a>
+				</p>
+			</div>
+			<Image src={marketingPhoto} alt="Spartronics team members at an event" width={800} class="photo" />
+		</div>
+	</section>
+
+	<section class="band tint">
+		<div class="wrap narrow">
+			<p class="eyebrow">Our history</p>
+			<h2>A new robot every year</h2>
+			<p>
+				Each January, FIRST releases a new game, and every FRC team builds a new robot from scratch to play it. Each
+				Spartronics robot is named after a Greek deity that hints at its function and abilities. Explore our robots,
+				innovations and milestones since 2013.
+			</p>
+			<p><a class="button secondary" href="/history/">Explore our history</a></p>
+		</div>
+	</section>
+
+	<section class="band sponsors">
+		<div class="wrap narrow center">
+			<p class="eyebrow">Our sponsors</p>
+			<h2>Thank you to our sponsors</h2>
+			<p>
+				Spartronics relies on community support to teach, build, and compete every season. We thank every sponsor and donor
+				for helping us fulfill our mission.
+			</p>
+			{
+				featuredSponsors.length > 0 && (
+					<ul class="logos">
+						{featuredSponsors.map((sponsor) => (
+							<li>
+								<Image src={sponsor.data.logo!} alt={sponsor.data.name} height={80} />
+							</li>
+						))}
+					</ul>
+				)
+			}
+			<p class="actions center">
+				<a class="button" href="/sponsors/">See all sponsors</a>
+				<a class="button outline" href="/sponsors/sponsor-information/">Become a sponsor</a>
+			</p>
+			<p>Questions about sponsoring? Email <a href={`mailto:${TEAM_EMAIL}`}>{TEAM_EMAIL}</a>.</p>
+		</div>
+	</section>
+
+	<section class="band tint newsletter">
+		<div class="wrap narrow center">
+			<h2>Get our newsletter</h2>
+			<p>Learn what Spartronics is doing throughout the season.</p>
+			{/*
+				TODO: link to the newsletter signup once we know which tool holds the
+				subscriber list. The old site used an Elementor Pro form with no
+				public signup URL, so there is nothing to link to yet.
+			*/}
+			<p>
+				To get on the list, email <a href={`mailto:${TEAM_EMAIL}?subject=Newsletter signup`}>{TEAM_EMAIL}</a>, or follow us on{' '}
+				<a href="https://www.instagram.com/spartronics/">Instagram</a>.
+			</p>
+		</div>
+	</section>
 </Base>
+
+<style>
+	.hero {
+		background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+		color: white;
+	}
+	.hero-inner {
+		max-width: var(--wide);
+		margin: 0 auto;
+		padding: 3rem 1rem;
+		display: flex;
+		align-items: center;
+		gap: 2.5rem;
+	}
+	.hero-logo {
+		flex: none;
+		width: clamp(140px, 22vw, 260px);
+		height: auto;
+	}
+	.hero h1 {
+		color: white;
+		text-transform: uppercase;
+		font-weight: 800;
+		margin: 0.25rem 0 0.75rem;
+		font-size: clamp(2.1rem, 6vw, 3.5rem);
+	}
+	.hero h1 span {
+		color: var(--yellow);
+	}
+	.eyebrow.light {
+		color: var(--yellow);
+	}
+	.lead {
+		font-size: 1.2rem;
+		max-width: 34rem;
+	}
+	.actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+	}
+	.actions.center {
+		justify-content: center;
+	}
+	.button.outline {
+		background: transparent;
+		color: white;
+		border: 2px solid white;
+	}
+	.button.outline-dark {
+		background: transparent;
+		color: var(--blue);
+		border: 2px solid var(--blue);
+	}
+	.band {
+		padding: 3.5rem 1rem;
+	}
+	.band.tint {
+		background: var(--tint);
+	}
+	.band h2 {
+		margin-top: 0.25rem;
+	}
+	.wrap {
+		max-width: var(--wide);
+		margin: 0 auto;
+	}
+	.wrap.narrow {
+		max-width: var(--column);
+	}
+	.center {
+		text-align: center;
+	}
+	.split {
+		max-width: var(--wide);
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1.2fr 1fr;
+		gap: 2.5rem;
+		align-items: center;
+	}
+	.split.reverse > :first-child {
+		order: 2;
+	}
+	.photo {
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+		border-radius: var(--radius);
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+		gap: 1.25rem;
+		margin-bottom: 1rem;
+	}
+	.logos {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem 2.5rem;
+		list-style: none;
+		padding: 0;
+		margin: 2rem 0;
+	}
+	.logos img {
+		height: 64px;
+		width: auto;
+	}
+	/* Sponsor logos are white versions made for a blue background. */
+	.sponsors {
+		background: var(--blue);
+		color: white;
+	}
+	.sponsors h2,
+	.sponsors .eyebrow {
+		color: white;
+	}
+	.sponsors .eyebrow {
+		opacity: 0.8;
+	}
+	.sponsors a:not(.button) {
+		color: white;
+	}
+	@media (max-width: 760px) {
+		.hero-inner {
+			flex-direction: column;
+			text-align: center;
+			padding: 2rem 1rem 2.5rem;
+			gap: 1rem;
+		}
+		.hero .actions {
+			justify-content: center;
+		}
+		.lead {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.split {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+		.split.reverse > :first-child {
+			order: 0;
+		}
+	}
+</style>

@@ -1,3 +1,43 @@
-- id: placeholder
-  name: Placeholder
-  summary: TODO
+# The subteams shown on the Join page. Each id matches a photo in
+# src/assets/home/<id>.jpg (the card shows no photo if there isn't one).
+- id: mechanics
+  name: Mechanics
+  summary: >-
+    The builders of the robot. Mechanics work hands-on to assemble and repair all physical
+    components, from the chassis to each mechanism. After getting the design from the Design
+    team, Mechanics builds the robot's mechanisms and frame. Since everything is built from
+    scratch, this is an intensive process of machining, measuring and making sure everything
+    fits tolerances. If you enjoy using tools, solving problems on the fly, and getting things
+    done, this is the team for you.
+- id: design
+  name: Design
+  summary: >-
+    The planners and creators of the robot's blueprint. Using CAD software and creative
+    thinking, Design turns ideas into precise 3D models that guide the build. As soon as the
+    season's game is unveiled, Design is off to the races to design a robot that fits the goals
+    of our strategy committee, then works with Mechanics to build the frame and mechanisms. If
+    you enjoy engineering challenges, creativity, and attention to detail, you'll fit right in.
+- id: electronics
+  name: Electronics and Pneumatics
+  summary: >-
+    The power and control hub. Electronics members wire the robot, manage sensors, and ensure
+    every motor and mechanism gets the right power at the right time. You will learn how to wire
+    machinery, build circuits and swerve drives, and implement pistons. If you're into circuits,
+    hardware troubleshooting, or neat cable management, this is your zone.
+- id: programming
+  name: Programming
+  summary: >-
+    The robot's brain. Programming brings the machine to life through code, enabling autonomous
+    movement and precise controls. Once Electronics finishes, Programming tests auto paths,
+    controls, and mechanism code. Auto paths drive the autonomous period of a match, where robots
+    move on their own and actions are worth more points. You will learn several programming
+    languages and how to deploy and debug code. If you love problem-solving, logic, and turning
+    "what if" into "watch this," this is for you.
+- id: marketing
+  name: Business and Marketing
+  summary: >-
+    Marketing handles the team's fundraising, social media, pit design, website and YouTube,
+    posters, merch and community outreach. You will learn business skills, video editing and
+    filming, photography, website design and maintenance, and organization. If you are
+    interested in business, content creation, video editing, public speaking, communication or
+    writing, Business and Marketing is the subteam for you.

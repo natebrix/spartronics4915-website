@@ -1,7 +1,89 @@
 ---
+// Our History: a robot-by-season timeline, then the team's story season by season.
+// The story is src/content/pages/history.md; the robots are history-robots.ts.
+import { getEntry, render } from 'astro:content';
+import TimelineRobots from '../components/TimelineRobots.astro';
+import { ROBOTS } from '../content/pages/history-robots';
 import Base from '../layouts/Base.astro';
+
+const page = await getEntry('pages', 'history');
+if (!page) throw new Error('Missing src/content/pages/history.md');
+const { Content, headings } = await render(page);
+
+// Link each robot to the history.md section whose heading starts with its year.
+const seasons = headings.filter((heading) => heading.depth === 2);
+const robots = ROBOTS.map((robot) => {
+	const prefix = robot.section ?? String(robot.year);
+	const heading = seasons.find((h) => h.text.startsWith(prefix));
+	return { ...robot, href: heading ? `#${heading.slug}` : undefined };
+});
 ---
 
-<Base title="TODO history" description="TODO">
-	<h1>TODO: history</h1>
+<Base title={page.data.title} description={page.data.description} fullWidth>
+	<div class="wrap">
+		<p class="eyebrow">Since 2013</p>
+		<h1>{page.data.title}</h1>
+		<p class="lede">
+			Every season, FIRST releases a new game in January and every FRC team builds a new robot from scratch to play
+			it. Like all Spartronics robots, each one is named after a figure from Greek mythology. Pick a robot to jump to
+			its season.
+		</p>
+		<TimelineRobots robots={robots} />
+	</div>
+	<div class="story prose">
+		<Content />
+	</div>
 </Base>
+
+<style>
+	.wrap {
+		max-width: var(--wide);
+		margin: 0 auto;
+		padding: 1.5rem 1rem 0;
+	}
+	.lede {
+		max-width: var(--column);
+		font-size: 1.15rem;
+		color: var(--muted);
+	}
+	/* The story reads as a vertical timeline: a line down the left, a marker per season. */
+	.story {
+		max-width: calc(var(--column) + 2rem);
+		margin: 0 auto;
+		padding: 0 1rem 0 2.25rem;
+		position: relative;
+	}
+	.story::before {
+		content: '';
+		position: absolute;
+		left: 1rem;
+		top: 0.5rem;
+		bottom: 0;
+		width: 4px;
+		border-radius: 2px;
+		background: var(--line);
+	}
+	.story :global(h2) {
+		position: relative;
+		scroll-margin-top: 5.5rem;
+		color: var(--blue);
+	}
+	.story :global(h2:first-of-type) {
+		margin-top: 0.5rem;
+	}
+	.story :global(h2)::before {
+		content: '';
+		position: absolute;
+		left: -1.6rem;
+		top: 0.35em;
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50%;
+		background: var(--yellow);
+		border: 3px solid var(--blue);
+	}
+	.story :global(img) {
+		max-height: 34rem;
+		width: auto;
+	}
+</style>

@@ -77,7 +77,8 @@ To move a sponsor to a new tier, change their `tier` line. The order within a ti
 | To change | Edit |
 | --- | --- |
 | Join Us text | `src/content/pages/join.md` |
-| History | `src/content/pages/history.md` |
+| History text | `src/content/pages/history.md` |
+| History robot cards (add next year's robot) | `src/content/pages/history-robots.ts` |
 | Subteams | `src/data/subteams.yaml` |
 | Home page countdown | `src/data/countdown.ts` |
 | Email, donate link, menu, social links | `src/consts.ts` |

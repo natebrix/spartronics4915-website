@@ -1,6 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { parse } from 'yaml';
 import { SPONSOR_TIER_IDS } from './data/sponsorTiers';
 
 // One Markdown file per news post. The file name is the post's URL:
@@ -29,22 +30,30 @@ const pages = defineCollection({
 	}),
 });
 
+// Collections come back sorted by id. For lists where the file's order is the
+// display order, record each entry's position as `order` and sort by that.
+function inFileOrder(text: string) {
+	return (parse(text) as Record<string, unknown>[]).map((entry, order) => ({ ...entry, order }));
+}
+
 const sponsors = defineCollection({
-	loader: file('./src/data/sponsors.yaml'),
+	loader: file('./src/data/sponsors.yaml', { parser: inFileOrder }),
 	schema: ({ image }) =>
 		z.object({
 			name: z.string(),
 			tier: z.enum(SPONSOR_TIER_IDS),
 			logo: image().optional(),
 			link: z.url().optional(),
+			order: z.number(),
 		}),
 });
 
 const subteams = defineCollection({
-	loader: file('./src/data/subteams.yaml'),
+	loader: file('./src/data/subteams.yaml', { parser: inFileOrder }),
 	schema: z.object({
 		name: z.string(),
 		summary: z.string(),
+		order: z.number(),
 	}),
 });
 

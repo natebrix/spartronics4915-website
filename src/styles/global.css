@@ -36,6 +36,15 @@ body {
 	font-family: var(--font-body), system-ui, sans-serif;
 	font-size: 1.0625rem;
 	line-height: 1.65;
+	/* Keep the footer at the bottom on short pages. */
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+body > main {
+	flex: 1;
+	width: 100%;
 }
 
 h1,

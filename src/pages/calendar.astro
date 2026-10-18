@@ -1,7 +1,19 @@
 ---
+import CalendarEmbed from '../components/CalendarEmbed.astro';
+import { TEAM_EMAIL } from '../consts';
 import Base from '../layouts/Base.astro';
 ---
 
-<Base title="TODO calendar" description="TODO">
-	<h1>TODO: calendar</h1>
+<Base title="Calendar" description="Spartronics meetings, competitions and events.">
+	<h1>Calendar</h1>
+	<p>
+		All of our meetings, competitions and other important dates are on this calendar. Use the <strong>+ Google Calendar</strong>
+		button at the bottom of the calendar to add our events to your own calendar.
+	</p>
+	<p>
+		<strong>Before Kickoff (early January):</strong> Wednesdays, 6–8 PM.{' '}
+		<strong>After Kickoff:</strong> Mondays, Wednesdays and Fridays, 4–8 PM. We meet in the BHS 100 Building, Room 103.
+	</p>
+	<CalendarEmbed />
+	<p>Questions? Email us at <a href={`mailto:${TEAM_EMAIL}`}>{TEAM_EMAIL}</a>.</p>
 </Base>

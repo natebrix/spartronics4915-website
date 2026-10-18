@@ -1,3 +1,116 @@
-- id: placeholder
-  name: Placeholder
+# Team sponsors, shown on the Sponsors page.
+#
+# Each sponsor needs an id (lowercase, no spaces), a name and a tier.
+# Tiers: pantheon, presenting, gold, silver, bronze, supporting, friends
+# (see src/data/sponsorTiers.ts). Within a tier, sponsors appear in this order.
+#
+# logo is optional. Put the file in src/assets/sponsors/. Logos sit on a blue
+# tile, so use a white or light version of the logo.
+# link is optional: the sponsor's website.
+
+# Pantheon
+- id: microsoft
+  name: Microsoft Philanthropies
+  tier: pantheon
+  logo: ../assets/sponsors/microsoft.png
+  link: https://www.microsoft.com/en-us
+- id: boeing
+  name: Boeing
+  tier: pantheon
+  logo: ../assets/sponsors/boeing.png
+  link: https://www.boeing.com/
+- id: arcana-networks
+  name: Arcana Networks
+  tier: pantheon
+  logo: ../assets/sponsors/arcana-networks.png
+- id: rotary-bainbridge
+  name: Rotary Club of Bainbridge Island
+  tier: pantheon
+  logo: ../assets/sponsors/rotary-bainbridge.png
+
+# Presenting
+- id: bainbridge-schools-foundation
+  name: Bainbridge Schools Foundation
+  tier: presenting
+  logo: ../assets/sponsors/bainbridge-schools-foundation.png
+  link: https://www.bainbridgeschoolsfoundation.org/
+- id: bisd
+  name: Bainbridge Island School District
+  tier: presenting
+  logo: ../assets/sponsors/bisd.png
+  link: https://www.bisd303.org/
+- id: ospi
+  name: Washington Office of Superintendent of Public Instruction
+  tier: presenting
+  logo: ../assets/sponsors/ospi.png
+
+# Gold
+- id: ace-hardware
+  name: Bainbridge Island Ace Hardware
   tier: gold
+  logo: ../assets/sponsors/ace-hardware.png
+  link: https://www.acehardware.com/store-details/03732
+- id: bainbridge-review
+  name: Bainbridge Island Review
+  tier: gold
+  logo: ../assets/sponsors/bainbridge-review.png
+  link: https://www.bainbridgereview.com/
+- id: jason-shutt
+  name: Jason Shutt, Windermere Real Estate
+  tier: gold
+  logo: ../assets/sponsors/jason-shutt.png
+  link: https://jasonshutt.com/
+- id: real-ai-guy
+  name: The Real AI Guy
+  tier: gold
+  logo: ../assets/sponsors/real-ai-guy.png
+  link: https://www.wavgroup.com/real-ai-guide-book/
+- id: westside-pizza
+  name: Westside Pizza
+  tier: gold
+  logo: ../assets/sponsors/westside-pizza.png
+  link: https://westsidepizza.com/location/bainbridge-island/
+- id: samer
+  name: Samer
+  tier: gold
+  logo: ../assets/sponsors/samer.png
+
+# Silver
+- id: island-family-eyecare
+  name: Island Family Eyecare
+  tier: silver
+  logo: ../assets/sponsors/island-family-eyecare.png
+  link: https://www.islandfamilyeyecare.com/
+- id: living-well-bainbridge
+  name: Living Well Bainbridge
+  tier: silver
+  logo: ../assets/sponsors/living-well-bainbridge.png
+  link: https://www.livingwellbainbridge.com/
+- id: sound-repro
+  name: Sound Repro Graphics
+  tier: silver
+  logo: ../assets/sponsors/sound-repro.png
+  link: https://www.soundrepro.com/
+- id: town-and-country
+  name: Town & Country Markets
+  tier: silver
+  logo: ../assets/sponsors/town-and-country.png
+  link: https://townandcountrymarkets.com/markets/bainbridge
+- id: wildernest
+  name: Wildernest Outdoor Store
+  tier: silver
+  logo: ../assets/sponsors/wildernest.png
+  link: https://www.wildernestoutdoorstore.com/
+
+# Supporting
+- id: bainbridge-community-pharmacy
+  name: Bainbridge Island Community Pharmacy
+  tier: supporting
+  link: https://www.facebook.com/bipharmacy/
+- id: sparechange2
+  name: Coins by SpareChange2, an eBay Store
+  tier: supporting
+- id: bay-hay-and-feed
+  name: Bay Hay and Feed
+  tier: supporting
+  link: https://bayhayandfeed.com/
