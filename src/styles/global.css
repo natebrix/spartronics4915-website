@@ -1,10 +1,17 @@
 /*
-  Site-wide styles. Colors come from the Spartronics logo.
-  Components keep their own styles in a <style> block in the component file.
+  Site-wide styles. Components keep their own styles in a <style> block in
+  the component file.
+
+  Brand guide:
+  - Blue: Pantone 7686, #0067b9. Yellow: Pantone Yellow (100% yellow), #f4e400.
+  - Open Sans for all website text, headings included.
+  - SF TransRobotics (--font-logo) only for the logo and titles, never for
+    body copy.
 */
 
 :root {
 	--blue: #0067b9;
+	/* A darker shade of the brand blue, for hover states and gradients. */
 	--blue-dark: #004b87;
 	--yellow: #f4e400;
 	--ink: #1a1717;
@@ -51,7 +58,8 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: var(--font-heading), system-ui, sans-serif;
+	font-family: var(--font-body), system-ui, sans-serif;
+	font-weight: 700;
 	color: var(--ink);
 	line-height: 1.2;
 	margin: 1.75em 0 0.5em;

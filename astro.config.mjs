@@ -14,21 +14,26 @@ export default defineConfig({
 			filter: (page) => !/\/huney(-public)?\/$/.test(page),
 		}),
 	],
+	// Fonts follow the Spartronics brand guide: Open Sans for all website text,
+	// SF TransRobotics only for the logo and titles. (Raleway is the print font.)
 	fonts: [
-		{
-			provider: fontProviders.google(),
-			name: 'Raleway',
-			cssVariable: '--font-heading',
-			weights: [600, 700, 800],
-			fallbacks: ['sans-serif'],
-		},
 		{
 			provider: fontProviders.google(),
 			name: 'Open Sans',
 			cssVariable: '--font-body',
-			weights: [400, 600, 700],
+			weights: [400, 600, 700, 800],
 			styles: ['normal', 'italic'],
 			fallbacks: ['sans-serif'],
+		},
+		{
+			// Freeware from ShyFonts Type Foundry.
+			provider: fontProviders.local(),
+			name: 'SF TransRobotics',
+			cssVariable: '--font-logo',
+			fallbacks: ['sans-serif'],
+			options: {
+				variants: [{ src: ['./src/assets/fonts/sf-transrobotics.ttf'], weight: 400, style: 'normal', display: 'swap' }],
+			},
 		},
 	],
 });

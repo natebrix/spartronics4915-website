@@ -34,4 +34,5 @@ request that undoes it. Merge that.
 - Put site-wide settings in `src/consts.ts`, not in individual pages.
 - Data a non-programmer should be able to change (sponsors, subteams, the countdown) goes in `src/data/`, not in page code.
 - Keep each component's CSS in its own `<style>` block. Colors and sizes come from the variables at the top of `src/styles/global.css`.
+- Follow the team brand guide. Colors: blue `--blue` (Pantone 7686, #0067b9) and yellow `--yellow` (#f4e400); don't add new brand colors. Fonts: Open Sans (`--font-body`) for all text, including headings. SF TransRobotics (`--font-logo`) is only for the logo and titles, never body text. Raleway is the print font; don't use it on the site.
 - Never put passwords, API keys or anyone's personal contact details in the repo. The repo is public. Secrets go in GitHub Actions secrets.

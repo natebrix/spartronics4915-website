@@ -172,6 +172,6 @@ ARTEMIS, short for Articulating Rotating Turret with Ejection Mechanism with Int
 
 ![ARTEMIS](../../assets/history/2026-artemis.jpg)
 
-At the Glacier Peak District Event, Spartronics won the event, beating reigning world champions Jack in the Bot (Team 2910) in the finals, and ARTEMIS won the Innovation in Control Award. Spartronics finished the district season ranked 10th of 126 teams in the Pacific Northwest.
+At the Glacier Peak District Event, Spartronics won the event, and ARTEMIS won the Innovation in Control Award. Spartronics finished the district season ranked 10th of 126 teams in the Pacific Northwest.
 
 That earned Spartronics its first trip to the FIRST Championship in Houston since 2017, and the third in team history: a first world championship for Coach Austin Smith and every student on the team. There, Citrus Circuits (Team 1678) chose Spartronics as the first pick of the Milstein Division's #1 alliance. The alliance won the Milstein Division, and Spartronics went on to play in the Einstein round robin among the champions of every division.
