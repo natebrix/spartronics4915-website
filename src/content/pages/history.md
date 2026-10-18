@@ -12,7 +12,7 @@ description: The history of Spartronics, FRC Team 4915, season by season, from o
 
 ## 2026: Spartronics Returns to Worlds
 
-ARTEMIS, short for Articulating Rotating Turret with Ejection Mechanism with Intake on Swerve, was Spartronics' robot for FIRST's 2026 game, Rebuilt. Like every Spartronics robot, its name is a backronym from Greek mythology. (The NASA mission of the same name, whose descent was shown on the arena screens during districts, was a coincidence.) The 114.5-pound robot, about the size of a washing machine, pairs a swerve drive and an intake with a rotating turret and shooter, aimed with help from its camera.
+ARTEMIS, short for Articulating Rotating Turret with Ejection Mechanism with Intake on Swerve, was Spartronics' robot for FIRST's 2026 game, [REBUILT](https://www.youtube.com/playlist?list=PLZT9pIgNOV6Y-gv2OmEdktNjWC8ftqZkK). Like every Spartronics robot, its name is a backronym from Greek mythology. (The NASA mission of the same name, whose descent was shown on the arena screens during districts, was a coincidence.) The 114.5-pound robot, about the size of a washing machine, pairs a swerve drive and an intake with a rotating turret and shooter, aimed with help from its camera.
 
 ![ARTEMIS](../../assets/history/2026-artemis.jpg)
 
@@ -32,7 +32,7 @@ Spartronics rode to districts with a team consisting of over 35 students, 14 men
 
 ![Spartronics students at Girls Gen 2025](../../assets/history/2025-girls-gen.jpg)
 
-EPHYRA was the robot Spartronics built for FIRST’s latest competition, Reefscape! EPHYRA can place coral in all positions on the reef, climb and intake coral from the delivery system. Like Spartronics’ previous robot, it also uses AI vision to move autonomously and score on any station and level from anywhere on the field.
+EPHYRA was the robot Spartronics built for FIRST’s latest competition, [REEFSCAPE](https://youtu.be/YNyzrkLxAtA)! EPHYRA can place coral in all positions on the reef, climb and intake coral from the delivery system. Like Spartronics’ previous robot, it also uses AI vision to move autonomously and score on any station and level from anywhere on the field.
 
 ## 2024: Spartronics Crescendos
 
@@ -50,7 +50,7 @@ One of the most advanced aspects of NEMESIS was its use of AI vision during auto
 
 ## 2023: Spartronics Gets Charged Up
 
-Spartronics was CHARGED UP in 2022-2023! TALOS, short for Telescopic, Actuated Lifter On Swerve, takes its name from the Greek mythological figure Talos, a giant bronze automaton forged by Hephaestus, the god of blacksmithing and craftsmanship. TALOS was designed to score on all grid nodes, pick up game pieces from both double loading stations and the ground, and maintain stability through an innovative gyroscopic balance system. The robot’s swerve drive chassis provided the agility needed for quick cycles, while its low center of gravity and strategic weight distribution ensured reliable performance even at full extension.
+Spartronics was [CHARGED UP](https://www.youtube.com/playlist?list=PLZT9pIgNOV6Z1KGc3k1GswZmKvrYbPlmU) in 2022-2023! TALOS, short for Telescopic, Actuated Lifter On Swerve, takes its name from the Greek mythological figure Talos, a giant bronze automaton forged by Hephaestus, the god of blacksmithing and craftsmanship. TALOS was designed to score on all grid nodes, pick up game pieces from both double loading stations and the ground, and maintain stability through an innovative gyroscopic balance system. The robot’s swerve drive chassis provided the agility needed for quick cycles, while its low center of gravity and strategic weight distribution ensured reliable performance even at full extension.
 
 TALOS performed well in qualifying matches. At Glacier Peak, we were an alliance captain and finished 6th. At Auburn in late March, another 6th place finish was complemented by winning the Judges’ Award and being selected as the 1st Pick of Alliance 3. These strong performances earned the team enough district points to qualify for the Pacific Northwest District Championship in Cheney, where they faced the region’s top teams.
 
@@ -86,7 +86,7 @@ To top off an already exciting weekend, we celebrated even more accomplishments:
 
 ![The Spartronics pit, with the team working on ATHENA](../../assets/history/2020-pit.jpg)
 
-Unfortunately, after the Glacier Peak Competition, FIRST delayed, then shut down competitions for the season. Spartronics, however, didn’t stop working, we Sponsored our Sponsors, and worked on the Infinite Recharge at Home challenge.
+Unfortunately, after the Glacier Peak Competition, FIRST delayed, then shut down competitions for the season. Spartronics, however, didn’t stop working, we Sponsored our Sponsors, and worked on the [INFINITE RECHARGE at Home](https://youtu.be/I77Dz9pfds4) challenge.
 
 The challenge had the team identify a real-world problem, brainstorm a solution, create a business model, and deliver a pitch for judged awards. This worked well to keep Spartronics productive and working during the season.
 
@@ -96,7 +96,7 @@ The challenge had the team identify a real-world problem, brainstorm a solution,
 
 While Spartronics and our Robot CHAOS didn’t qualify for the district championships in Tacoma, we won the Engineering Inspiration Award at Glacier Peak! The Engineering Inspiration Award is second only to the Impact Award and is an amazing accomplishment for the team!
 
-CHAOS, Team 4915 Spartronics’ robot for the Destination: Deep Space season, is a Cargo Hatch-panel Ascending Operational System designed for both scoring and climbing at the highest level. It can load cargo into the cargo ship and the lower level of the rocket ship, and it features a Level 3 climbing system that made it a strong endgame contender. The climbing system, one of CHAOS’s most striking features, uses a four-leg pneumatic setup to lift the robot securely and efficiently, earning it a reputation as one of the coolest aspects of the design.
+CHAOS, Team 4915 Spartronics’ robot for the [Destination: Deep Space](https://youtu.be/Mew6G_og-PI) season, is a Cargo Hatch-panel Ascending Operational System designed for both scoring and climbing at the highest level. It can load cargo into the cargo ship and the lower level of the rocket ship, and it features a Level 3 climbing system that made it a strong endgame contender. The climbing system, one of CHAOS’s most striking features, uses a four-leg pneumatic setup to lift the robot securely and efficiently, earning it a reputation as one of the coolest aspects of the design.
 
 Like all Spartronics robots, CHAOS is named after a figure from Greek mythology. In myth, Chaos represents the primordial emptiness before the universe came into being, a fitting nod to the season’s space theme. The name also serves as an acronym describing its primary functions: Cargo Hatch-panel Ascending Operational System.
 

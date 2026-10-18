@@ -16,18 +16,21 @@ const { robots } = Astro.props;
 		{
 			robots.map((robot) => (
 				<li>
-					<a href={robot.href ?? '#'}>
-						{robot.image ? (
-							<Image src={robot.image} alt="" width={320} height={240} fit="cover" class="photo" />
-						) : (
-							<div class="photo placeholder" aria-hidden="true">
-								{robot.name}
-							</div>
-						)}
-						<span class="year">{robot.year}</span>
-						<span class="name">{robot.name}</span>
-						{robot.standsFor && <span class="stands-for">{robot.standsFor}</span>}
-						<span class="game">{robot.game}</span>
+					{robot.image ? (
+						<Image src={robot.image} alt="" width={320} height={240} fit="cover" class="photo" />
+					) : (
+						<div class="photo placeholder" aria-hidden="true">
+							{robot.name}
+						</div>
+					)}
+					<span class="year">{robot.year}</span>
+					{/* This link covers the whole card; the game link sits above it. */}
+					<a class="name" href={robot.href ?? '#'}>
+						{robot.name}
+					</a>
+					{robot.standsFor && <span class="stands-for">{robot.standsFor}</span>}
+					<a class="game" href={robot.game.url} title={`Watch FIRST's ${robot.game.name} game video`}>
+						{robot.game.name} ↗
 					</a>
 				</li>
 			))
@@ -52,23 +55,29 @@ const { robots } = Astro.props;
 	}
 	li {
 		scroll-snap-align: start;
-	}
-	a {
+		position: relative;
 		display: flex;
 		flex-direction: column;
-		height: 100%;
-		color: inherit;
-		text-decoration: none;
 		border: 1px solid var(--line);
 		border-radius: var(--radius);
 		overflow: hidden;
 		background: var(--paper);
 		transition: box-shadow 0.15s, transform 0.15s;
 	}
-	a:hover,
-	a:focus-visible {
+	li:hover,
+	li:focus-within {
 		box-shadow: 0 6px 20px rgb(0 0 0 / 0.1);
 		transform: translateY(-2px);
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	/* Stretch the robot's link over the whole card. */
+	.name::after {
+		content: '';
+		position: absolute;
+		inset: 0;
 	}
 	.photo {
 		width: 100%;
@@ -110,9 +119,17 @@ const { robots } = Astro.props;
 		color: var(--text);
 	}
 	.game {
+		/* Above the stretched card link, so it can be clicked on its own. */
+		position: relative;
+		z-index: 1;
+		align-self: flex-start;
 		margin: auto 0.9rem 0.8rem;
 		padding-top: 0.5rem;
 		font-size: 0.8rem;
-		color: var(--muted);
+		font-weight: 600;
+		color: var(--blue);
+	}
+	.game:hover {
+		text-decoration: underline;
 	}
 </style>
