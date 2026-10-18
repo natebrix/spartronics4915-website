@@ -1,0 +1,48 @@
+# Cloudflare Pages redirects: https://developers.cloudflare.com/pages/configuration/redirects/
+# Format: <old path> <new path> <status>. The old-URL check (npm run check:urls)
+# reads this file too, so keep one rule per line.
+
+# RSS: WordPress served the feed at /feed/.
+/feed/ /rss.xml 301
+/feed /rss.xml 301
+
+# Old pages that moved or merged.
+/updated-our-history/ /history/ 301
+/donate/ /sponsors/sponsor-information/ 301
+/homepage/ / 301
+/homepage-2/ / 301
+
+# Old links inside posts. WP Engine already redirected the first three; the
+# robot pages and events listing were gone from the WordPress site.
+/support-2/donate/ /sponsors/sponsor-information/ 301
+/support-2/open-house/ /news/ 301
+/event/* /:splat 301
+/events/ /calendar/ 301
+/event/ /calendar/ 301
+/about-2/our-robot/* /history/ 301
+/ephyra/ /history/ 301
+/2025-autos /history/ 301
+
+# Uploaded files that posts linked to.
+/wp-content/uploads/How-to-Grow-FIRST-Faster-1.pdf /files/How-to-Grow-FIRST-Faster-1.pdf 301
+/wp-content/uploads/MLKShortEssay.pdf /files/MLKShortEssay.pdf 301
+
+# WordPress archive pages all become the News page.
+/category/* /news/ 301
+/tag/* /news/ 301
+/author/* /news/ 301
+/page/* /news/ 301
+/newsletter/* /news/ 301
+/2014/* /news/ 301
+/2015/* /news/ 301
+/2016/* /news/ 301
+/2017/* /news/ 301
+/2018/* /news/ 301
+/2019/* /news/ 301
+/2020/* /news/ 301
+/2021/* /news/ 301
+/2022/* /news/ 301
+/2023/* /news/ 301
+/2024/* /news/ 301
+/2025/* /news/ 301
+/2026/* /news/ 301

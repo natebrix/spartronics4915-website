@@ -11,7 +11,10 @@
     "preview": "astro preview",
     "astro": "astro",
     "import:wordpress": "node ./scripts/import-wordpress.mjs",
-    "check": "astro check"
+    "check": "astro check",
+    "check:urls": "node ./scripts/check-old-urls.mjs",
+    "check:site": "node ./scripts/check-site.mjs",
+    "verify": "npm run check && npm run build && npm run check:site && npm run check:urls"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

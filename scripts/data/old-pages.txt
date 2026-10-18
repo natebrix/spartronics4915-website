@@ -1,0 +1,19 @@
+# Pages the WordPress site served, beyond posts and archives (those are in
+# old-urls.txt, which the import script writes). Hand-maintained.
+# Lines starting with "pending" are known old URLs with no decision yet: the
+# old-URL check lists them as warnings instead of failing.
+/
+/history/
+/updated-our-history/
+/calendar/
+/sponsors/
+/sponsors/sponsor-information/
+/join/
+/donate/
+/homepage/
+/homepage-2/
+/feed/
+pending /elementor-page-5140/  Awards page, edited Sept 2026; probably becomes /awards/
+pending /huney/                Huney grant application, unlisted
+pending /huney-public/         public version of the grant application
+pending /resources-2/          unfinished Resources page

@@ -22,6 +22,4 @@ tags:
 wordpressId: 322
 ---
 
-[![National Championship](https://spartronicsbhs.wpengine.com/images/eventspic4.JPG)](/images/eventspic4.JPG)
-
 This is it: the World FRC Championship in St. Louis, Missouri! All of our work this past year has been to secure us a spot here, where we competed with the best high school robotics teams in the world. Over four hundred top teams battled for the title "champion," and our robot's performance placed us in the top 5% of FRC teams worldwide! This was our toughest competition yet, and now none of us can wait till our chance to compete again.

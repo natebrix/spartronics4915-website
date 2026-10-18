@@ -1,63 +1,56 @@
-# Astro Starter Kit: Blog
+# Spartronics 4915 website
+
+The website for FIRST Robotics Competition Team 4915, built with [Astro](https://astro.build).
+Every page is a file in this repo, and every change goes through a pull request.
+
+- **Writing a post or updating a page?** Read [docs/editing.md](docs/editing.md).
+- **Changing code?** Read [CONTRIBUTING.md](CONTRIBUTING.md).
+- **New web lead?** Read [docs/handoff.md](docs/handoff.md).
+
+## Run the site on your computer
+
+You need [Node.js](https://nodejs.org) 22 or newer.
 
 ```sh
-npm create astro@latest -- --template blog
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Open http://localhost:4321. The page reloads as you save files. Press Ctrl+C to stop.
 
-Features:
+## Commands
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and Open Graph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Runs the site locally while you edit |
+| `npm run build` | Builds the finished site into `dist/` |
+| `npm run preview` | Serves the built `dist/` folder |
+| `npm run check` | Type-checks pages and post frontmatter |
+| `npm run check:site` | Finds broken internal links and images over 1 MB (run after `build`) |
+| `npm run check:urls` | Checks that every URL from the old WordPress site still works (run after `build`) |
+| `npm run verify` | All of the above, the same as the pull request check |
+| `npm run import:wordpress -- --backup <folder>` | Re-imports posts from a WordPress backup (only needed during the migration) |
 
-## 🚀 Project Structure
+## Where things live
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+```
+src/
+  content/posts/    one Markdown file per news post; the file name is its URL
+  content/pages/    longer text for pages like History and Join
+  data/             sponsors, subteams, sponsor tiers, countdown
+  assets/           images (resized automatically when the site builds)
+  components/       pieces of pages: header, footer, sponsor grid, ...
+  layouts/          the frame every page sits in
+  pages/            one file per route: index.astro is /, join.astro is /join/
+  consts.ts         site-wide settings: email, donate link, menu, social links
+public/
+  _redirects        old URLs and where they go now
+  files/            PDFs and other downloads, served as-is
+scripts/            the WordPress import and the checks
+docs/               guides for editors and maintainers
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Hosting
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+The plan is Cloudflare Pages: production builds from `main`, and every other
+branch gets its own preview link. Build command `npm run build`, output folder `dist`.

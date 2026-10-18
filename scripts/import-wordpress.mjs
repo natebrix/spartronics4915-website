@@ -292,6 +292,9 @@ function makeTurndown(media) {
         const name = media.done.get(upload);
         return name ? `![${alt}](../../assets/uploads/${name})` : "";
       }
+      // Old-site images outside uploads (like /images/eventspic1.jpg) were
+      // already gone from the live site.
+      if (parseOldUrl(src)) return "";
       return src ? `![${alt}](${src})` : "";
     }
   });
@@ -437,7 +440,7 @@ async function main() {
     for (const image of images) await media.addImage(image);
     for (const file of files) await media.addFile(file);
     for (const match of html.matchAll(/<img[^>]+src="(https?:\/\/[^"]+)"/g)) {
-      if (!uploadPathOf(match[1])) {
+      if (!parseOldUrl(match[1])) {
         const host = new URL(match[1]).hostname;
         externalImages.set(host, (externalImages.get(host) ?? 0) + 1);
       }

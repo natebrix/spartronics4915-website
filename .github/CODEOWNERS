@@ -1,0 +1,14 @@
+# Who reviews what. GitHub asks these people to approve pull requests that
+# touch matching files. The last matching line wins.
+# The teams below are placeholders: create them in the Spartronics4915 GitHub
+# organization and update the members every May (see docs/handoff.md).
+
+# Code, config and checks: programming web lead plus a mentor.
+*                       @Spartronics4915/web-programming @Spartronics4915/web-mentors
+
+# Writing, photos and sponsor data: business/marketing web lead.
+/src/content/           @Spartronics4915/web-content
+/src/data/              @Spartronics4915/web-content
+/src/assets/            @Spartronics4915/web-content
+/public/files/          @Spartronics4915/web-content
+/docs/editing.md        @Spartronics4915/web-content
