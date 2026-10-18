@@ -29,7 +29,7 @@ Marketing is also continuing to plan for our 5th annual all-Island Robotics Open
 
 **Sponsor Spotlight: Bainbridge Schools Foundation**
 
-The [Bainbridge Schools Foundation](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=ac585eb86a&e=96dbbba0fa) is an organization with a highly-focused mission: support Bainbridge's public school system. With events such as their upcoming [auction](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=e260fdfa1a&e=96dbbba0fa), the nonprofit has raised over $6,000,000 dollars for our schools since 2006. Its innovative grants have helped students learn by giving them opportunities that wouldn't exist without BSF’s aid.
+The [Bainbridge Schools Foundation](https://www.bainbridgeschoolsfoundation.org/) is an organization with a highly-focused mission: support Bainbridge's public school system. With events such as their upcoming [auction](https://www.bsfgala.org/), the nonprofit has raised over $6,000,000 dollars for our schools since 2006. Its innovative grants have helped students learn by giving them opportunities that wouldn't exist without BSF’s aid.
 
 While the whole Bainbridge Island community has reasons to thank BSF, Spartronics is especially grateful. Six years ago, under the leadership of Vicky Marsing, BSF became our first official sponsor, providing the first funding to help start Spartronics at BHS.
 
@@ -37,7 +37,7 @@ This generosity has continued through to the present day, currently under the le
 
 We simply cannot thank the Bainbridge Schools Foundation enough, except to tell our families, friends and supporters that when you donate to Spartronics, it would be GREAT to also donate to support BSF!
 
-You can donate to BSF _and_ Spartronics anytime [here](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=22aab39f6f&e=96dbbba0fa) - 24/7/365!
+You can donate to BSF _and_ Spartronics anytime [here](https://www.bainbridgeschoolsfoundation.org/donate/) - 24/7/365!
 
 **This is Marie's Story:**
 

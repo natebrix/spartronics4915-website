@@ -34,9 +34,9 @@ Business + Marketing:
 
 We planned our upcoming appearance at Town and Country and organized our sponsor lists.
 
-We also are in the middle of our **fundraising for our 2024 competition season**. Team **sponsorships start at $250**. If you or your business would like to become a sponsor, check out all the great benefits [you will receive here](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=ac524e8f8d&e=7a2522b59e).
+We also are in the middle of our **fundraising for our 2024 competition season**. Team **sponsorships start at $250**. If you or your business would like to become a sponsor, check out all the great benefits [you will receive here](/sponsors/sponsor-information/).
 
-**Did you know you can also donate** to Spartronics via the Bainbridge Schools Foundation, which can be tax deductible? Just designate "Spartronics (robotics)" in the "Designation" pull-down menu on this online [BSF donation](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=58e91025ae&e=7a2522b59e) [form](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=d3fb41cf73&e=7a2522b59e).
+**Did you know you can also donate** to Spartronics via the Bainbridge Schools Foundation, which can be tax deductible? Just designate "Spartronics (robotics)" in the "Designation" pull-down menu on this online [BSF donation](https://interland3.donorperfect.net/weblink/weblink.aspx?name=E170080&id=9) [form](https://interland3.donorperfect.net/weblink/weblink.aspx?name=E170080&id=9).
 
 Our subteam also wrote this newsletter!
 

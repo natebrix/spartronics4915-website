@@ -15,7 +15,7 @@ Spartronics is excited to announce the name of this years robot: **CHAOS**!
 
 CHAOS is an acronym for **C**argo **H**atch-panel **A**scending **O**perational **S**ystem because of the robot’s capability to manipulate hatch panels and cargo (two important game pieces this year) and its ability to climb.
 
-Spartronics has continued its tradition of naming robots after Greek mythological figures; CHAOS shares its name with the Greek deity of the void between Heaven and Earth. We think the name fits this year's space-themed game, [Destination Deep Space](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=3f5104b101&e=96dbbba0fa), perfectly!
+Spartronics has continued its tradition of naming robots after Greek mythological figures; CHAOS shares its name with the Greek deity of the void between Heaven and Earth. We think the name fits this year's space-themed game, [Destination Deep Space](http://info.firstinspires.org/destination-deep-space), perfectly!
 
 ![Spartronics students working](../../assets/uploads/2-2.jpg)
 
@@ -23,7 +23,7 @@ Spartronics has continued its tradition of naming robots after Greek mythologica
 
 Despite the snow, Spartronics has continued work on CHAOS as Bag Day approaches.
 
-For those who don’t know, Bag Day is on February 19 and marks the end of Build Season. Every FRC team in the world is required to stop work on their robots and to pack them away in a sealed plastic bag in preparation for competition season. We have a countdown to the time we're bagging CHAOS at the top of our [website](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=0253667e67&e=96dbbba0fa).
+For those who don’t know, Bag Day is on February 19 and marks the end of Build Season. Every FRC team in the world is required to stop work on their robots and to pack them away in a sealed plastic bag in preparation for competition season. We have a countdown to the time we're bagging CHAOS at the top of our [website](/).
 
 Some students in the **Mechanics** subteam took parts home before the snowstorm, allowing construction to continue smoothly. CHAOS has been almost completely assembled with both climber and intake mounted.
 
@@ -49,7 +49,7 @@ These new black team shirts are an extra shirt. They are not a substitute for ou
 
 **Sponsor Spotlight: Modern Collision**
 
-[Modern Collision](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=aaaaaabe7e&e=96dbbba0fa) is a general auto service, collision repair and refinishing business located in Fletcher Bay off Miller Road. They have been providing general mechanical repair and service to Bainbridge Islanders for more than four decades. Their motto is "Employ the best employees and strive for excellence in every job, never forgetting it is the vehicle owner who ultimately writes our paycheck." They're also members of the Coalition for Collision Repair Excellence (CCRE), the Automotive Service Association of Washington (ASA-WA), and are an EnviroStar 5-star (highest rating) shop.
+[Modern Collision](https://www.moderncollision.com/) is a general auto service, collision repair and refinishing business located in Fletcher Bay off Miller Road. They have been providing general mechanical repair and service to Bainbridge Islanders for more than four decades. Their motto is "Employ the best employees and strive for excellence in every job, never forgetting it is the vehicle owner who ultimately writes our paycheck." They're also members of the Coalition for Collision Repair Excellence (CCRE), the Automotive Service Association of Washington (ASA-WA), and are an EnviroStar 5-star (highest rating) shop.
 
 We asked them a few questions about their company:
 
@@ -65,7 +65,7 @@ We asked them a few questions about their company:
 
 ![Modern Collision and Repair](../../assets/uploads/6.jpg)
 
-**Modern Collision:** Yes. Stop in for an oil change, a cup of coffee, or repairs.  You can like us on [Facebook](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=3e94672a54&e=96dbbba0fa), or [Yelp](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=bcb2511366&e=96dbbba0fa), and please tell your friends and family. We love referrals  
+**Modern Collision:** Yes. Stop in for an oil change, a cup of coffee, or repairs.  You can like us on [Facebook](https://www.facebook.com/moderncollision/), or [Yelp](https://www.yelp.com/biz/modern-collision-rebuild-and-service-bainbridge-island), and please tell your friends and family. We love referrals  
 **Spartronics**: Is there anything else you would like us to include in Modern Collision’s Sponsor Spotlight newsletter feature?
 
 **Modern Collision:**  Each year Modern Collision offers BHS students the opportunity to experience a technical career exploration program through Bainbridge Youth Services where students have the opportunity to learn about the auto repair industry with hands-on experience. We support our community through the Classic Car Shows which benefits Helpline House Project Backpack, the Rotary Auction, Little League, Race for the Cure and many more.
@@ -75,4 +75,4 @@ Modern Collision
 BAINBRIDGE ISLAND, WA 98110  
 (206) 317-5436  
 MON - FRI: 8:00 AM - 5:00 PM  
-[www.moderncollision.com](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=4815eba6fe&e=96dbbba0fa)
+[www.moderncollision.com](https://www.moderncollision.com/)

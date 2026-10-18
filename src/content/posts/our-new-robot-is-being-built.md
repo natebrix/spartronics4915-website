@@ -17,7 +17,7 @@ Mechanics subteam is finishing building this year's field elements out of wood. 
 
 The Programming subteam is still training students, and have just assigned team members specific robot subsystems to people to develop. Programmers are also testing different sensors and computer vision that will track where to shoot the Power Cells. This is primarily done with Visual Simultaneous Localization and Mapping.
 
-The Electronics subteam is working with [NEO motors](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=634ad65ff7&e=96dbbba0fa) and researching ultrasonic proximity sensors. These sensors measure distance.
+The Electronics subteam is working with [NEO motors](http://www.revrobotics.com/rev-21-1651/) and researching ultrasonic proximity sensors. These sensors measure distance.
 
 Our Marketing subteam has finalized the artwork for new sponsor banners and team shirts as well as created flyers and ads to promote our annual "All Robotics  Open House," scheduled for March 25th.
 
@@ -25,7 +25,7 @@ Our Marketing subteam has finalized the artwork for new sponsor banners and team
 
 ![Cavu networks logo](../../assets/uploads/unnamed-3.jpg)  
 
-[Cavu Networks](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=abe74f2e61&e=96dbbba0fa) was founded in 2004 and has been providing its technical expertise to the Seattle area ever since. As they're also a valuable sponsor to Spartronics, we decided to ask founder John Brennan a few questions about the company.
+[Cavu Networks](https://www.cavunetworks.com/about-us/our-story/) was founded in 2004 and has been providing its technical expertise to the Seattle area ever since. As they're also a valuable sponsor to Spartronics, we decided to ask founder John Brennan a few questions about the company.
 
 **Spartronics**: Can you give us a brief description of Cavu networks and what it does?
 
@@ -45,8 +45,8 @@ Our Marketing subteam has finalized the artwork for new sponsor banners and team
 
 John Benjamin – 206-866-5340
 
-blog: https://[www.cavunetworks.com](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=464e6d470d&e=96dbbba0fa)/blog
+blog: https://[www.cavunetworks.com](http://www.cavunetworks.com/)/blog
 
-Facebook: [https://www.facebook.com/Cavunetworks/](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=0910bc2c48&e=96dbbba0fa)
+Facebook: [https://www.facebook.com/Cavunetworks/](https://www.facebook.com/Cavunetworks/)
 
 ![](../../assets/uploads/unnamed-4.jpg)

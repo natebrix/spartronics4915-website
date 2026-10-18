@@ -31,9 +31,9 @@ We participated in the mock kickoff!
 
 We continued designing our banner and team shirts.
 
-We also are in the middle of our **fundraising for our 2024 competition season**. Team **sponsorships start at $250**. If you or your business would like to become a sponsor, check out all the great benefits [you will receive here](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=6fd3e4c4dd&e=7a2522b59e).
+We also are in the middle of our **fundraising for our 2024 competition season**. Team **sponsorships start at $250**. If you or your business would like to become a sponsor, check out all the great benefits [you will receive here](/sponsors/sponsor-information/).
 
-**Did you know you can also donate** to Spartronics via the Bainbridge Schools Foundation, which can be tax deductible? Just designate "Spartronics (robotics)" in the "Designation" pull-down menu on this online [BSF donation](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=a3980d72ab&e=7a2522b59e) [form](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=de3bc5ceb3&e=7a2522b59e).
+**Did you know you can also donate** to Spartronics via the Bainbridge Schools Foundation, which can be tax deductible? Just designate "Spartronics (robotics)" in the "Designation" pull-down menu on this online [BSF donation](https://interland3.donorperfect.net/weblink/weblink.aspx?name=E170080&id=9) [form](https://interland3.donorperfect.net/weblink/weblink.aspx?name=E170080&id=9).
 
 Our subteam also wrote this newsletter!
 

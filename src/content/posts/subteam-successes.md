@@ -34,6 +34,6 @@ Business and marketing wrote this newsletter!
 
 We also continued practicing assembly of our pit as well as organizing outreach for later this season.
 
-We also posted a new video on our YouTube channel! Keep reading to see it or click [here](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=a0103a1f85&e=7a2522b59e)!
+We also posted a new video on our YouTube channel! Keep reading to see it or click [here](https://www.youtube.com/watch?v=QgGoHd5HngQ&t=3s)!
 
 ![](https://ci3.googleusercontent.com/meips/ADKq_NYmL7pJqD3pnqXRyk7--qL7cp1QaIDHqaA5m3q5ChR0hHUV6xQpR-MWX3BTukeZzun1QctdJwGpzYb4oc7bmk1IPbGwYpRvnDg5Mx7eNo7FI35urP_NzON0injtnASZVhNHiX6LTLm7bgU01xhJKy3N848fvPPX33zXFMYZ3q4=s0-d-e1-ft#https://mcusercontent.com/83401ef6f6634dd529783840a/_compresseds/9769c827-c38a-acc2-9d26-e7d515c2a359.jpg)

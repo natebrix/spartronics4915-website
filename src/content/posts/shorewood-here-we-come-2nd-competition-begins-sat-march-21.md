@@ -20,7 +20,7 @@ Shorewood Livestream](http://pnwfirst.org/events/schedule/2015-pnw-dist-8/)
 [https://spartronicsbhs.wpengine.com/events/](http://pnwfirst.org/events/schedule/2015-pnw-dist-8/)
 
 More information  
-[http://www.usfirst.org/whats-going-on/event/10853](http://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=638bfaa565&e=81680b0c0c)
+[http://www.usfirst.org/whats-going-on/event/10853](http://www.usfirst.org/whats-going-on/event/10853)
 
 **2015 Pacific Northwest District**
 

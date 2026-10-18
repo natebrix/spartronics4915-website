@@ -17,7 +17,7 @@ By Jessica Rosenfeld
 
 At our first all-team meeting, we introduced what the year ahead would look like being online, as well as the team in general. We also gave subteam presentations to make pitches to Spartronics student members about each subteam. From there, we told everyone to expect to go into break-out rooms at the next meeting so they could learn more about each subteam.
 
-At our second all-team "Zoom" meeting, we did just that. We made sure that everyone was well-informed on each of the subteams, and answered all questions. At the beginning of our meeting, one of our team captains, Darwin, gave a presentation about [FIRST](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=771b6d7b56&e=81680b0c0c) so the new members could become familiarized with FIRST Robotics.
+At our second all-team "Zoom" meeting, we did just that. We made sure that everyone was well-informed on each of the subteams, and answered all questions. At the beginning of our meeting, one of our team captains, Darwin, gave a presentation about [FIRST](https://www.firstinspires.org/) so the new members could become familiarized with FIRST Robotics.
 
 **FIRST**  
 FIRST stands for For Inspiration and Recognition of Science and Technology. Its mission is “to inspire young people to be science and technology leaders and innovators, by engaging them in exciting mentor-based programs that build science, engineering, and technology skills, that inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication, and leadership.”

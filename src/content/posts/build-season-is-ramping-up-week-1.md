@@ -9,9 +9,9 @@ wordpressId: 2833
 
 ![Spartronics students working](../../assets/uploads/newsletter_1.jpg) **Team Update**
 
-The team’s had a very productive first week of Build Season! Remember, all 3,700 FRC teams worldwide have just six weeks to build a robot for the new "[Destination: Deep Space](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=83f19b5e94&e=96dbbba0fa)" 2019 game.
+The team’s had a very productive first week of Build Season! Remember, all 3,700 FRC teams worldwide have just six weeks to build a robot for the new "[Destination: Deep Space](https://www.firstinspires.org/robotics/frc/game-and-season)" 2019 game.
 
-We continued the brainstorming process started at [Kickoff](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=0121c8b9b3&e=96dbbba0fa) by coming up with a multitude of innovative ideas for mechanisms. The best of these ideas were grouped together into one of three cohesive robot concepts. The whole team then voted on its favorite of these concepts. Using the team's input, the leadership team and our amazing mentors made a final decision. We will soon announce the final decision, but we are all looking forward to a successful Competition Season!
+We continued the brainstorming process started at [Kickoff](/2019-kickoff-event/) by coming up with a multitude of innovative ideas for mechanisms. The best of these ideas were grouped together into one of three cohesive robot concepts. The whole team then voted on its favorite of these concepts. Using the team's input, the leadership team and our amazing mentors made a final decision. We will soon announce the final decision, but we are all looking forward to a successful Competition Season!
 
 Soon students will split up into Spartronics various subteams: Mechanics, Electronics, Programming and Marketing. Every subteam makes contributions that help ensure that our six-week Build Season will go as smoothly as possible.
 
@@ -33,7 +33,7 @@ We asked Doña to talk about her company:
 
 **Spartronics**: Can you tell us a little bit about Professional Options?
 
-**Doña**: Professional Options is a leadership and management consulting firm. We advise NGOs (non-governmental agencies) Fortune 100, governments, and non-profits on best practices so their [C-Suite](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=9e2c27e7e4&e=96dbbba0fa) leaders and organisations can improve their strategies, teams, and missions. We also provide facilitation of executive board retreats and meetings, and public policy advocacy on a wide range of issues such as digital privacy, telecommunications, education, technology innovation, economic development, and entrepreneurship.
+**Doña**: Professional Options is a leadership and management consulting firm. We advise NGOs (non-governmental agencies) Fortune 100, governments, and non-profits on best practices so their [C-Suite](https://www.investopedia.com/terms/c/c-suite.asp) leaders and organisations can improve their strategies, teams, and missions. We also provide facilitation of executive board retreats and meetings, and public policy advocacy on a wide range of issues such as digital privacy, telecommunications, education, technology innovation, economic development, and entrepreneurship.
 
 **Spartronics**: Why is Professional Options sponsoring Spartronics?
 
@@ -41,11 +41,11 @@ We asked Doña to talk about her company:
 
 **Spartronics**: Is there a way Spartronics fans can support Professional Options?
 
-**Doña**: The community is free to like our Facebook Page ([https://www.facebook.com/ProfessionalOptions](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=c439331aff&e=96dbbba0fa)/), but I’d prefer they spread the word and recruit more to like and follow Spartronics on [Facebook](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=02d5f00b7e&e=96dbbba0fa), [Twitter](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=ec1f977580&e=96dbbba0fa), and [Instagram](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=8d80ed753c&e=96dbbba0fa).
+**Doña**: The community is free to like our Facebook Page ([https://www.facebook.com/ProfessionalOptions](https://www.facebook.com/ProfessionalOptions)/), but I’d prefer they spread the word and recruit more to like and follow Spartronics on [Facebook](https://www.facebook.com/spartronics4915), [Twitter](https://twitter.com/spartronics4915), and [Instagram](https://www.instagram.com/spartronics/).
 
 **Spartronics**: Is there anything else we should let our readers know about?
 
-**Doña**: Our company URL is [http://www.professionaloptions.com](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=a3885d0c4d&e=96dbbba0fa), but again, my preference is that they support and engage Spartronics!
+**Doña**: Our company URL is [http://www.professionaloptions.com](http://www.professionaloptions.com), but again, my preference is that they support and engage Spartronics!
 
 ---
 

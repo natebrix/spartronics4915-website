@@ -21,7 +21,7 @@ In the past, we only had six weeks after Kickoff to construct our robot before s
 
 Everybody on the Spartronics team is excited about the coming season and how we’ll be able to take advantage of this extra time.
 
-Read these newsletters to stay up-to-date on our progress, or like us on Facebook [here](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=623735195e&e=96dbbba0fa) or Instagram [here](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=95a136057d&e=96dbbba0fa)!
+Read these newsletters to stay up-to-date on our progress, or like us on Facebook [here](https://www.facebook.com/spartronics4915) or Instagram [here](https://www.instagram.com/spartronics/)!
 
 ![Spartronics girls bringing CHAOS onto the field](../../assets/uploads/2-4.jpg)
 
@@ -37,7 +37,7 @@ Sunny, our robot’s driver during the competition, sums it up best with a simpl
 
 **Thank You Woodie Flowers**
 
-Unfortunately, not all the news we have to share is positive. [Woodie Flowers](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=3dd086158d&e=96dbbba0fa), a Co-Founder of FIRST Robotics, Professor Emeritus of Mechanical Engineering at MIT, Co-Chair of the FIRST Executive Board, and Distinguished Advisor to FIRST, recently passed away.
+Unfortunately, not all the news we have to share is positive. [Woodie Flowers](https://www.sciencetimes.com/articles/24060/20191014/woodie-flowers-passed-away.htm), a Co-Founder of FIRST Robotics, Professor Emeritus of Mechanical Engineering at MIT, Co-Chair of the FIRST Executive Board, and Distinguished Advisor to FIRST, recently passed away.
 
 Woodie was a pillar of support for FIRST since the organization's inception. He coined the term "Gracious Professionalism," summarizing FIRST’s belief that “fierce competition and mutual gain are not separate notions” and that teams must always treat each other with respect.
 
@@ -47,8 +47,8 @@ While Woodie may no longer be with us, part of his legacy will always live in th
 
 ![Logo for this years FLL competition, City Shaper](../../assets/uploads/4-1.jpg)
 
-Mark your calendars: Spartronics is hosting a FIRST LEGO League ([FLL](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=7c9fa794cd&e=96dbbba0fa)) competition on Saturday, December 7th from 10 am - 4 pm. In FLL, teams of kids ages 9-14 build and programmable LEGO robots. This year, participants will be playing in a game called "City Shaper."
+Mark your calendars: Spartronics is hosting a FIRST LEGO League ([FLL](https://www.firstinspires.org/robotics/fll)) competition on Saturday, December 7th from 10 am - 4 pm. In FLL, teams of kids ages 9-14 build and programmable LEGO robots. This year, participants will be playing in a game called "City Shaper."
 
-See the game video here: [https://youtu.be/y\_mTQZQ8Kzc](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=14c7799796&e=96dbbba0fa)
+See the game video here: [https://youtu.be/y\_mTQZQ8Kzc](https://youtu.be/y_mTQZQ8Kzc)
 
 Everyone is welcome to come and watch this exciting event!

@@ -165,3 +165,13 @@ Spartronics rode to districts with a team consisting of over 35 students, 14 men
 ![Spartronics students at Girls Gen 2025](../../assets/history/2025-girls-gen.jpg)
 
 EPHYRA was the robot Spartronics built for FIRST’s latest competition, Reefscape! EPHYRA can place coral in all positions on the reef, climb and intake coral from the delivery system. Like Spartronics’ previous robot, it also uses AI vision to move autonomously and score on any station and level from anywhere on the field.
+
+## 2026: Spartronics Returns to Worlds
+
+ARTEMIS, short for Articulating Rotating Turret with Ejection Mechanism with Intake on Swerve, was Spartronics' robot for FIRST's 2026 game, Rebuilt. Like every Spartronics robot, its name is a backronym from Greek mythology. (The NASA mission of the same name, whose descent was shown on the arena screens during districts, was a coincidence.) The 114.5-pound robot, about the size of a washing machine, pairs a swerve drive and an intake with a rotating turret and shooter, aimed with help from its camera.
+
+![ARTEMIS](../../assets/history/2026-artemis.jpg)
+
+At the Glacier Peak District Event, Spartronics won the event, beating reigning world champions Jack in the Bot (Team 2910) in the finals, and ARTEMIS won the Innovation in Control Award. Spartronics finished the district season ranked 10th of 126 teams in the Pacific Northwest.
+
+That earned Spartronics its first trip to the FIRST Championship in Houston since 2017, and the third in team history: a first world championship for Coach Austin Smith and every student on the team. There, Citrus Circuits (Team 1678) chose Spartronics as the first pick of the Milstein Division's #1 alliance. The alliance won the Milstein Division, and Spartronics went on to play in the Einstein round robin among the champions of every division.

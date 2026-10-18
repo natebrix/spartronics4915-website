@@ -14,7 +14,8 @@
     "check": "astro check",
     "check:urls": "node ./scripts/check-old-urls.mjs",
     "check:site": "node ./scripts/check-site.mjs",
-    "verify": "npm run check && npm run build && npm run check:site && npm run check:urls"
+    "verify": "npm run check && npm run build && npm run check:site && npm run check:urls",
+    "resolve:mailchimp": "node ./scripts/resolve-mailchimp-links.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

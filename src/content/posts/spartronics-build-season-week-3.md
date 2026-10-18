@@ -25,11 +25,11 @@ The primary team consists of Coach Jon Coonan, Driver Will Hobbs, Mechanism Oper
 
 **Sponsor Spotlight: Westside Pizza**
 
-Since originally opening on the island in 2001, [Westside Pizza](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=cb7283bdaf&e=96dbbba0fa) has been a pillar of the community. Since Tom and Maureen Daniels have become owners they've supported local organizations including Bainbridge Little League, the Bainbridge Historical Society,  BHS’s swim team, and Spartronics.
+Since originally opening on the island in 2001, [Westside Pizza](http://www.westsidepizza.com/locations/bainbridge-island) has been a pillar of the community. Since Tom and Maureen Daniels have become owners they've supported local organizations including Bainbridge Little League, the Bainbridge Historical Society,  BHS’s swim team, and Spartronics.
 
 As one of our legacy sponsors, they’ve done a great deal to support the team over the years. Besides purely monetary contributions, they’ve helped feed us by providing significant discounts on their pizzas. The team, including students and mentors, have consumed some 6,000 slices of pizza since the team began! Stretched end to end that's enough pizza to run from Safeco's home plate to the center field wall 10 times!
 
-This tradition of helping sate students appetites goes back to our very first Kickoff event where they graciously donated pizzas for our first dinner. Westside has also aided our past fundraising efforts by allowing us to stage a [takeover](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=3ead73b79c&e=96dbbba0fa) of their restaurant last year.
+This tradition of helping sate students appetites goes back to our very first Kickoff event where they graciously donated pizzas for our first dinner. Westside has also aided our past fundraising efforts by allowing us to stage a [takeover](http://www.bainbridgereview.com/life/things-get-robotic-this-wednesday-at-westside-pizza/) of their restaurant last year.
 
 Westside's owners, Tom and Maureen, are huge Spartronics sponsors and we greatly appreciate them taking the time to attend our Open Houses and encouraging our students.
 

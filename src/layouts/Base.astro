@@ -11,15 +11,18 @@ interface Props {
 	// Pages that lay out their own full-width sections (like the home page)
 	// skip the default centered column.
 	fullWidth?: boolean;
+	// Keep the page out of search engines (it's still reachable by its link).
+	noindex?: boolean;
 }
 
-const { title, description, image, fullWidth = false } = Astro.props;
+const { title, description, image, fullWidth = false, noindex = false } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} image={image} />
+		{noindex && <meta name="robots" content="noindex" />}
 	</head>
 	<body>
 		<a class="skip-link" href="#main">Skip to content</a>

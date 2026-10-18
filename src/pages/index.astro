@@ -9,8 +9,10 @@ import PostCard from '../components/PostCard.astro';
 import { SITE_DESCRIPTION, SITE_TITLE, TEAM_EMAIL } from '../consts';
 import Base from '../layouts/Base.astro';
 import { getPosts } from '../lib/posts';
+import { currentSeason, ordinal } from '../lib/season';
 
 const latest = (await getPosts()).slice(0, 3);
+const season = currentSeason();
 
 // Only the top two tiers appear on the home page; the rest are on /sponsors/.
 const HOME_TIERS = ['pantheon', 'presenting'];
@@ -54,8 +56,8 @@ const featuredSponsors = (await getCollection('sponsors'))
 					challenges teams of high school students to build an original robot to compete in a new themed game each year.
 				</p>
 				<p>
-					Since 2013 we have worked toward our mission: spreading STEM education in our local community and beyond, while
-					encouraging equal gender representation in STEM fields.
+					We are now in our {ordinal(season.number)} season, continuously working toward our mission: spreading STEM
+					education in our local community and beyond, while encouraging equal gender representation in STEM fields.
 				</p>
 				<p><strong>We are builders, we are coders, we are electricians, we are designers, we are marketers, we are Spartronics!</strong></p>
 			</div>
@@ -82,7 +84,7 @@ const featuredSponsors = (await getCollection('sponsors'))
 				<p>
 					Are you a high school student who wants to learn engineering, electronics, design, programming, or business and
 					marketing? Would you like to grow your skills on industry-grade machines and platforms? You can join at any point
-					in the season. Check our calendar for meeting dates and come to our next meeting!
+					in the {season.label} season. Check our calendar for meeting dates and come to our next meeting!
 				</p>
 				<p class="actions">
 					<a class="button secondary" href="/join/">How to join</a>
@@ -133,21 +135,6 @@ const featuredSponsors = (await getCollection('sponsors'))
 		</div>
 	</section>
 
-	<section class="band tint newsletter">
-		<div class="wrap narrow center">
-			<h2>Get our newsletter</h2>
-			<p>Learn what Spartronics is doing throughout the season.</p>
-			{/*
-				TODO: link to the newsletter signup once we know which tool holds the
-				subscriber list. The old site used an Elementor Pro form with no
-				public signup URL, so there is nothing to link to yet.
-			*/}
-			<p>
-				To get on the list, email <a href={`mailto:${TEAM_EMAIL}?subject=Newsletter signup`}>{TEAM_EMAIL}</a>, or follow us on{' '}
-				<a href="https://www.instagram.com/spartronics/">Instagram</a>.
-			</p>
-		</div>
-	</section>
 </Base>
 
 <style>

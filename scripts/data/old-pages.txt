@@ -13,7 +13,7 @@
 /homepage/
 /homepage-2/
 /feed/
-pending /elementor-page-5140/  Awards page, edited Sept 2026; probably becomes /awards/
-pending /huney/                Huney grant application, unlisted
-pending /huney-public/         public version of the grant application
-pending /resources-2/          unfinished Resources page
+/elementor-page-5140/
+/huney/
+/huney-public/
+/resources-2/

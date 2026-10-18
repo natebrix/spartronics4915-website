@@ -57,4 +57,14 @@ const subteams = defineCollection({
 	}),
 });
 
-export const collections = { posts, pages, sponsors, subteams };
+// Every award the team has won, one entry per season, shown on /awards/.
+const awards = defineCollection({
+	loader: file('./src/data/awards.yaml'),
+	schema: z.object({
+		year: z.number(),
+		note: z.string().optional(),
+		awards: z.array(z.string()),
+	}),
+});
+
+export const collections = { posts, pages, sponsors, subteams, awards };

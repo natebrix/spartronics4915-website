@@ -35,7 +35,7 @@ Themis was the Greek God of Divine Order, Fairness, and Law. These aspects of th
 
 **Sponsor Spotlight:** **Boeing**
 
-Since being founded in Seattle in 1916, [Boeing](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=b2dd73dc39&e=96dbbba0fa) has gone on to become the world's preeminent aerospace engineering company. As a corporation whose success is based on technological and scientific excellence, Boeing understands the value of FIRST and its message. They demonstrate this understanding every year with their support of Spartronics.
+Since being founded in Seattle in 1916, [Boeing](http://www.boeing.com/) has gone on to become the world's preeminent aerospace engineering company. As a corporation whose success is based on technological and scientific excellence, Boeing understands the value of FIRST and its message. They demonstrate this understanding every year with their support of Spartronics.
 
 Our biggest sponsor, Boeing has donated tens of thousands of dollars to the team over the years! This history of support stretches all the way back to 2013 with one of our founding mentors, Jon Sachs, being a Boeing employee. Jon and our other Boeing mentors, Jim Carr and Randy Groves, have collectively spent hundreds upon hundreds of hours with Spartronics.
 

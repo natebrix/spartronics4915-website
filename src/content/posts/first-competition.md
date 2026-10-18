@@ -19,7 +19,7 @@ While CHAOS encountered many mechanical and programming issues, we were able to 
 
 Finally, we are extremely proud of our mentor Riyadth and two of our students, Declan-Freeman Gleason and Cruz Strom. Riyadth, who has been with the team from the beginning, was nominated as a Woodie Flowers Finalist, an award for outstanding mentors. Declan and Cruz were both nominated for the most prestigious individual honor in FIRST, the Dean's List Award.
 
-Overall, the team learned tons and had loads of phun at the competition. We’re very excited for our next District Competition this coming weekend at [Glacier Peak](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=97016747a7&e=96dbbba0fa) High School south of Everett on March 23-24.
+Overall, the team learned tons and had loads of phun at the competition. We’re very excited for our next District Competition this coming weekend at [Glacier Peak](https://www.google.com/maps/place/Glacier+Peak+High+School/@47.8672956,-122.1334676,15z/data=!4m5!3m4!1s0x0:0xa8d95e9dacee5108!8m2!3d47.8672956!4d-122.1334676) High School south of Everett on March 23-24.
 
 ![Spartronics student and mentor](../../assets/uploads/2-3.jpg)
 

@@ -79,6 +79,8 @@ To move a sponsor to a new tier, change their `tier` line. The order within a ti
 | Join Us text | `src/content/pages/join.md` |
 | History text | `src/content/pages/history.md` |
 | History robot cards (add next year's robot) | `src/content/pages/history-robots.ts` |
+| Awards | `src/data/awards.yaml` |
+| Resources, grant pages | `src/content/pages/resources.md`, `huney.md`, `huney-public.md` |
 | Subteams | `src/data/subteams.yaml` |
 | Home page countdown | `src/data/countdown.ts` |
 | Email, donate link, menu, social links | `src/consts.ts` |

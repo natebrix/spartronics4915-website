@@ -8,7 +8,12 @@ export default defineConfig({
 	site: 'https://spartronics4915.com',
 	// Match WordPress: every page URL ends in a slash, like /history/.
 	trailingSlash: 'always',
-	integrations: [sitemap()],
+	integrations: [
+		sitemap({
+			// Grant applications are shared by link only; keep them out of search.
+			filter: (page) => !/\/huney(-public)?\/$/.test(page),
+		}),
+	],
 	fonts: [
 		{
 			provider: fontProviders.google(),

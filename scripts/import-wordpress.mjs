@@ -26,6 +26,13 @@ const UPLOADS_DIR = path.join(ROOT, "src/assets/uploads");
 const FILES_DIR = path.join(ROOT, "public/files");
 const DATA_DIR = path.join(ROOT, "scripts/data");
 
+// Real destinations of Mailchimp click-tracker links, from
+// `npm run resolve:mailchimp`. A null value means the tracker was dead.
+const MAILCHIMP_LINKS_FILE = path.join(DATA_DIR, "mailchimp-links.json");
+const MAILCHIMP_LINKS = existsSync(MAILCHIMP_LINKS_FILE)
+  ? JSON.parse(await fs.readFile(MAILCHIMP_LINKS_FILE, "utf8"))
+  : {};
+
 const TABLE_PREFIX = "8h3_";
 const OLD_HOSTS = ["spartronics4915.com", "www.spartronics4915.com", "spartronicsbhs.wpengine.com"];
 const GENERIC_AUTHORS = new Set(["Spartronics", "admin"]);
@@ -302,7 +309,10 @@ function makeTurndown(media) {
   turndown.addRule("link", {
     filter: (node) => node.nodeName === "A" && node.getAttribute("href"),
     replacement(content, node) {
-      const href = node.getAttribute("href");
+      const raw = node.getAttribute("href");
+      const resolved = MAILCHIMP_LINKS[raw.replace(/^http:/, "https:")];
+      if (resolved === null) return content;
+      const href = resolved ?? raw;
       const upload = uploadPathOf(href);
       // A thumbnail linking to its own full-size image: keep just the image.
       if (upload && IMAGE_EXTENSIONS.has(path.extname(upload).toLowerCase())) return content;

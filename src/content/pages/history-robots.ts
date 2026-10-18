@@ -12,6 +12,7 @@ import hermes from '../../assets/history/2022-hermes.jpg';
 import talos from '../../assets/history/2023-talos.jpg';
 import nemesis from '../../assets/history/2024-nemesis.jpg';
 import ephyra from '../../assets/history/2025-ephyra.jpg';
+import artemis from '../../assets/history/2026-artemis.jpg';
 
 export interface Robot {
 	/** The season year. Links to the history.md section whose heading starts with it. */
@@ -38,4 +39,11 @@ export const ROBOTS: Robot[] = [
 	{ year: 2023, name: 'TALOS', standsFor: 'Telescopic, Actuated Lifter On Swerve', game: 'Charged Up', image: talos },
 	{ year: 2024, name: 'NEMESIS', standsFor: 'Note Ejection Machine with Elevator-Supported Intake System', game: 'Crescendo', image: nemesis },
 	{ year: 2025, name: 'EPHYRA', game: 'Reefscape', image: ephyra },
+	{
+		year: 2026,
+		name: 'ARTEMIS',
+		standsFor: 'Articulating Rotating Turret with Ejection Mechanism with Intake on Swerve',
+		game: 'Rebuilt',
+		image: artemis,
+	},
 ];

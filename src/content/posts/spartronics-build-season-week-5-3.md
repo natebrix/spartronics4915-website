@@ -27,7 +27,7 @@ Marketing has also completed this year's entry for the Woodie Flowers award, whi
 
 One sponsor that's been supporting Spartonics from the beginning has been Town & Country Markets, a Bainbridge Island institution.
 
-For over [60 years](https://spatronics4915.us9.list-manage.com/track/click?u=83401ef6f6634dd529783840a&id=241a1c2b3a&e=96dbbba0fa) Town & Country has served our Island. Throughout the last 5 of those years they've supported Spartronics with both financial backing and by helping to provide healthy snacks at a discount to our students during our six-week build season.
+For over [60 years](http://www.bainbridgereview.com/news/town-country-marks-60-years-of-service/) Town & Country has served our Island. Throughout the last 5 of those years they've supported Spartronics with both financial backing and by helping to provide healthy snacks at a discount to our students during our six-week build season.
 
 When Spartonics went to the World Championships for the first time, the sign outside T&C has told the entire Island of our incredible first-year accomplishment, and congratulated our team.
 

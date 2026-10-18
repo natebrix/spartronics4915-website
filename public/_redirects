@@ -11,6 +11,8 @@
 /donate/ /sponsors/sponsor-information/ 301
 /homepage/ / 301
 /homepage-2/ / 301
+/elementor-page-5140/ /awards/ 301
+/resources-2/ /resources/ 301
 
 # Old links inside posts. WP Engine already redirected the first three; the
 # robot pages and events listing were gone from the WordPress site.
@@ -22,6 +24,8 @@
 /about-2/our-robot/* /history/ 301
 /ephyra/ /history/ 301
 /2025-autos /history/ 301
+/importantdates/ /calendar/ 301
+/sponsors/how-to-become-a-sponsor/ /sponsors/sponsor-information/ 301
 
 # Uploaded files that posts linked to.
 /wp-content/uploads/How-to-Grow-FIRST-Faster-1.pdf /files/How-to-Grow-FIRST-Faster-1.pdf 301

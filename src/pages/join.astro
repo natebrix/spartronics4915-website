@@ -7,9 +7,11 @@ import teamPhoto from '../assets/home/team.jpg';
 import SubteamCards from '../components/SubteamCards.astro';
 import { TEAM_EMAIL } from '../consts';
 import Base from '../layouts/Base.astro';
+import { currentSeason } from '../lib/season';
 
 const page = (await getEntry('pages', 'join'))!;
 const { Content } = await render(page);
+const season = currentSeason();
 ---
 
 <Base title={page.data.title} description={page.data.description} image={teamPhoto} fullWidth>
@@ -19,7 +21,7 @@ const { Content } = await render(page);
 			<h1>{page.data.title}</h1>
 			<p class="lead">
 				High school students: come learn engineering, electronics, design, programming, or business and marketing
-				this season. No experience needed. Stop by any meeting!
+				in our {season.label} season. No experience needed. Stop by any meeting!
 			</p>
 			<p class="actions">
 				<a class="button" href="/calendar/">See meeting dates</a>
@@ -70,15 +72,6 @@ const { Content } = await render(page);
 	.prose {
 		max-width: var(--column);
 		margin-top: 1rem;
-	}
-	/* The awards list is long; lay each year's list out compactly. */
-	.prose :global(h3) {
-		margin: 1.25rem 0 0.25rem;
-		font-size: 1.05rem;
-		color: var(--blue);
-	}
-	.prose :global(h3 + ul) {
-		margin: 0;
 	}
 	@media (max-width: 760px) {
 		.hero {
