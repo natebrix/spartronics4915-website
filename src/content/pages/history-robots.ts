@@ -1,21 +1,21 @@
 // The robot timeline at the top of the Our History page, newest first.
-// To add a new season: put the robot's photo in src/assets/history/, import
+// To add a new season: put the robot's photo in src/assets/pages/history/, import
 // it below, and add one entry to the start of the list. Then add a section for
-// the season to history.md whose heading starts with the same year.
+// the season to history.mdoc whose heading starts with the same year.
 import type { ImageMetadata } from 'astro';
-import atlas from '../../assets/history/2014-atlas.jpg';
-import gaea from '../../assets/history/2015-gaea.jpg';
-import ares from '../../assets/history/2016-ares-wheels.jpg';
-import themis from '../../assets/history/2018-themis.jpg';
-import athena from '../../assets/history/2020-athena.jpg';
-import hermes from '../../assets/history/2022-hermes.jpg';
-import talos from '../../assets/history/2023-talos.jpg';
-import nemesis from '../../assets/history/2024-nemesis.jpg';
-import ephyra from '../../assets/history/2025-ephyra.jpg';
-import artemis from '../../assets/history/2026-artemis.jpg';
+import atlas from '../../assets/pages/history/2014-atlas.jpg';
+import gaea from '../../assets/pages/history/2015-gaea.jpg';
+import ares from '../../assets/pages/history/2016-ares-wheels.jpg';
+import themis from '../../assets/pages/history/2018-themis.jpg';
+import athena from '../../assets/pages/history/2020-athena.jpg';
+import hermes from '../../assets/pages/history/2022-hermes.jpg';
+import talos from '../../assets/pages/history/2023-talos.jpg';
+import nemesis from '../../assets/pages/history/2024-nemesis.jpg';
+import ephyra from '../../assets/pages/history/2025-ephyra.jpg';
+import artemis from '../../assets/pages/history/2026-artemis.jpg';
 
 export interface Robot {
-	/** The season year. Links to the history.md section whose heading starts with it. */
+	/** The season year. Links to the history.mdoc section whose heading starts with it. */
 	year: number;
 	name: string;
 	/** What the robot's name stands for, if it is an acronym. */
@@ -27,7 +27,7 @@ export interface Robot {
 	 */
 	game: { name: string; url: string };
 	image?: ImageMetadata;
-	/** Override when the history.md heading doesn't start with the year (like "2013–14"). */
+	/** Override when the history.mdoc heading doesn't start with the year (like "2013–14"). */
 	section?: string;
 }
 

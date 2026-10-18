@@ -19,6 +19,7 @@
     "deploy:demo": "npm run build && node ./scripts/mark-demo.mjs && wrangler pages deploy dist --project-name spartronics-demo --branch main"
   },
   "dependencies": {
+    "@astrojs/markdoc": "2.1.0",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.4.0",
@@ -26,6 +27,14 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@astrojs/node": "^11.1.8",
+    "@astrojs/react": "^7.1.0",
+    "@keystatic/astro": "^6.0.0",
+    "@keystatic/core": "^0.6.9",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "turndown": "^7.2.4",
     "typescript": "^6.0.3",
     "wrangler": "4.151.1",

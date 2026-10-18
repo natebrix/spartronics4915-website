@@ -1,7 +1,7 @@
 ---
 // Everything served at /<name>/ that isn't its own file in src/pages/:
 // - news posts, from src/content/posts/ (the same URLs the WordPress site used)
-// - simple pages, from src/content/pages/. Adding a Markdown file there adds a
+// - simple pages, from src/content/pages/. Adding a .mdoc file there adds a
 //   page; no code needed. A page with its own file here (like join.astro) uses
 //   that file instead, which reads the Markdown text itself.
 import { getCollection } from 'astro:content';
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 	const postIds = new Set(posts.map((post) => post.id));
 	for (const page of pages) {
 		if (postIds.has(page.id) || routeFolders.has(page.id)) {
-			throw new Error(`src/content/pages/${page.id}.md has the same name as another page or post. Rename the file.`);
+			throw new Error(`src/content/pages/${page.id}.mdoc has the same name as another page or post. Rename the file.`);
 		}
 	}
 

@@ -4,10 +4,11 @@ import { z } from 'astro/zod';
 import { parse } from 'yaml';
 import { SPONSOR_TIER_IDS } from './data/sponsorTiers';
 
-// One Markdown file per news post. The file name is the post's URL:
-// src/content/posts/open-house-2015.md is served at /open-house-2015/.
+// One Markdoc file (.mdoc, Markdown plus a few tags) per news post. The file
+// name is the post's URL: src/content/posts/open-house-2015.mdoc is served at
+// /open-house-2015/.
 const posts = defineCollection({
-	loader: glob({ base: './src/content/posts', pattern: '**/*.md' }),
+	loader: glob({ base: './src/content/posts', pattern: '**/*.mdoc' }),
 	schema: ({ image }) =>
 		z.object({
 			title: z.string(),
@@ -21,11 +22,11 @@ const posts = defineCollection({
 		}),
 });
 
-// Pages written in Markdown. Each file is served at /<file name>/, unless
+// Pages written in Markdoc. Each file is served at /<file name>/, unless
 // src/pages/ has its own route for it (join.astro, history.astro), which then
 // uses this file for its text.
 const pages = defineCollection({
-	loader: glob({ base: './src/content/pages', pattern: '*.md' }),
+	loader: glob({ base: './src/content/pages', pattern: '*.mdoc' }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),

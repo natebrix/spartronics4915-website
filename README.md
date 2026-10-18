@@ -16,7 +16,9 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:4321. The page reloads as you save files. Press Ctrl+C to stop.
+Open http://localhost:4321. The page reloads as you save files. The visual
+editor is at http://localhost:4321/keystatic while the dev server runs. Press
+Ctrl+C to stop (or `npx astro dev stop` if it was started in the background).
 
 ## Commands
 
@@ -36,10 +38,13 @@ Open http://localhost:4321. The page reloads as you save files. Press Ctrl+C to 
 
 ```
 src/
-  content/posts/    one Markdown file per news post; the file name is its URL
-  content/pages/    longer text for pages like History and Join
+  content/posts/    one .mdoc file per news post; the file name is its URL
+  content/pages/    one .mdoc file per page; each becomes /<file name>/
+                    (Join and History have their own code in pages/)
   data/             sponsors, subteams, sponsor tiers, countdown
-  assets/           images (resized automatically when the site builds)
+  assets/           images, resized automatically when the site builds
+    posts/<name>/   each post's photos, where the editor puts them
+    pages/<name>/   each page's photos
   components/       pieces of pages: header, footer, sponsor grid, ...
   layouts/          the frame every page sits in
   pages/            one file per route: index.astro is /, join.astro is /join/
@@ -48,6 +53,8 @@ public/
   _redirects        old URLs and where they go now
   files/            PDFs and other downloads, served as-is
 scripts/            the WordPress import and the checks
+keystatic.config.ts the visual editor's fields
+markdoc.config.mjs  custom tags for posts and pages, like {% youtube %}
 docs/               guides for editors and maintainers
 ```
 

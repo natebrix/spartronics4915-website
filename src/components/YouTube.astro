@@ -1,0 +1,19 @@
+---
+// A YouTube video, from the {% youtube url="..." /%} tag in posts and pages.
+interface Props {
+	// Any YouTube link (watch, youtu.be, shorts or embed) or a bare video ID.
+	url: string;
+	title?: string;
+}
+
+const { url, title = 'YouTube video' } = Astro.props;
+const id = url.match(/(?:v=|youtu\.be\/|embed\/|shorts\/|live\/)([\w-]{11})/)?.[1] ?? url.trim();
+if (!/^[\w-]{11}$/.test(id)) throw new Error(`Not a YouTube video: ${url}`);
+---
+
+<iframe
+	src={`https://www.youtube-nocookie.com/embed/${id}`}
+	title={title}
+	loading="lazy"
+	allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+	allowfullscreen></iframe>

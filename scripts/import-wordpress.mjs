@@ -1,5 +1,7 @@
-// Imports published WordPress posts into src/content/posts/ from the site
-// backup's database dump, and copies the images they use into src/assets/uploads/.
+// Imports published WordPress posts into src/content/posts/ (as Markdoc,
+// .mdoc, the format the Keystatic editor uses) from the site
+// backup's database dump, and copies the images each post uses into
+// src/assets/posts/<post name>/ (the layout the Keystatic editor expects).
 //
 // Usage:
 //   npm run import:wordpress -- --backup /path/to/site-archive-folder
@@ -22,7 +24,9 @@ import { readTables } from "./lib/wp-sql.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const POSTS_DIR = path.join(ROOT, "src/content/posts");
-const UPLOADS_DIR = path.join(ROOT, "src/assets/uploads");
+// Resized images are made once here, then copied into each post's folder.
+const UPLOADS_DIR = path.join(ROOT, "node_modules/.cache/wordpress-images");
+const POST_ASSETS_DIR = path.join(ROOT, "src/assets/posts");
 const FILES_DIR = path.join(ROOT, "public/files");
 const DATA_DIR = path.join(ROOT, "scripts/data");
 
@@ -268,10 +272,19 @@ function isDataTable(table) {
   return Array.from(table.querySelectorAll("tr")).some((row) => row.querySelectorAll("td, th").length > 1);
 }
 
-function makeTurndown(media) {
+function makeTurndown(media, current) {
   const turndown = new TurndownService({ codeBlockStyle: "fenced", headingStyle: "atx", hr: "---" });
 
-  turndown.keep(["iframe"]);
+  // YouTube embeds become the site's {% youtube %} Markdoc tag, which the
+  // Keystatic editor understands; any other embed is kept as HTML.
+  turndown.addRule("iframe", {
+    filter: "iframe",
+    replacement(_, node) {
+      const src = node.getAttribute("src") ?? "";
+      const id = src.match(/youtube(?:-nocookie)?\.com\/embed\/([\w-]{11})/)?.[1];
+      return id ? `\n\n{% youtube url="https://www.youtube.com/watch?v=${id}" /%}\n\n` : `\n\n${node.outerHTML}\n\n`;
+    }
+  });
   turndown.keep((node) => node.nodeName === "TABLE" && isDataTable(node));
   turndown.remove(["script", "style", "noscript"]);
 
@@ -297,7 +310,7 @@ function makeTurndown(media) {
       const upload = uploadPathOf(src);
       if (upload) {
         const name = media.done.get(upload);
-        return name ? `![${alt}](../../assets/uploads/${name})` : "";
+        return name ? `![${alt}](../../assets/posts/${current.slug}/${name})` : "";
       }
       // Old-site images outside uploads (like /images/eventspic1.jpg) were
       // already gone from the live site.
@@ -440,13 +453,17 @@ async function main() {
   }
 
   await fs.rm(POSTS_DIR, { recursive: true, force: true });
-  for (const dir of [POSTS_DIR, UPLOADS_DIR, FILES_DIR, DATA_DIR]) await fs.mkdir(dir, { recursive: true });
+  await fs.rm(POST_ASSETS_DIR, { recursive: true, force: true });
+  for (const dir of [POSTS_DIR, POST_ASSETS_DIR, UPLOADS_DIR, FILES_DIR, DATA_DIR]) await fs.mkdir(dir, { recursive: true });
 
-  const turndown = makeTurndown(media);
+  // The post being converted, so image links point into its own folder.
+  const current = { slug: "" };
+  const turndown = makeTurndown(media, current);
   const externalImages = new Map();
   for (const p of posts) {
     const html = hoistAlignedImages(wrapLegacyParagraphs(expandShortcodes(p.post_content, attachments)));
     const { images, files } = collectUploads(html);
+    current.slug = p.post_name;
     for (const image of images) await media.addImage(image);
     for (const file of files) await media.addFile(file);
     for (const match of html.matchAll(/<img[^>]+src="(https?:\/\/[^"]+)"/g)) {
@@ -459,6 +476,15 @@ async function main() {
     const markdown = cleanMarkdown(turndown.turndown(html));
     const thumbnail = attachments.get(thumbnails.get(p.ID));
     const coverName = thumbnail ? await media.addImage(thumbnail) : null;
+    // Keystatic names a post's cover file "cover.<ext>", so match that.
+    const coverFile = coverName ? `cover${path.extname(coverName)}` : null;
+    const usedImages = [...new Set([...images].map((image) => media.done.get(image)).filter(Boolean))];
+    if (usedImages.length || coverFile) {
+      const folder = path.join(POST_ASSETS_DIR, p.post_name);
+      await fs.mkdir(folder, { recursive: true });
+      for (const name of usedImages) await fs.copyFile(path.join(UPLOADS_DIR, name), path.join(folder, name));
+      if (coverFile) await fs.copyFile(path.join(UPLOADS_DIR, coverName), path.join(folder, coverFile));
+    }
     const author = authors.get(p.post_author);
     const tags = (postTerms.get(p.ID) ?? [])
       .filter((t) => t.term && t.term.slug !== "uncategorized")
@@ -469,11 +495,11 @@ async function main() {
       title: p.title,
       date: p.post_date.slice(0, 10),
       summary: decodeHtmlEntities(normalizeText(p.post_excerpt)) || buildSummary(markdown),
-      cover: coverName ? `../../assets/uploads/${coverName}` : null,
+      cover: coverFile ? `../../assets/posts/${p.post_name}/${coverFile}` : null,
       author: author && !GENERIC_AUTHORS.has(author) ? author : null,
       tags: [...new Set(tags)]
     };
-    await fs.writeFile(path.join(POSTS_DIR, `${p.post_name}.md`), `${frontmatter(post)}\n\n${markdown}\n`);
+    await fs.writeFile(path.join(POSTS_DIR, `${p.post_name}.mdoc`), `${frontmatter(post)}\n\n${markdown}\n`);
   }
 
   // Every URL the old site served for these posts and their archives, for the

@@ -1,16 +1,16 @@
 ---
 // Our History: a robot-by-season timeline, then the team's story season by season.
-// The story is src/content/pages/history.md; the robots are history-robots.ts.
+// The story is src/content/pages/history.mdoc; the robots are history-robots.ts.
 import { getEntry, render } from 'astro:content';
 import TimelineRobots from '../components/TimelineRobots.astro';
 import { ROBOTS } from '../content/pages/history-robots';
 import Base from '../layouts/Base.astro';
 
 const page = await getEntry('pages', 'history');
-if (!page) throw new Error('Missing src/content/pages/history.md');
+if (!page) throw new Error('Missing src/content/pages/history.mdoc');
 const { Content, headings } = await render(page);
 
-// Link each robot to the history.md section whose heading starts with its year.
+// Link each robot to the history.mdoc section whose heading starts with its year.
 const seasons = headings.filter((heading) => heading.depth === 2);
 const robots = ROBOTS.map((robot) => {
 	const prefix = robot.section ?? String(robot.year);
