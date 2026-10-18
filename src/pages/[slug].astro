@@ -1,71 +1,42 @@
 ---
-// A news post. Posts live at /<slug>/, the same URLs the WordPress site used.
-import { Image } from 'astro:assets';
-import { render } from 'astro:content';
-import FormattedDate from '../components/FormattedDate.astro';
-import Base from '../layouts/Base.astro';
+// Everything served at /<name>/ that isn't its own file in src/pages/:
+// - news posts, from src/content/posts/ (the same URLs the WordPress site used)
+// - simple pages, from src/content/pages/. Adding a Markdown file there adds a
+//   page; no code needed. A page with its own file here (like join.astro) uses
+//   that file instead, which reads the Markdown text itself.
+import { getCollection } from 'astro:content';
+import MarkdownPage from '../layouts/MarkdownPage.astro';
+import Post from '../layouts/Post.astro';
 import { getPosts } from '../lib/posts';
 
 export async function getStaticPaths() {
 	const posts = await getPosts();
-	return posts.map((post, index) => ({
-		params: { slug: post.id },
-		props: { post, newer: posts[index - 1], older: posts[index + 1] },
-	}));
+	// Pages with their own route file, like join.astro and history.astro.
+	const customRoutes = new Set(Object.keys(import.meta.glob('./*.astro')).map((file) => file.slice(2, -'.astro'.length)));
+	const pages = (await getCollection('pages')).filter((page) => !customRoutes.has(page.id));
+
+	// Folders of routes, like news/ and sponsors/. A page can't share their name.
+	const routeFolders = new Set(Object.keys(import.meta.glob('./*/**/*.astro')).map((file) => file.split('/')[1]));
+	const postIds = new Set(posts.map((post) => post.id));
+	for (const page of pages) {
+		if (postIds.has(page.id) || routeFolders.has(page.id)) {
+			throw new Error(`src/content/pages/${page.id}.md has the same name as another page or post. Rename the file.`);
+		}
+	}
+
+	return [
+		...posts.map((post, index) => ({
+			params: { slug: post.id },
+			props: { kind: 'post' as const, post, newer: posts[index - 1], older: posts[index + 1] },
+		})),
+		...pages.map((page) => ({
+			params: { slug: page.id },
+			props: { kind: 'page' as const, page },
+		})),
+	];
 }
 
-const { post, newer, older } = Astro.props;
-const { Content } = await render(post);
-// Imported posts usually repeat the cover photo as their first image.
-const showCover = post.data.cover && !post.data.wordpressId;
+const props = Astro.props;
 ---
 
-<Base title={post.data.title} description={post.data.summary} image={post.data.cover}>
-	<article>
-		<p class="eyebrow"><a href="/news/">News</a></p>
-		<h1>{post.data.title}</h1>
-		<p class="meta">
-			<FormattedDate date={post.data.date} />
-			{post.data.author && <span> · {post.data.author}</span>}
-		</p>
-		{showCover && <Image src={post.data.cover!} alt="" width={1200} class="cover" />}
-		<div class="prose">
-			<Content />
-		</div>
-	</article>
-	<nav class="pager" aria-label="More posts">
-		{newer ? <a href={`/${newer.id}/`}>← {newer.data.title}</a> : <span />}
-		{older && <a href={`/${older.id}/`}>{older.data.title} →</a>}
-	</nav>
-</Base>
-
-<style>
-	.eyebrow a {
-		text-decoration: none;
-	}
-	.meta {
-		color: var(--muted);
-		margin-top: -0.25rem;
-	}
-	.cover {
-		width: 100%;
-		border-radius: var(--radius);
-		margin: 1rem 0;
-	}
-	.pager {
-		display: flex;
-		justify-content: space-between;
-		gap: 1rem;
-		margin-top: 3rem;
-		padding-top: 1.5rem;
-		border-top: 1px solid var(--line);
-		font-weight: 600;
-	}
-	.pager a {
-		max-width: 48%;
-		text-decoration: none;
-	}
-	.pager a:last-child {
-		text-align: right;
-	}
-</style>
+{props.kind === 'post' ? <Post post={props.post} newer={props.newer} older={props.older} /> : <MarkdownPage page={props.page} />}

@@ -1,6 +1,7 @@
 ---
 title: Huney Large Grant Request
 description: Spartronics 4915's request to the Huney Large Grant Committee for a CNC milling machine.
+noindex: true
 ---
 
 To the Huney Large Grant Committee:

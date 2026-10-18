@@ -1,7 +1,15 @@
 ---
 import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
 import logo from '../assets/brand/logo.png';
 import { NAV_LINKS } from '../consts';
+
+// Markdown pages with `menu: true` join the built-in links.
+const menuPages = (await getCollection('pages', (page) => page.data.menu)).map((page) => ({
+	href: `/${page.id}/`,
+	label: page.data.title,
+}));
+const links = [...NAV_LINKS, ...menuPages];
 
 const current = Astro.url.pathname;
 const isCurrent = (href: string) =>
@@ -18,7 +26,7 @@ const isCurrent = (href: string) =>
 		<nav id="main-nav" aria-label="Main">
 			<ul>
 				{
-					NAV_LINKS.map((link) => (
+					links.map((link) => (
 						<li>
 							<a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>
 								{link.label}

@@ -1,0 +1,70 @@
+---
+// The page for one news post. src/pages/[slug].astro picks this layout for posts.
+import type { CollectionEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+import { render } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+import Base from './Base.astro';
+
+interface Props {
+	post: CollectionEntry<'posts'>;
+	newer?: CollectionEntry<'posts'>;
+	older?: CollectionEntry<'posts'>;
+}
+
+const { post, newer, older } = Astro.props;
+const { Content } = await render(post);
+// Imported posts usually repeat the cover photo as their first image.
+const showCover = post.data.cover && !post.data.wordpressId;
+---
+
+
+<Base title={post.data.title} description={post.data.summary} image={post.data.cover}>
+	<article>
+		<p class="eyebrow"><a href="/news/">News</a></p>
+		<h1>{post.data.title}</h1>
+		<p class="meta">
+			<FormattedDate date={post.data.date} />
+			{post.data.author && <span> · {post.data.author}</span>}
+		</p>
+		{showCover && <Image src={post.data.cover!} alt="" width={1200} class="cover" />}
+		<div class="prose">
+			<Content />
+		</div>
+	</article>
+	<nav class="pager" aria-label="More posts">
+		{newer ? <a href={`/${newer.id}/`}>← {newer.data.title}</a> : <span />}
+		{older && <a href={`/${older.id}/`}>{older.data.title} →</a>}
+	</nav>
+</Base>
+
+<style>
+	.eyebrow a {
+		text-decoration: none;
+	}
+	.meta {
+		color: var(--muted);
+		margin-top: -0.25rem;
+	}
+	.cover {
+		width: 100%;
+		border-radius: var(--radius);
+		margin: 1rem 0;
+	}
+	.pager {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-top: 3rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--line);
+		font-weight: 600;
+	}
+	.pager a {
+		max-width: 48%;
+		text-decoration: none;
+	}
+	.pager a:last-child {
+		text-align: right;
+	}
+</style>

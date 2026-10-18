@@ -1,22 +1,18 @@
 ---
-// A page whose text is one Markdown file in src/content/pages/.
-import { getEntry, render } from 'astro:content';
+// A simple page whose text is one Markdown file in src/content/pages/.
+import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
 import Base from './Base.astro';
 
 interface Props {
-	// The file name in src/content/pages/, without .md.
-	id: string;
-	// Keep the page out of search engines (it's still reachable by its link).
-	noindex?: boolean;
+	page: CollectionEntry<'pages'>;
 }
 
-const { id, noindex = false } = Astro.props;
-const page = await getEntry('pages', id);
-if (!page) throw new Error(`No page src/content/pages/${id}.md`);
+const { page } = Astro.props;
 const { Content } = await render(page);
 ---
 
-<Base title={page.data.title} description={page.data.description} noindex={noindex}>
+<Base title={page.data.title} description={page.data.description} noindex={page.data.noindex}>
 	<h1>{page.data.title}</h1>
 	<div class="prose">
 		<Content />

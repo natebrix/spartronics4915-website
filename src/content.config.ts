@@ -21,12 +21,18 @@ const posts = defineCollection({
 		}),
 });
 
-// Text-heavy pages (history, join). Each one has its own route in src/pages/.
+// Pages written in Markdown. Each file is served at /<file name>/, unless
+// src/pages/ has its own route for it (join.astro, history.astro), which then
+// uses this file for its text.
 const pages = defineCollection({
-	loader: glob({ base: './src/content/pages', pattern: '**/*.md' }),
+	loader: glob({ base: './src/content/pages', pattern: '*.md' }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),
+		// Add the page to the main menu, after the built-in links.
+		menu: z.boolean().default(false),
+		// Keep the page out of search engines and the sitemap; it still works by link.
+		noindex: z.boolean().default(false),
 	}),
 });
 

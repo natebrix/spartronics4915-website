@@ -1,7 +1,18 @@
 // @ts-check
 
+import fs from 'node:fs';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
+
+// Markdown pages marked `noindex: true` (like the grant applications) stay out
+// of the sitemap. The content collections aren't loaded yet when this file
+// runs, so read the front matter directly.
+const PAGES_DIR = './src/content/pages';
+const noindexPages = fs
+	.readdirSync(PAGES_DIR)
+	.filter((file) => file.endsWith('.md'))
+	.filter((file) => /^noindex:\s*true\s*$/m.test(fs.readFileSync(`${PAGES_DIR}/${file}`, 'utf8').split(/^---$/m)[1] ?? ''))
+	.map((file) => `/${file.slice(0, -3)}/`);
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,8 +21,7 @@ export default defineConfig({
 	trailingSlash: 'always',
 	integrations: [
 		sitemap({
-			// Grant applications are shared by link only; keep them out of search.
-			filter: (page) => !/\/huney(-public)?\/$/.test(page),
+			filter: (page) => !noindexPages.some((path) => page.endsWith(path)),
 		}),
 	],
 	// Fonts follow the Spartronics brand guide: Open Sans for all website text,

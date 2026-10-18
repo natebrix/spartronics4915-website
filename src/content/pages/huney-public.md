@@ -1,6 +1,7 @@
 ---
 title: Huney Large Grant Request
 description: Spartronics 4915's request for a CNC milling machine for Bainbridge Island students.
+noindex: true
 ---
 
 Spartronics 4915, Bainbridge Island’s student-led robotics team, requests $35,000 to purchase a CNC milling machine that will transform STEM education for over 500 Bainbridge Island students annually.
