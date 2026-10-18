@@ -29,6 +29,7 @@ Open http://localhost:4321. The page reloads as you save files. Press Ctrl+C to 
 | `npm run check:site` | Finds broken internal links and images over 1 MB (run after `build`) |
 | `npm run check:urls` | Checks that every URL from the old WordPress site still works (run after `build`) |
 | `npm run verify` | All of the above, the same as the pull request check |
+| `npm run deploy:demo` | Builds and uploads a demo copy to `spartronics-demo.pages.dev`, hidden from search engines. Needs `npx wrangler login` once. |
 | `npm run import:wordpress -- --backup <folder>` | Re-imports posts from a WordPress backup (only needed during the migration) |
 
 ## Where things live
@@ -52,5 +53,13 @@ docs/               guides for editors and maintainers
 
 ## Hosting
 
+**Demo:** `npm run deploy:demo` publishes the current build to
+https://spartronics-demo.pages.dev without GitHub or the real domain. Before
+uploading it adds a `noindex` header and a blocking `robots.txt` to `dist/`
+only, so the demo never shows up in search results and production builds are
+never affected. The first time, run `npx wrangler login` to connect to the
+team's Cloudflare account.
+
+**Production:**
 The plan is Cloudflare Pages: production builds from `main`, and every other
 branch gets its own preview link. Build command `npm run build`, output folder `dist`.
