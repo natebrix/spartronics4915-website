@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
 import logo from '../assets/brand/logo.png';
 import marketingPhoto from '../assets/home/marketing.jpg';
 import mechanicsPhoto from '../assets/home/mechanics.jpg';
@@ -9,6 +8,7 @@ import PostCard from '../components/PostCard.astro';
 import { SITE_DESCRIPTION, SITE_TITLE, TEAM_EMAIL } from '../consts';
 import Base from '../layouts/Base.astro';
 import { getPosts } from '../lib/posts';
+import { getSponsors } from '../lib/sponsors';
 import { currentSeason, ordinal } from '../lib/season';
 
 const latest = (await getPosts()).slice(0, 3);
@@ -16,9 +16,7 @@ const season = currentSeason();
 
 // Only the top two tiers appear on the home page; the rest are on /sponsors/.
 const HOME_TIERS = ['pantheon', 'presenting'];
-const featuredSponsors = (await getCollection('sponsors'))
-	.filter((sponsor) => HOME_TIERS.includes(sponsor.data.tier) && sponsor.data.logo)
-	.sort((a, b) => HOME_TIERS.indexOf(a.data.tier) - HOME_TIERS.indexOf(b.data.tier) || a.data.order - b.data.order);
+const featuredSponsors = (await getSponsors()).filter((sponsor) => HOME_TIERS.includes(sponsor.data.tier) && sponsor.data.logo);
 ---
 
 <Base title={SITE_TITLE} description={SITE_DESCRIPTION} fullWidth>

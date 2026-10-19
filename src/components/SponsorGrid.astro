@@ -1,9 +1,9 @@
 ---
-// Sponsor logos grouped by tier, from src/data/sponsors.yaml.
+// Sponsor logos grouped by tier, from src/content/sponsors/.
 // Sponsors without a logo are listed by name.
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
 import { SPONSOR_TIERS, type SponsorTierId } from '../data/sponsorTiers';
+import { getSponsors } from '../lib/sponsors';
 
 interface Props {
 	// Only show these tiers. Shows every tier when left out.
@@ -13,7 +13,7 @@ interface Props {
 }
 
 const { tiers, compact = false } = Astro.props;
-const sponsors = (await getCollection('sponsors')).sort((a, b) => a.data.order - b.data.order);
+const sponsors = await getSponsors();
 const groups = SPONSOR_TIERS.filter((tier) => !tiers || tiers.includes(tier.id))
 	.map((tier) => ({ tier, sponsors: sponsors.filter((s) => s.data.tier === tier.id) }))
 	.filter((group) => group.sponsors.length > 0);

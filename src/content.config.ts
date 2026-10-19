@@ -43,15 +43,18 @@ function inFileOrder(text: string) {
 	return (parse(text) as Record<string, unknown>[]).map((entry, order) => ({ ...entry, order }));
 }
 
+// One YAML file per sponsor, edited in Keystatic. Each sponsor's logo is in
+// src/assets/sponsors/<file name>/.
 const sponsors = defineCollection({
-	loader: file('./src/data/sponsors.yaml', { parser: inFileOrder }),
+	loader: glob({ base: './src/content/sponsors', pattern: '*.yaml' }),
 	schema: ({ image }) =>
 		z.object({
 			name: z.string(),
 			tier: z.enum(SPONSOR_TIER_IDS),
 			logo: image().optional(),
 			link: z.url().optional(),
-			order: z.number(),
+			// Order within the tier: lowest first, then sponsors without one by name.
+			position: z.number().optional(),
 		}),
 });
 
@@ -64,11 +67,11 @@ const subteams = defineCollection({
 	}),
 });
 
-// Every award the team has won, one entry per season, shown on /awards/.
+// Every award the team has won, one YAML file per season, shown on /awards/.
 const awards = defineCollection({
-	loader: file('./src/data/awards.yaml'),
+	loader: glob({ base: './src/content/awards', pattern: '*.yaml' }),
 	schema: z.object({
-		year: z.number(),
+		year: z.coerce.number(),
 		note: z.string().optional(),
 		awards: z.array(z.string()),
 	}),

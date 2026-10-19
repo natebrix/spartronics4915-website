@@ -1,19 +1,17 @@
 ---
+// Text for this page, including meeting times, is in src/content/pages/calendar.mdoc.
+import { getEntry, render } from 'astro:content';
 import CalendarEmbed from '../components/CalendarEmbed.astro';
 import { TEAM_EMAIL } from '../consts';
 import Base from '../layouts/Base.astro';
+
+const page = (await getEntry('pages', 'calendar'))!;
+const { Content } = await render(page);
 ---
 
-<Base title="Calendar" description="Spartronics meetings, competitions and events.">
-	<h1>Calendar</h1>
-	<p>
-		All of our meetings, competitions and other important dates are on this calendar. Use the <strong>+ Google Calendar</strong>
-		button at the bottom of the calendar to add our events to your own calendar.
-	</p>
-	<p>
-		<strong>Before Kickoff (early January):</strong> Wednesdays, 6–8 PM.{' '}
-		<strong>After Kickoff:</strong> Mondays, Wednesdays and Fridays, 4–8 PM. We meet in the BHS 100 Building, Room 103.
-	</p>
+<Base title={page.data.title} description={page.data.description}>
+	<h1>{page.data.title}</h1>
+	<Content />
 	<CalendarEmbed />
 	<p>Questions? Email us at <a href={`mailto:${TEAM_EMAIL}`}>{TEAM_EMAIL}</a>.</p>
 </Base>

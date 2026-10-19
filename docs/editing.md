@@ -11,7 +11,7 @@ that has the site set up (a web lead can do this for you once):
 1. In the `website` folder, run `npm run dev`.
 2. Open http://localhost:4321/keystatic.
 
-You'll see **News posts** and **Pages** on the left. Everything you save goes
+You'll see **News posts**, **Pages**, **Sponsors** and **Awards** on the left. Everything you save goes
 into the site's files, and a web lead turns it into a pull request so it gets
 a preview link and a review before it's live.
 
@@ -57,39 +57,47 @@ it a title.
 Tick **Hide from search engines** for pages you only want to share by link,
 like a grant application.
 
+## Add or change a sponsor
+
+1. Click **Sponsors**. To change one, click its name; to add one, click **Add**.
+2. Fill in **Name** and pick a **Tier**.
+3. Under **Logo**, click **Choose file**. Logos sit on a blue tile, so use a
+   white or light version of the logo. Sponsors without a logo are listed by
+   name.
+4. **Website** is optional; clicking the logo goes there.
+5. **Position in tier** is optional. Lower numbers come first; sponsors
+   without one follow in A–Z order.
+6. Click **Save**.
+
+To move a sponsor to a new tier, change their **Tier**. To remove a sponsor,
+open them and choose **Delete** from the menu at the top.
+
+## Add a season's awards
+
+1. Click **Awards**, then **Add**.
+2. Fill in **Season** (the year, like 2027).
+3. Under **Awards**, click **Add** once per award. Write the award and the
+   event, like *Judges' Award (Auburn)*.
+4. Click **Save**. The Awards page lists seasons newest first.
+
+## Change meeting times
+
+Click **Pages**, then **Calendar**, and edit the text. The calendar itself
+comes from the team's Google Calendar; change events there.
+
 ## Things the editor doesn't cover yet
 
 These are still edited as files, in GitHub or by a web lead:
 
 | To change | Edit |
 | --- | --- |
-| Sponsors | `src/data/sponsors.yaml` |
-| Awards | `src/data/awards.yaml` |
+| Sponsorship levels (amounts and benefits) | `src/data/sponsorTiers.ts` |
 | History robot cards (add next year's robot) | `src/content/pages/history-robots.ts` |
 | Subteams | `src/data/subteams.yaml` |
 | Home page countdown | `src/data/countdown.ts` |
 | Email, donate link, menu, social links | `src/consts.ts` |
 
-The Join, History and Resources text *is* in the editor, under **Pages**.
-
-### Adding a sponsor by hand
-
-Each sponsor in `src/data/sponsors.yaml` looks like this:
-
-```yaml
-- id: ace-hardware
-  name: Ace Hardware
-  tier: gold
-  logo: ../assets/sponsors/ace-hardware.png
-  link: https://www.acehardware.com/store-details/03732
-```
-
-- `id`: the name in lowercase with dashes. It must be different from every other sponsor's.
-- `tier`: one of `pantheon`, `presenting`, `gold`, `silver`, `bronze`, `supporting`, `friends`.
-- `logo`: optional. Upload the logo to `src/assets/sponsors/` first. Logos sit on a blue tile, so use a white version.
-- `link`: optional. The sponsor's website.
-
-To move a sponsor to a new tier, change their `tier` line. The order within a tier is the order in the file.
+The Join, History, Calendar and Resources text *is* in the editor, under **Pages**.
 
 ## If something goes wrong
 
