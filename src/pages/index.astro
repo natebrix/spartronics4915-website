@@ -2,8 +2,8 @@
 import { Image } from 'astro:assets';
 import logo from '../assets/brand/logo.png';
 import marketingPhoto from '../assets/home/marketing.jpg';
-import mechanicsPhoto from '../assets/home/mechanics.jpg';
 import Countdown from '../components/Countdown.astro';
+import LoopVideo from '../components/LoopVideo.astro';
 import PostCard from '../components/PostCard.astro';
 import { SITE_DESCRIPTION, SITE_TITLE, TEAM_EMAIL } from '../consts';
 import Base from '../layouts/Base.astro';
@@ -59,7 +59,13 @@ const featuredSponsors = (await getSponsors()).filter((sponsor) => HOME_TIERS.in
 				</p>
 				<p><strong>We are builders, we are coders, we are electricians, we are designers, we are marketers, we are Spartronics!</strong></p>
 			</div>
-			<Image src={mechanicsPhoto} alt="Spartronics students building the robot" width={800} class="photo" />
+			<div class="photo video">
+				<LoopVideo
+					src="/video/robots-in-action.mp4"
+					poster="/video/robots-in-action.jpg"
+					label="Spartronics robots competing on the field"
+				/>
+			</div>
 		</div>
 	</section>
 
@@ -225,6 +231,10 @@ const featuredSponsors = (await getSponsors()).filter((sponsor) => HOME_TIERS.in
 		aspect-ratio: 4 / 3;
 		object-fit: cover;
 		border-radius: var(--radius);
+	}
+	.photo.video {
+		aspect-ratio: 16 / 9;
+		overflow: hidden;
 	}
 	.grid {
 		display: grid;
