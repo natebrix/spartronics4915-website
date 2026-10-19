@@ -10,7 +10,6 @@ export const DONATE_URL = 'https://wa-bainbridge-lite.intouchreceipting.com/bhss
 
 export const NAV_LINKS = [
 	{ href: '/', label: 'Home' },
-	{ href: '/news/', label: 'News' },
 	{ href: '/history/', label: 'Our History' },
 	{ href: '/calendar/', label: 'Calendar' },
 	{ href: '/sponsors/', label: 'Sponsors' },
