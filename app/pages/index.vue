@@ -8,7 +8,7 @@ const { data: latest } = await usePosts(3);
 const season = useSeason();
 
 // Only the top two tiers appear on the home page; the rest are on /sponsors/.
-const HOME_TIERS = ['pantheon', 'presenting'];
+const HOME_TIERS = ['pantheon', 'platinum'];
 const { data: sponsors } = await useSponsors();
 const featuredSponsors = computed(() =>
 	(sponsors.value ?? []).filter((sponsor) => HOME_TIERS.includes(sponsor.tier) && sponsor.logo),

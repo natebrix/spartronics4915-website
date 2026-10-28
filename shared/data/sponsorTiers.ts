@@ -14,8 +14,8 @@ export const SPONSOR_TIERS = [
 		],
 	},
 	{
-		id: 'presenting',
-		name: 'Presenting',
+		id: 'platinum',
+		name: 'Platinum',
 		amount: '$5,000+',
 		benefits: [
 			'Medium logo on all promotional materials',

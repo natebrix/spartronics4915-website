@@ -91,7 +91,7 @@ const sponsorMailto = `mailto:${TEAM_EMAIL}?subject=${encodeURIComponent("I'm in
 		padding: 1rem 1.2rem 1.2rem;
 	}
 	.tier-pantheon,
-	.tier-presenting {
+	.tier-platinum {
 		border-top-color: var(--yellow);
 		background: var(--tint);
 	}
