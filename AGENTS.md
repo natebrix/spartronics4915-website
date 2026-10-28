@@ -1,22 +1,28 @@
 ## Development
 
-When starting the dev server, use background mode:
+The site is [Nuxt](https://nuxt.com) 4, built as a static site with
+`nuxt generate` (`npm run build`). Content lives in `content/` and is read with
+[Nuxt Content](https://content.nuxt.com).
+
+When starting the dev server, run it in the background so it doesn't block:
 
 ```
-astro dev --background
+npm run dev
 ```
 
-Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
+It serves http://localhost:3000. Before finishing a change, run `npm run verify`
+(type check, build, link check, old-URL check), the same check CI runs.
 
 ## Documentation
 
-Full documentation: https://docs.astro.build
-
 Consult these guides before working on related tasks:
 
-- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
-- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
-- [Using React, Vue, Svelte, or other framework components](https://docs.astro.build/en/guides/framework-components/)
-- [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
-- [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
-- [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+- [Pages and routing](https://nuxt.com/docs/guide/directory-structure/app/pages)
+- [Components](https://nuxt.com/docs/guide/directory-structure/app/components)
+- [Data fetching with useAsyncData](https://nuxt.com/docs/getting-started/data-fetching)
+- [Prerendering and static hosting](https://nuxt.com/docs/getting-started/prerendering)
+- [Content collections](https://content.nuxt.com/docs/collections/define)
+- [Querying content](https://content.nuxt.com/docs/utils/query-collection)
+- [MDC syntax for components in Markdown](https://content.nuxt.com/docs/files/markdown)
+- [Images](https://image.nuxt.com)
+- [Nuxt Studio, the visual editor](https://nuxt.studio)

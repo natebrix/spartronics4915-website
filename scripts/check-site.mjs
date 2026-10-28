@@ -9,7 +9,7 @@ import process from "node:process";
 import { DIST, ROOT, htmlFiles, readRedirects, requireBuild, resolvePath } from "./lib/site.mjs";
 
 const MAX_IMAGE_BYTES = 1024 * 1024;
-const IMAGE_DIRS = ["src/assets", "public"];
+const IMAGE_DIRS = ["public"];
 const IMAGE_PATTERN = /\.(jpe?g|png|gif|webp|avif|svg)$/i;
 
 function imageFiles(dir) {

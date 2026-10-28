@@ -1,0 +1,8 @@
+name: Electronics and Pneumatics
+summary: >-
+  The power and control hub. Electronics members wire the robot, manage sensors, and ensure
+  every motor and mechanism gets the right power at the right time. You will learn how to wire
+  machinery, build circuits and swerve drives, and implement pistons. If you're into circuits,
+  hardware troubleshooting, or neat cable management, this is your zone.
+photo: /images/home/electronics.jpg
+order: 3

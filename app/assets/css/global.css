@@ -1,0 +1,211 @@
+/*
+  Site-wide styles. Components keep their own styles in a <style scoped>
+  block in the component file.
+
+  Brand guide:
+  - Blue: Pantone 7686, #0067b9. Yellow: Pantone Yellow (100% yellow), #f4e400.
+  - Open Sans for all website text, headings included.
+  - SF TransRobotics (--font-logo) only for the logo and titles, never for
+    body copy.
+*/
+
+/* Freeware from ShyFonts Type Foundry. */
+@font-face {
+	font-family: 'SF TransRobotics';
+	src: url('/fonts/sf-transrobotics.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--font-body: 'Open Sans', sans-serif;
+	--font-logo: 'SF TransRobotics', sans-serif;
+
+	--blue: #0067b9;
+	/* A darker shade of the brand blue, for hover states and gradients. */
+	--blue-dark: #004b87;
+	--yellow: #f4e400;
+	--ink: #1a1717;
+	--text: #2b2b2b;
+	--muted: #5f6368;
+	--line: #e3e6ea;
+	--paper: #ffffff;
+	--tint: #f3f7fb;
+
+	--column: 46rem;
+	--wide: 74rem;
+	--radius: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	background: var(--paper);
+	color: var(--text);
+	font-family: var(--font-body), system-ui, sans-serif;
+	font-size: 1.0625rem;
+	line-height: 1.65;
+	/* Keep the footer at the bottom on short pages. */
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+body > main {
+	flex: 1;
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-body), system-ui, sans-serif;
+	font-weight: 700;
+	color: var(--ink);
+	line-height: 1.2;
+	margin: 1.75em 0 0.5em;
+}
+
+h1 {
+	font-size: clamp(2rem, 5vw, 2.75rem);
+	margin-top: 0.5em;
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+a {
+	color: var(--blue);
+}
+
+a:hover {
+	color: var(--blue-dark);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	max-width: 100%;
+	border: 0;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid var(--line);
+	margin: 2rem 0;
+}
+
+blockquote {
+	margin: 1.5rem 0;
+	padding-left: 1rem;
+	border-left: 4px solid var(--yellow);
+	color: var(--muted);
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 1.5rem 0;
+	display: block;
+	overflow-x: auto;
+}
+
+th,
+td {
+	border: 1px solid var(--line);
+	padding: 0.4rem 0.6rem;
+	text-align: left;
+}
+
+/* The default centered column most pages use. */
+main.column {
+	max-width: var(--column);
+	margin: 0 auto;
+	padding: 1.5rem 1rem 0;
+}
+
+/* Long-form text from Markdown. */
+.prose img {
+	display: block;
+	margin: 1.5rem auto;
+	border-radius: var(--radius);
+}
+
+.prose iframe {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	margin: 1.5rem 0;
+	border-radius: var(--radius);
+}
+
+.button {
+	display: inline-block;
+	padding: 0.7rem 1.4rem;
+	border-radius: 999px;
+	background: var(--yellow);
+	color: var(--ink);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.button:hover {
+	color: var(--ink);
+	filter: brightness(0.95);
+}
+
+.button.secondary {
+	background: var(--blue);
+	color: white;
+}
+
+.eyebrow {
+	font-size: 0.85rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--blue);
+	margin: 0;
+}
+
+.skip-link {
+	position: absolute;
+	left: -999px;
+}
+
+.skip-link:focus {
+	left: 1rem;
+	top: 1rem;
+	z-index: 100;
+	background: var(--yellow);
+	color: var(--ink);
+	padding: 0.5rem 1rem;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}

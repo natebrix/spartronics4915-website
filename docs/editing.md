@@ -5,84 +5,102 @@ You don't need to know how to code.
 
 ## The editor
 
-The site has a visual editor called Keystatic. For now it runs on a computer
+The site has a visual editor called Nuxt Studio. For now it runs on a computer
 that has the site set up (a web lead can do this for you once):
 
 1. In the `website` folder, run `npm run dev`.
-2. Open http://localhost:4321/keystatic.
+2. Open http://localhost:3000 and click **Edit this page** at the bottom left.
 
-You'll see **News posts**, **Pages**, **Sponsors** and **Awards** on the left. Everything you save goes
-into the site's files, and a web lead turns it into a pull request so it gets
-a preview link and a review before it's live.
+The editor opens beside the site. Its **Content** tab has a folder for each
+kind of thing on the site: **Posts**, **Pages**, **Sponsors**, **Awards** and
+**Subteams**. Its **Media** tab holds the photos. Everything you change goes
+straight into the site's files ("Using local filesystem" at the bottom), and a
+web lead turns it into a pull request so it gets a preview link and a review
+before it's live.
 
-> Later, once the site is on GitHub, the same editor will work from any
-> browser with a GitHub login, with no setup.
+> Later, once the site is hosted somewhere that can run a small server, the
+> same editor can work from any browser with a GitHub login, with no setup.
 
 ## Write a news post
 
-1. Click **News posts**, then **Add**.
-2. Fill in **Title**. The **Web address** fills itself in from the title; that
-   becomes the post's URL, so keep it short.
-3. Fill in **Date** and **Summary** (one or two sentences for the News page).
-4. Write the post in the big box on the left. The toolbar does headings, bold,
-   lists, links and tables.
-5. Click **Save**.
+1. In **Content**, open the **⋮** menu on **Posts** and choose **New file**.
+2. Name the file for the post's web address, like `open-house-2027.md`. The post
+   will be at spartronics4915.com/open-house-2027/, so keep it short and don't
+   change it later; that breaks old links.
+3. Open **Page Settings** at the top and fill in **Title**, **Date**
+   (`YYYY-MM-DD`) and **Summary** (one or two sentences for the News page).
+4. Write the post below. The editor does headings, bold, lists, links and
+   tables.
+
+The editor saves as you go. The preview beside it shows the post as visitors
+will see it.
 
 ## Add photos
 
-- **Cover photo:** in the right-hand column, click **Choose file** under
-  *Cover photo*. It shows on the News page.
-- **Photos in the post:** drag a photo into the text, or use the **+** menu.
-  Write a short description of each photo in its *alt text*, for people using
-  screen readers.
+- Put a post's photos in its own folder: in **Media**, open `images` →
+  `posts` and make a folder named after the post's file (`open-house-2027`).
+- **Cover photo:** in **Page Settings**, pick the photo for *Cover*. It shows
+  on the News page.
+- **Photos in the post:** add them from the editor. Write a short description
+  of each photo in its *alt text*, for people using screen readers.
 - Shrink photos first: at most 2000 pixels on the long side and under 1 MB.
   Phone photos are usually too big. On a Mac, open the photo in Preview →
-  **Tools → Adjust Size**.
-
-Each post keeps its photos in its own folder, `src/assets/posts/<web address>/`.
+  **Tools → Adjust Size**. The site makes smaller copies itself when it builds.
 
 ## Add a YouTube video
 
-In the post, click **+** → **YouTube video**, paste the video's link, and give
-it a title.
+Put these two lines in the post, on their own, with the video's link:
+
+```
+::youtube-video{url="https://www.youtube.com/watch?v=..."}
+::
+```
 
 ## Add a page
 
-1. Click **Pages**, then **Add**.
-2. Fill in **Title** and **Description** (one sentence for search engines).
-3. Tick **Show in the main menu** if it should be in the menu.
-4. Write the page and click **Save**. It's live at
-   spartronics4915.com/<web address>/ once the change is merged.
+1. In **Content**, open the **⋮** menu on **Pages** and choose **New file**.
+2. Name it for its web address, like `robot-camp.md`. It will be at
+   spartronics4915.com/robot-camp/.
+3. In **Page Settings**, fill in **Title** and **Description** (one sentence
+   for search engines). Turn on **Menu** if it should be in the main menu.
+4. Write the page.
 
-Tick **Hide from search engines** for pages you only want to share by link,
-like a grant application.
+Turn on **Noindex** for pages you only want to share by link, like a grant
+application.
 
 ## Add or change a sponsor
 
-1. Click **Sponsors**. To change one, click its name; to add one, click **Add**.
+1. Open **Sponsors**. To change one, click its name; to add one, use **New
+   file** and name it for the sponsor, like `ace-hardware.yaml`.
 2. Fill in **Name** and pick a **Tier**.
-3. Under **Logo**, click **Choose file**. Logos sit on a blue tile, so use a
+3. Under **Logo**, pick the logo from **Media**. Put each sponsor's logo in
+   `images/sponsors/<sponsor file name>/`. Logos sit on a blue tile, so use a
    white or light version of the logo. Sponsors without a logo are listed by
    name.
-4. **Website** is optional; clicking the logo goes there.
-5. **Position in tier** is optional. Lower numbers come first; sponsors
-   without one follow in A–Z order.
-6. Click **Save**.
+4. **Link** is optional; clicking the logo goes there.
+5. **Position** is optional. Lower numbers come first within the tier;
+   sponsors without one follow in A–Z order.
 
 To move a sponsor to a new tier, change their **Tier**. To remove a sponsor,
-open them and choose **Delete** from the menu at the top.
+choose **Delete** from the **⋮** menu next to them.
 
 ## Add a season's awards
 
-1. Click **Awards**, then **Add**.
-2. Fill in **Season** (the year, like 2027).
-3. Under **Awards**, click **Add** once per award. Write the award and the
-   event, like *Judges' Award (Auburn)*.
-4. Click **Save**. The Awards page lists seasons newest first.
+1. Open **Awards** and make a **New file** named for the year, like `2027.yaml`.
+2. Fill in **Year**.
+3. Under **Awards**, add one line per award. Write the award and the event,
+   like *Judges' Award (Auburn)*.
+
+The Awards page lists seasons newest first.
+
+## Change the subteams
+
+Open **Subteams** and click a subteam to change its name, description or
+photo. **Order** is where it appears on the Join page (1 is first).
 
 ## Change meeting times
 
-Click **Pages**, then **Calendar**, and edit the text. The calendar itself
+Open **Pages**, then **calendar**, and edit the text. The calendar itself
 comes from the team's Google Calendar; change events there.
 
 ## Things the editor doesn't cover yet
@@ -91,11 +109,10 @@ These are still edited as files, in GitHub or by a web lead:
 
 | To change | Edit |
 | --- | --- |
-| Sponsorship levels (amounts and benefits) | `src/data/sponsorTiers.ts` |
-| History robot cards (add next year's robot) | `src/content/pages/history-robots.ts` |
-| Subteams | `src/data/subteams.yaml` |
-| Home page countdown | `src/data/countdown.ts` |
-| Email, donate link, menu, social links | `src/consts.ts` |
+| Sponsorship levels (amounts and benefits) | `shared/data/sponsorTiers.ts` |
+| History robot cards (add next year's robot) | `shared/data/robots.ts` |
+| Home page countdown | `shared/data/countdown.ts` |
+| Email, donate link, menu, social links | `shared/consts.ts` |
 
 The Join, History, Calendar and Resources text *is* in the editor, under **Pages**.
 

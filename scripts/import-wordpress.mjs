@@ -1,7 +1,6 @@
-// Imports published WordPress posts into src/content/posts/ (as Markdoc,
-// .mdoc, the format the Keystatic editor uses) from the site
-// backup's database dump, and copies the images each post uses into
-// src/assets/posts/<post name>/ (the layout the Keystatic editor expects).
+// Imports published WordPress posts into content/posts/ (as Markdown, .md)
+// from the site backup's database dump, and copies the images each post uses
+// into public/images/posts/<post name>/.
 //
 // Usage:
 //   npm run import:wordpress -- --backup /path/to/site-archive-folder
@@ -23,10 +22,10 @@ import TurndownService from "turndown";
 import { readTables } from "./lib/wp-sql.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
-const POSTS_DIR = path.join(ROOT, "src/content/posts");
+const POSTS_DIR = path.join(ROOT, "content/posts");
 // Resized images are made once here, then copied into each post's folder.
 const UPLOADS_DIR = path.join(ROOT, "node_modules/.cache/wordpress-images");
-const POST_ASSETS_DIR = path.join(ROOT, "src/assets/posts");
+const POST_ASSETS_DIR = path.join(ROOT, "public/images/posts");
 const FILES_DIR = path.join(ROOT, "public/files");
 const DATA_DIR = path.join(ROOT, "scripts/data");
 
@@ -275,14 +274,14 @@ function isDataTable(table) {
 function makeTurndown(media, current) {
   const turndown = new TurndownService({ codeBlockStyle: "fenced", headingStyle: "atx", hr: "---" });
 
-  // YouTube embeds become the site's {% youtube %} Markdoc tag, which the
-  // Keystatic editor understands; any other embed is kept as HTML.
+  // YouTube embeds become the site's ::youtube-video component
+  // (app/components/content/YoutubeVideo.vue); any other embed is kept as HTML.
   turndown.addRule("iframe", {
     filter: "iframe",
     replacement(_, node) {
       const src = node.getAttribute("src") ?? "";
       const id = src.match(/youtube(?:-nocookie)?\.com\/embed\/([\w-]{11})/)?.[1];
-      return id ? `\n\n{% youtube url="https://www.youtube.com/watch?v=${id}" /%}\n\n` : `\n\n${node.outerHTML}\n\n`;
+      return id ? `\n\n::youtube-video{url="https://www.youtube.com/watch?v=${id}"}\n::\n\n` : `\n\n${node.outerHTML}\n\n`;
     }
   });
   turndown.keep((node) => node.nodeName === "TABLE" && isDataTable(node));
@@ -310,7 +309,7 @@ function makeTurndown(media, current) {
       const upload = uploadPathOf(src);
       if (upload) {
         const name = media.done.get(upload);
-        return name ? `![${alt}](../../assets/posts/${current.slug}/${name})` : "";
+        return name ? `![${alt}](/images/posts/${current.slug}/${name})` : "";
       }
       // Old-site images outside uploads (like /images/eventspic1.jpg) were
       // already gone from the live site.
@@ -370,6 +369,7 @@ function buildSummary(markdown, maxChars = 180) {
   const text = normalizeWhitespace(
     markdown
       .replace(/!\[[^\]]*]\([^)]*\)/g, " ")
+      .replace(/^::.*$/gm, " ")
       .replace(/\[([^\]]*)]\([^)]*\)/g, "$1")
       .replace(/<[^>]+>/g, " ")
       .replace(/\\(.)/g, "$1")
@@ -476,7 +476,7 @@ async function main() {
     const markdown = cleanMarkdown(turndown.turndown(html));
     const thumbnail = attachments.get(thumbnails.get(p.ID));
     const coverName = thumbnail ? await media.addImage(thumbnail) : null;
-    // Keystatic names a post's cover file "cover.<ext>", so match that.
+    // Each post's cover photo is "cover.<ext>" in its folder.
     const coverFile = coverName ? `cover${path.extname(coverName)}` : null;
     const usedImages = [...new Set([...images].map((image) => media.done.get(image)).filter(Boolean))];
     if (usedImages.length || coverFile) {
@@ -495,11 +495,11 @@ async function main() {
       title: p.title,
       date: p.post_date.slice(0, 10),
       summary: decodeHtmlEntities(normalizeText(p.post_excerpt)) || buildSummary(markdown),
-      cover: coverFile ? `../../assets/posts/${p.post_name}/${coverFile}` : null,
+      cover: coverFile ? `/images/posts/${p.post_name}/${coverFile}` : null,
       author: author && !GENERIC_AUTHORS.has(author) ? author : null,
       tags: [...new Set(tags)]
     };
-    await fs.writeFile(path.join(POSTS_DIR, `${p.post_name}.mdoc`), `${frontmatter(post)}\n\n${markdown}\n`);
+    await fs.writeFile(path.join(POSTS_DIR, `${p.post_name}.md`), `${frontmatter(post)}\n\n${markdown}\n`);
   }
 
   // Every URL the old site served for these posts and their archives, for the

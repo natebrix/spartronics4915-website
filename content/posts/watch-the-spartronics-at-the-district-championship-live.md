@@ -1,0 +1,25 @@
+---
+title: "Watch the SPARTRONICS at the District Championship LIVE!"
+date: 2022-04-10
+summary: "April 7-9, 2022 - Eastern Washington University Updates on our Facebook Page Watch the livestream here: https://www.twitch.tv/firstinspires28"
+cover: "/images/posts/watch-the-spartronics-at-the-district-championship-live/cover.avif"
+tags:
+  - "FIRST"
+  - "Spartronics"
+  - "robotics"
+  - "4915"
+  - "live spartronics"
+  - "District Championship"
+  - "Team 4915"
+wordpressId: 3560
+---
+
+April 7-9, 2022 - Eastern Washington University
+
+Updates on our [Facebook Page](https://www.facebook.com/spartronics4915)
+
+![Working on robot Hermes](/images/posts/watch-the-spartronics-at-the-district-championship-live/fixinghermes.jpg)
+
+Watch the livestream here:
+
+[https://www.twitch.tv/firstinspires28](https://www.twitch.tv/firstinspires28)

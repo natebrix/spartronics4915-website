@@ -1,0 +1,20 @@
+---
+title: "Join Us For Our Open House"
+date: 2024-04-17
+summary: "JOIN FOR OUR OPEN HOUSE Bainbridge High School WEDNESDAY May 22nd, 5-7 pm Robotics Open House Please join us on Wednesday, May 22nd for our Robotics Open House, showcasing…"
+tags:
+  - "Events"
+  - "Meetings"
+  - "Competitions"
+  - "Innovation"
+  - "Media"
+  - "Sponsors"
+  - "Blog"
+wordpressId: 3950
+---
+
+# JOIN FOR OUR OPEN HOUSE
+
+## Bainbridge High School WEDNESDAY May 22nd, 5-7 pm **Robotics Open House**
+
+![](/images/posts/join-us-for-our-open-house/image_6483441.jpg) Please join us on **Wednesday, May 22nd** for our Robotics Open House, showcasing Robotics on Bainbridge Island. We want teachers, students of all ages, families, friends, sponsors, parents, and community members to see STEAM/STEM - and our robots - in action! Our two-month robot build season for Spartronics Team 4915 entailed the arduous effort of some 35 students and 15 professional mentors, and Coach Austin Smith, culminated in our robot NEMESIS. Join us and see NEMISIS in action and learn more about what our team does! We'll share what we've been doing while having the “hardest fun we’ll ever have.” ![](/images/posts/join-us-for-our-open-house/DSC03716.webp)At this student-led event, you’ll meet our programming, mechanical, electrical/pneumatic, and business and marketing sub-teams. You'll also have the opportunity to learn about FIRST, which offers many post-high-school opportunities to our students. And most importantly, we would love to chat with you and answer any questions you might have about our team! We hope to see you there!

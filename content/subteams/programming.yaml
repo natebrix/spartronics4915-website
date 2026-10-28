@@ -1,0 +1,10 @@
+name: Programming
+summary: >-
+  The robot's brain. Programming brings the machine to life through code, enabling autonomous
+  movement and precise controls. Once Electronics finishes, Programming tests auto paths,
+  controls, and mechanism code. Auto paths drive the autonomous period of a match, where robots
+  move on their own and actions are worth more points. You will learn several programming
+  languages and how to deploy and debug code. If you love problem-solving, logic, and turning
+  "what if" into "watch this," this is for you.
+photo: /images/home/programming.jpg
+order: 4

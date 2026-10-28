@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
-const POSTS_DIR = path.join(ROOT, "src/content/posts");
+const POSTS_DIR = path.join(ROOT, "content/posts");
 const MAP_FILE = path.join(ROOT, "scripts/data/mailchimp-links.json");
 const TRACKER = /https?:\/\/[a-z0-9.]+\.list-manage\.com\/track\/click\?[^)\s"]+/g;
 

@@ -3,15 +3,15 @@
   "type": "module",
   "version": "0.0.1",
   "engines": {
-    "node": ">=22.22.0"
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
   },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
+    "dev": "nuxt dev",
+    "build": "nuxt generate",
+    "preview": "npx serve dist",
+    "postinstall": "nuxt prepare",
     "import:wordpress": "node ./scripts/import-wordpress.mjs",
-    "check": "astro check",
+    "check": "nuxt typecheck",
     "check:urls": "node ./scripts/check-old-urls.mjs",
     "check:site": "node ./scripts/check-site.mjs",
     "verify": "npm run check && npm run build && npm run check:site && npm run check:urls",
@@ -19,24 +19,19 @@
     "deploy:demo": "npm run build && node ./scripts/mark-demo.mjs && wrangler pages deploy dist --project-name spartronics-demo --branch main"
   },
   "dependencies": {
-    "@astrojs/markdoc": "2.1.0",
-    "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.4.0",
+    "@nuxt/content": "^3.16.2",
+    "@nuxt/fonts": "^1.2.0",
+    "@nuxt/image": "^2.2.0",
+    "@nuxtjs/sitemap": "^9.1.0",
+    "nuxt": "^4.6.3",
     "sharp": "^0.35.0"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
-    "@astrojs/node": "^11.1.8",
-    "@astrojs/react": "^7.1.0",
-    "@keystatic/astro": "^6.0.0",
-    "@keystatic/core": "^0.6.9",
-    "@types/react": "^19.3.0",
-    "@types/react-dom": "^19.3.0",
-    "react": "^19.3.1",
-    "react-dom": "^19.3.1",
+    "@types/node": "^22.19.0",
+    "nuxt-studio": "^1.8.0",
     "turndown": "^7.2.4",
     "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.13",
     "wrangler": "4.151.1",
     "yaml": "^2.9.1"
   }

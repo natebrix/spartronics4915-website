@@ -1,0 +1,19 @@
+---
+title: "Senior Spotlight!"
+date: 2024-02-09
+summary: "Spotlight time! This week, we are focusing on Gavin. Gavin has been in Spartronics as long as he has been at the high school! Gavin's favourite part of Spartronics is…"
+tags:
+  - "Media"
+  - "Blog"
+wordpressId: 3894
+---
+
+Spotlight time! This week, we are focusing on Gavin.
+
+Gavin has been in Spartronics as long as he has been at the high school!
+
+Gavin's favourite part of Spartronics is competitions.
+
+Gavin's dream career is in engineering.
+
+![](/images/posts/senior-spotlight/unnamed-1-3.png)

@@ -1,0 +1,18 @@
+---
+title: "Shorewood Schedule! Here are Spartronics 4915 Matches"
+date: 2015-03-21
+summary: "See the live stream here: Broadcast live streaming video on Ustream"
+cover: "/images/posts/shorewood-schedule-here-are-spartronic-4915-matches/cover.jpg"
+tags: []
+wordpressId: 992
+---
+
+![RecycleRush-thumb](/images/posts/shorewood-schedule-here-are-spartronic-4915-matches/RecycleRush-thumb.jpg)
+
+![2015matches](/images/posts/shorewood-schedule-here-are-spartronic-4915-matches/2015matches.jpg)
+
+See the live stream here:
+
+<iframe style="border: 0px none transparent;" src="http://www.ustream.tv/embed/20054416?v=3&amp;wmode=direct" width="720" height="437" frameborder="0" scrolling="no"></iframe>
+
+[Broadcast live streaming video on Ustream](http://www.ustream.tv)

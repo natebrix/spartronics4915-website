@@ -1,0 +1,25 @@
+---
+title: "April 23-26, 2014 - World Championship"
+date: 2014-04-27
+summary: "This is it: the World FRC Championship in St. Louis, Missouri! All of our work this past year has been to secure us a spot here, where we competed with the best high school…"
+cover: "/images/posts/april-23-26-2014-world-championship/cover.avif"
+tags:
+  - "Events"
+  - "Competitions"
+  - "Meetings"
+  - "Team"
+  - "Upcoming"
+  - "Gathering"
+  - "Build"
+  - "Season"
+  - "meeting"
+  - "worlds"
+  - "world"
+  - "competition"
+  - "championships"
+  - "championship"
+  - "atlas"
+wordpressId: 322
+---
+
+This is it: the World FRC Championship in St. Louis, Missouri! All of our work this past year has been to secure us a spot here, where we competed with the best high school robotics teams in the world. Over four hundred top teams battled for the title "champion," and our robot's performance placed us in the top 5% of FRC teams worldwide! This was our toughest competition yet, and now none of us can wait till our chance to compete again.

@@ -1,0 +1,14 @@
+---
+title: "Spartronics finish 16th place and qualify for worlds!"
+date: 2015-04-06
+summary: "Spartronics finished 16th at the Pacific Northwest Championships in Cheney Washington. We started Saturday in 16th place and managed to reach 8th place. This resulted in us being…"
+cover: "/images/posts/spartronics-finish-16th-place-and-qualify-for-worlds/cover.jpg"
+tags: []
+wordpressId: 1045
+---
+
+Spartronics finished 16th at the Pacific Northwest Championships in Cheney Washington. We started Saturday in 16th place and managed to reach 8th place. This resulted in us being the captain of the 7th seed alliance going into quarterfinals. This was the first time in our team's history that we captained an alliance and we would like to give a shoutout to team 2522 Royal Robotics and team 492 Titan Robotics Club, our alliance partners.
+
+Their websites can be found at [Royalrobotics.org](http://royalrobotics.org/wordpress/) and [Titanrobotics.net](http://www.titanrobotics.net/). We highly encourage you to go check out what these amazing teams are doing. Not only did our quarterfinals performance land us in 16th place at the competition, it also landed us in 20th place in the district! This placement qualifies Spartronics for the FRC World Championships in St. Louis on April 22-25. Congratulations Spartronics and good luck at worlds!
+
+![553310_440074919494232_1118981546902576027_n](/images/posts/spartronics-finish-16th-place-and-qualify-for-worlds/553310_440074919494232_1118981546902576027_n.jpg)
