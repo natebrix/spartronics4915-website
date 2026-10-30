@@ -31,6 +31,7 @@ the bottom left of every page. Press Ctrl+C to stop.
 | `npm run check:site` | Finds broken internal links and images over 1 MB (run after `build`) |
 | `npm run check:urls` | Checks that every URL from the old WordPress site still works (run after `build`) |
 | `npm run verify` | All of the above, the same as the pull request check |
+| `npm run vercel:json` | Rewrites `vercel.json` from `public/_redirects` (`check:urls` fails until you do) |
 | `npm run deploy:demo` | Builds and uploads a demo copy to `spartronics-demo.pages.dev`, hidden from search engines. Needs `npx wrangler login` once. |
 | `npm run import:wordpress -- --backup <folder>` | Re-imports posts from a WordPress backup (only needed during the migration) |
 
@@ -76,6 +77,12 @@ uploading it adds a `noindex` header and a blocking `robots.txt` to `dist/`
 only, so the demo never shows up in search results and production builds are
 never affected. The first time, run `npx wrangler login` to connect to the
 team's Cloudflare account.
+
+**Preview on Vercel:** https://spartronics-nuxt-preview.vercel.app builds from
+`main` on every push, and every pull request gets its own preview link.
+Vercel ignores `_redirects`, so `vercel.json` carries the same redirects plus a
+`noindex` header for `*.vercel.app` addresses; regenerate it with
+`npm run vercel:json` after changing `_redirects`.
 
 **Production:**
 The plan is Cloudflare Pages: production builds from `main`, and every other

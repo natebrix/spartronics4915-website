@@ -75,6 +75,9 @@ export default defineNuxtConfig({
 	},
 
 	image: {
+		// Resize at build time into /_ipx/ on every host. On Vercel it would
+		// otherwise use Vercel's image service, which a static build can't.
+		provider: 'ipx',
 		quality: 80,
 	},
 
@@ -99,6 +102,9 @@ export default defineNuxtConfig({
 	},
 
 	nitro: {
+		// A plain static build everywhere. Without this, Nitro notices it's
+		// building on Vercel or Cloudflare and switches to that host's format.
+		preset: 'static',
 		prerender: {
 			// Build exactly the site's own pages (listed in `hooks` below) rather
 			// than following links: old posts link to WordPress addresses that only

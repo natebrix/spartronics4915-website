@@ -1,0 +1,216 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": ".output/public",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/feed/",
+      "destination": "/rss.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/feed",
+      "destination": "/rss.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/updated-our-history/",
+      "destination": "/history/",
+      "statusCode": 301
+    },
+    {
+      "source": "/donate/",
+      "destination": "/sponsors/sponsor-information/",
+      "statusCode": 301
+    },
+    {
+      "source": "/homepage/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/homepage-2/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/elementor-page-5140/",
+      "destination": "/awards/",
+      "statusCode": 301
+    },
+    {
+      "source": "/resources-2/",
+      "destination": "/resources/",
+      "statusCode": 301
+    },
+    {
+      "source": "/support-2/donate/",
+      "destination": "/sponsors/sponsor-information/",
+      "statusCode": 301
+    },
+    {
+      "source": "/support-2/open-house/",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/event/:path(.*)",
+      "destination": "/:path",
+      "statusCode": 301
+    },
+    {
+      "source": "/events/",
+      "destination": "/calendar/",
+      "statusCode": 301
+    },
+    {
+      "source": "/event/",
+      "destination": "/calendar/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-2/our-robot/:path(.*)",
+      "destination": "/history/",
+      "statusCode": 301
+    },
+    {
+      "source": "/ephyra/",
+      "destination": "/history/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2025-autos",
+      "destination": "/history/",
+      "statusCode": 301
+    },
+    {
+      "source": "/importantdates/",
+      "destination": "/calendar/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sponsors/how-to-become-a-sponsor/",
+      "destination": "/sponsors/sponsor-information/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/How-to-Grow-FIRST-Faster-1.pdf",
+      "destination": "/files/How-to-Grow-FIRST-Faster-1.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/MLKShortEssay.pdf",
+      "destination": "/files/MLKShortEssay.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tag/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/author/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/page/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/newsletter/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2014/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2015/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2016/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2017/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2018/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2019/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2020/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2021/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2022/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2023/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2024/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2025/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2026/:path(.*)",
+      "destination": "/news/",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": ".*\\.vercel\\.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    }
+  ]
+}

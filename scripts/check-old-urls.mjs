@@ -10,7 +10,14 @@
 import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
-import { ROOT, readRedirects, requireBuild, resolvePath } from "./lib/site.mjs";
+import { ROOT, VERCEL_JSON, readRedirects, requireBuild, resolvePath, vercelConfig } from "./lib/site.mjs";
+
+// vercel.json carries the same redirects for Vercel, so it must match _redirects.
+const expectedVercel = `${JSON.stringify(vercelConfig(), null, 2)}\n`;
+if (!fs.existsSync(VERCEL_JSON) || fs.readFileSync(VERCEL_JSON, "utf8") !== expectedVercel) {
+  console.error("vercel.json doesn't match public/_redirects. Run `npm run vercel:json` and commit the result.");
+  process.exit(1);
+}
 
 function readUrlList(name) {
   return fs

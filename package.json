@@ -15,6 +15,7 @@
     "check:urls": "node ./scripts/check-old-urls.mjs",
     "check:site": "node ./scripts/check-site.mjs",
     "verify": "npm run check && npm run build && npm run check:site && npm run check:urls",
+    "vercel:json": "node ./scripts/write-vercel-json.mjs",
     "resolve:mailchimp": "node ./scripts/resolve-mailchimp-links.mjs",
     "deploy:demo": "npm run build && node ./scripts/mark-demo.mjs && wrangler pages deploy dist --project-name spartronics-demo --branch main"
   },

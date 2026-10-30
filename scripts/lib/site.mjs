@@ -20,6 +20,36 @@ export function readRedirects(file = path.join(ROOT, "public/_redirects")) {
     });
 }
 
+export const VERCEL_JSON = path.join(ROOT, "vercel.json");
+
+/**
+ * The Vercel settings for this site: the static build, the redirects from
+ * public/_redirects, and noindex on *.vercel.app so the preview copy stays out
+ * of search results (the real domain is unaffected).
+ */
+export function vercelConfig() {
+  return {
+    $schema: "https://openapi.vercel.sh/vercel.json",
+    framework: null,
+    buildCommand: "npm run build",
+    outputDirectory: ".output/public",
+    trailingSlash: true,
+    redirects: readRedirects().map((rule) => ({
+      // Cloudflare's /tag/* is /tag/:path(.*) on Vercel, and :splat is :path.
+      source: rule.from.endsWith("*") ? `${rule.from.slice(0, -1)}:path(.*)` : rule.from,
+      destination: rule.to.replace(":splat", ":path"),
+      statusCode: rule.status,
+    })),
+    headers: [
+      {
+        source: "/(.*)",
+        has: [{ type: "host", value: ".*\\.vercel\\.app" }],
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
+    ],
+  };
+}
+
 function matchRule(rule, urlPath) {
   if (rule.from.endsWith("*")) {
     const prefix = rule.from.slice(0, -1);

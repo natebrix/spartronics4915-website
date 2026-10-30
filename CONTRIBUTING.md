@@ -6,7 +6,7 @@ page, goes through the same steps:
 1. **Branch.** Make a branch from `main` named for the change, like `add-sponsor-ace` or `fix-join-dates`.
 2. **Change.** Edit files locally (`npm run dev` shows the result as you go) or in GitHub's web editor.
 3. **Check.** Run `npm run verify`. It's the same check GitHub runs on your pull request.
-4. **Pull request.** Push the branch and open a pull request. Cloudflare posts a preview link on it within a couple of minutes. Open it and click through what you changed.
+4. **Pull request.** Push the branch and open a pull request. Vercel posts a preview link on it within a couple of minutes. Open it and click through what you changed.
 5. **Review.** One approval is needed. The reviewer looks at the preview, not just the code.
 6. **Merge.** Merging to `main` publishes the site in about a minute.
 
@@ -15,9 +15,9 @@ page, goes through the same steps:
 The pull request page shows which step failed. Click **Details** to see the message.
 
 - **Type-check or build failed:** usually a post's frontmatter is missing `title`, `date` or `summary`, or the date isn't `YYYY-MM-DD`. The build names the file.
-- **Broken internal link:** a page links to a URL that doesn't exist. Fix the link, or add a line to `public/_redirects` if the page moved.
+- **Broken internal link:** a page links to a URL that doesn't exist. Fix the link, or add a line to `public/_redirects` if the page moved (then run `npm run vercel:json`).
 - **Image over 1 MB:** shrink it to at most 2000 px on the long side, or save it as a JPEG.
-- **Old URL broken:** a URL from the old WordPress site no longer works. Add a redirect in `public/_redirects`.
+- **Old URL broken:** a URL from the old WordPress site no longer works. Add a redirect in `public/_redirects`, then run `npm run vercel:json`.
 
 ## Undoing a bad change on the live site
 
