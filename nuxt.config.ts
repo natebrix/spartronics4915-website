@@ -124,6 +124,12 @@ export default defineNuxtConfig({
 			nitro.hooks.hook('prerender:routes', (routes) => {
 				for (const route of appRoutes) routes.add(route);
 			});
+			// Nuxt also writes 200.html, an empty app shell for client-only
+			// hosting. Vercel serves it for every unknown URL, which hides the
+			// real 404.html, so don't write it.
+			nitro.hooks.hook('prerender:generate', (route) => {
+				if (route.route === '/200.html') route.skip = true;
+			});
 		},
 	},
 });
