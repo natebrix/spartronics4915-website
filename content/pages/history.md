@@ -162,7 +162,7 @@ GAEA’s autonomous mode offers five options: simply move; grab a recycling cont
 
 ## 2013–14: Team Founding
 
-Spartronics debuted on Bainbridge Island, WA (23,000 residents) in 2013. Spartronics Team 4915 came into fruition led by a small yet incredibly dedicated group that included a student leader, a Boeing engineer, the head of our local high school science department, the District’s STEM coordinator, and a local marketing executive who had established FIRST Washington’s Facebook page in 2011.
+Spartronics debuted on Bainbridge Island, WA (23,000 residents) in 2013. Spartronics Team 4915 came into fruition led by a small yet incredibly dedicated group that included a student leader, a Boeing engineer, the head of our local high school science department, the District’s STEM coordinator, and a local marketing executive who had established FIRST Washington’s Facebook page in 2011. The team’s founders were Coach Enrique Chee and mentors John Sachs and Kevin Hawkins.
 
 FRC Team 4915 – Spartronics – was the first formal robotics program in the Bainbridge Island School District. Under the leadership of Bainbridge High School Science Department chair and Physics teacher Enrique Chee, we started from scratch, without any prior FRC, FTC or FLL-related FIRST teams. In our Rookie season, we competed with some 30 students, including 4 girls, 9 professional mentors and Coach Chee.
 

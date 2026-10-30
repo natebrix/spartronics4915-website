@@ -40,7 +40,7 @@ const featuredSponsors = computed(() =>
 				<h2>Spartronics</h2>
 				<p>
 					Team 4915 proudly hails from Bainbridge Island, Washington. We were founded in 2013 by physics teacher Enrique
-					Chee, and the team started its journey from scratch.
+					Chee and mentors John Sachs and Kevin Hawkins, and the team started its journey from scratch.
 				</p>
 				<p>
 					Spartronics is an FRC team. <a href="https://www.firstinspires.org/robotics/frc">FRC</a>, short for FIRST

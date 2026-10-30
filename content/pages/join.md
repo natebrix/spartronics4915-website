@@ -19,4 +19,4 @@ We know it can be hard to make every meeting, so there's no attendance requireme
 
 ## About us
 
-Spartronics began its first season in 2013, founded by a physics teacher and a business mentor. Almost every season since, Spartronics' robots have won awards, placed highly, or won competitions outright. See [every award the team has won](/awards/), and meet our robots in [Our History](/history/).
+Spartronics began its first season in 2013, founded by physics teacher Enrique Chee and mentors John Sachs and Kevin Hawkins. Almost every season since, Spartronics' robots have won awards, placed highly, or won competitions outright. See [every award the team has won](/awards/), and meet our robots in [Our History](/history/).
