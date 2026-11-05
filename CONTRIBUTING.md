@@ -10,6 +10,18 @@ page, goes through the same steps:
 5. **Review.** One approval is needed. The reviewer looks at the preview, not just the code.
 6. **Merge.** Merging to `main` publishes the site in about a minute.
 
+## Pull requests from the editor
+
+Writers using the editor site don't make branches or pull requests themselves.
+Their changes are saved to the `studio` branch, and a GitHub Action keeps one
+pull request open, **Website edits from the editor**, while there are unmerged
+edits (see [docs/editor-setup.md](docs/editor-setup.md)). Review it like any
+other: open the preview, click through what changed, approve and merge. After
+the merge, the Action moves `studio` back to `main` by itself.
+
+If its checks fail (usually a photo over 1 MB), fix it on the `studio` branch:
+in the editor, or by pushing a commit to `studio`.
+
 ## If the checks fail
 
 The pull request page shows which step failed. Click **Details** to see the message.

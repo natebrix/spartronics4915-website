@@ -5,21 +5,37 @@ You don't need to know how to code.
 
 ## The editor
 
-The site has a visual editor called Nuxt Studio. For now it runs on a computer
-that has the site set up (a web lead can do this for you once):
+The site has a visual editor called Nuxt Studio. It works from any browser,
+with nothing to install:
 
-1. In the `website` folder, run `npm run dev`.
-2. Open http://localhost:3000 and click **Edit this page** at the bottom left.
+1. Open the editor link (a web lead has it; it ends in `/_studio`).
+2. Sign in with Google, using the email address a web lead added to the
+   editor's list. Any other address gets "not authorized".
+3. The site opens with the editor beside it.
 
-The editor opens beside the site. Its **Content** tab has a folder for each
-kind of thing on the site: **Posts**, **Pages**, **Sponsors**, **Awards** and
-**Subteams**. Its **Media** tab holds the photos. Everything you change goes
-straight into the site's files ("Using local filesystem" at the bottom), and a
-web lead turns it into a pull request so it gets a preview link and a review
-before it's live.
+The editor's **Content** tab has a folder for each kind of thing on the site:
+**Posts**, **Pages**, **Sponsors**, **Awards** and **Subteams**. Its **Media**
+tab holds the photos.
 
-> Later, once the site is hosted somewhere that can run a small server, the
-> same editor can work from any browser with a GitHub login, with no setup.
+### How your changes go live
+
+1. Make your changes. The preview beside the editor shows them as you go.
+2. Publish them from the editor, with a few words saying what you changed.
+3. Within a couple of minutes, a pull request called *Website edits from the
+   editor* appears on GitHub, with a preview link. A web lead checks the preview
+   and merges it, and the change is live about a minute later.
+
+Until it's merged, your change shows in the editor but not on the public site.
+Everyone's published changes go into the same pull request, so if someone else
+published something earlier, it's reviewed and goes live together with yours.
+
+### Editing on your own computer instead
+
+Web leads can also run the editor locally: in the `website` folder, run
+`npm run dev`, open http://localhost:3000 and click **Edit this page** at the
+bottom left. There, changes go straight into the files on that computer ("Using
+local filesystem" at the bottom), and you make the pull request yourself (see
+[CONTRIBUTING.md](../CONTRIBUTING.md)).
 
 ## Write a news post
 
@@ -46,6 +62,8 @@ will see it.
 - Shrink photos first: at most 2000 pixels on the long side and under 1 MB.
   Phone photos are usually too big. On a Mac, open the photo in Preview →
   **Tools → Adjust Size**. The site makes smaller copies itself when it builds.
+  The editor will accept a bigger photo, but then the pull request's check
+  fails and a web lead has to swap in a smaller copy.
 
 ## Add a YouTube video
 

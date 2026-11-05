@@ -20,12 +20,15 @@ Open http://localhost:3000. The page reloads as you save files. While the dev
 server runs, the visual editor (Nuxt Studio) is the **Edit this page** button at
 the bottom left of every page. Press Ctrl+C to stop.
 
+Writers don't need any of this: they use the hosted editor site from a browser
+(see [docs/editing.md](docs/editing.md) and [docs/editor-setup.md](docs/editor-setup.md)).
+
 ## Commands
 
 | Command | What it does |
 | --- | --- |
 | `npm run dev` | Runs the site locally while you edit |
-| `npm run build` | Builds the finished site into `dist/` (`nuxt generate`) |
+| `npm run build` | Builds the finished site into `dist/` (`nuxt generate`). With `STUDIO_EDITOR=true`, builds the editor site instead (`nuxt build`, with a server) |
 | `npm run preview` | Serves the built `dist/` folder |
 | `npm run check` | Type-checks the code (`nuxt typecheck`) |
 | `npm run check:site` | Finds broken internal links and images over 1 MB (run after `build`) |
@@ -83,6 +86,12 @@ team's Cloudflare account.
 Vercel ignores `_redirects`, so `vercel.json` carries the same redirects plus a
 `noindex` header for `*.vercel.app` addresses; regenerate it with
 `npm run vercel:json` after changing `_redirects`.
+
+**Editor site on Vercel:** a second Vercel project builds the `studio` branch
+with `STUDIO_EDITOR=true`: the same site plus a small server, so writers can
+sign in to Nuxt Studio with Google from any browser. Their changes are saved to
+`studio`, and the **Editor branch** GitHub Action keeps a pull request open from
+`studio` into `main`. Setup and day-to-day care: [docs/editor-setup.md](docs/editor-setup.md).
 
 **Production:**
 The plan is Cloudflare Pages: production builds from `main`, and every other
