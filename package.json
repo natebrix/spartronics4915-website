@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "nuxt dev",
-    "build": "nuxt generate",
+    "build": "node ./scripts/build.mjs",
     "preview": "npx serve dist",
     "postinstall": "nuxt prepare",
     "import:wordpress": "node ./scripts/import-wordpress.mjs",
@@ -25,11 +25,11 @@
     "@nuxt/image": "^2.2.0",
     "@nuxtjs/sitemap": "^9.1.0",
     "nuxt": "^4.6.3",
+    "nuxt-studio": "^1.8.0",
     "sharp": "^0.35.0"
   },
   "devDependencies": {
     "@types/node": "^22.19.0",
-    "nuxt-studio": "^1.8.0",
     "turndown": "^7.2.4",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.13",

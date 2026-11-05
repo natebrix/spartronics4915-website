@@ -1,0 +1,62 @@
+# The editor site (docs/editor-setup.md) saves writers' changes to the `studio`
+# branch, never to `main`. This workflow:
+# - keeps a pull request open from `studio` into `main` whenever `studio` has
+#   edits that aren't on `main`, so every edit gets a preview link, the checks
+#   and a review before it's live;
+# - moves `studio` up to `main` once those edits are merged (or when `main`
+#   changes and `studio` has nothing waiting), so the editor always starts
+#   from the live site.
+name: Editor branch
+
+on:
+  push:
+    branches: [main, studio]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+# One run at a time, so two quick saves can't both open a pull request.
+concurrency:
+  group: studio-branch
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync the studio branch with main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! git rev-parse --verify --quiet origin/studio >/dev/null; then
+            echo "No studio branch yet. Create it from main (see docs/editor-setup.md)."
+            exit 0
+          fi
+          studio=$(git rev-parse origin/studio)
+          main=$(git rev-parse origin/main)
+
+          # Nothing waiting on studio: every studio commit is already on main, or
+          # main has exactly the same files (after a squash merge). Move studio
+          # to main. --force-with-lease refuses if a writer saved in the meantime.
+          if git merge-base --is-ancestor "$studio" "$main" || git diff --quiet "$main" "$studio"; then
+            if [ "$studio" != "$main" ]; then
+              git push --force-with-lease="studio:$studio" origin "$main:refs/heads/studio"
+              echo "Moved studio to main."
+            fi
+            exit 0
+          fi
+
+          # studio has edits that aren't on main: make sure they're in a pull request.
+          open=$(gh pr list --head studio --base main --state open --json number --jq '.[0].number')
+          if [ -n "$open" ]; then
+            echo "Pull request #$open already has the edits."
+            exit 0
+          fi
+          gh pr create --base main --head studio \
+            --title "Website edits from the editor" \
+            --body "Changes saved in the website editor. Open the preview link that Vercel posts below, click through what changed, and approve if it looks right. Merging publishes it. New saves in the editor are added to this pull request automatically."

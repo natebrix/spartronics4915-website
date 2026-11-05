@@ -5,7 +5,9 @@ name: Check site
 on:
   pull_request:
   push:
-    branches: [main]
+    # studio: the editor's pull request is opened by a GitHub Action, which
+    # doesn't start pull_request checks, so check each push to it directly.
+    branches: [main, studio]
 
 jobs:
   check:

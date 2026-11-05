@@ -29,17 +29,44 @@ const noindexPages = fs
 	.filter((file) => /^noindex:\s*true\s*$/m.test(fs.readFileSync(`${PAGES_DIR}/${file}`, 'utf8').split(/^---$/m)[1] ?? ''))
 	.map((file) => `/${file.slice(0, -'.md'.length)}/`);
 
+// The editor site: a second copy of the site, with a small server, where
+// writers log in to Nuxt Studio from any browser. Its host sets
+// STUDIO_EDITOR=true; the public site never does. See docs/editor-setup.md.
+const isEditor = process.env.STUDIO_EDITOR === 'true';
+
 // https://nuxt.com/docs/api/nuxt-config
 export default defineNuxtConfig({
 	compatibilityDate: '2026-10-01',
-	modules: ['@nuxt/content', '@nuxt/image', '@nuxt/fonts', '@nuxtjs/sitemap'],
+	modules: ['@nuxt/content', '@nuxt/image', '@nuxt/fonts', '@nuxtjs/sitemap', ...(isEditor ? ['nuxt-studio'] : [])],
 
-	// The Nuxt Studio editor (the pencil button, bottom left) only runs with
-	// `npm run dev`, editing the files on this computer. `npm run build` makes a
-	// fully static site in dist/, with no editor and no server.
+	// The Nuxt Studio editor (the "Edit this page" button, bottom left). With
+	// `npm run dev` it edits the files on this computer. On the editor site it
+	// saves to the `studio` branch on GitHub. The public site is fully static,
+	// with no editor and no server.
 	$development: {
-		modules: ['nuxt-studio'],
+		modules: isEditor ? [] : ['nuxt-studio'],
 	},
+
+	// Editor site only. (Spread in, because `studio` is only a known setting
+	// when the nuxt-studio module is loaded.)
+	...(isEditor && {
+		studio: {
+			repository: {
+				provider: 'github',
+				owner: 'natebrix',
+				repo: 'spartronics4915-website',
+				// Never main: a GitHub Action opens a pull request from this branch,
+				// so every edit gets a preview and a review before it's live.
+				branch: 'studio',
+				private: false,
+			},
+			git: {
+				commit: { messagePrefix: 'Editor: ' },
+			},
+		},
+		// Keep the editor site out of search engines.
+		routeRules: { '/**': { headers: { 'X-Robots-Tag': 'noindex, nofollow' } } },
+	}),
 
 	css: ['~/assets/css/global.css'],
 
@@ -104,7 +131,8 @@ export default defineNuxtConfig({
 	nitro: {
 		// A plain static build everywhere. Without this, Nitro notices it's
 		// building on Vercel or Cloudflare and switches to that host's format.
-		preset: 'static',
+		// The editor site needs that host's format, for Studio's login server.
+		preset: isEditor ? undefined : 'static',
 		prerender: {
 			// Build exactly the site's own pages (listed in `hooks` below) rather
 			// than following links: old posts link to WordPress addresses that only

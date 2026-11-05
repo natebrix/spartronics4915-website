@@ -15,6 +15,7 @@ at least a month.
 - [ ] Update GitHub organization members and the teams named in `.github/CODEOWNERS`; remove graduated students.
 - [ ] Review the account table below. Every account needs at least two mentors with access.
 - [ ] Check the domain's renewal date and payment method.
+- [ ] Update the editor's sign-in list (`STUDIO_GOOGLE_MODERATORS` in the editor's Vercel project): add next year's writers, remove graduates. Check the expiry date of the editor's GitHub token and renew it if it runs out before next May (see [editor-setup.md](editor-setup.md)).
 - [ ] Update the Join page, the sponsor list, the countdown and the history timeline for next season.
 - [ ] Merge pending dependency updates and confirm `npm run verify` passes.
 - [ ] Read through `docs/` and fix anything out of date.
@@ -29,7 +30,7 @@ public. Logins live in the team's shared password manager.
 | GitHub organization |  |  |  |
 | Cloudflare |  |  |  |
 | Domain registrar |  |  |  |
-| Visual editor |  |  |  |
+| Editor site (Vercel project, Google sign-in project, GitHub token and its expiry date) |  |  |  |
 | Newsletter service |  |  |  |
 | Google Calendar |  |  |  |
 | InTouch donation page |  |  |  |
